@@ -1,0 +1,110 @@
+entries:
+- title: Dose Syntax Implementation 
+  product: Dose Syntax Implementation for FHIR
+  version: 1.0.0 - Experimental 
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+    - title: The Journey
+      url: /overview_the_journey.html
+      output: web
+    - title: Guide Versioning
+      url: /overview_guide_versioning.html
+      output: web
+    - title: Release Notes
+      url: /overview_release_notes.html
+      output: web
+    - title: Glossary
+      url: /overview_glossary.html
+      output: web
+
+  - title: CareConnect Resources
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore.html
+      output: web
+      type: homepage
+      subfolders:
+      - title: xxxxx
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /explore_bundle_overview.html
+          output: web
+ 
+  - title: xxxxxx
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore.html
+      output: web
+      type: homepage
+      subfolders:
+      - title: xxxxxx
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /explore_bundle_overview.html
+          output: web 
+
+  - title: Design & Build
+    output: web
+    folderitems:
+    - title: Overview
+      url: /design.html
+      output: web
+    - title: Data Mapping
+      url: /build_data_mapping.html
+      output: web      
+
+
+  - title: Assure
+    output: web
+    folderitems:
+    - title: Overview
+      url: /assure.html
+      output: web
+
+
+  - title: Deploy
+    output: web
+    folderitems:
+    - title: Overview
+      url: /deploy.html
+      output: web
+
+
+  - title: Help & Support
+    output: web
+    folderitems:
+    - title: Frequently Asked Questions (FAQ)
+      url: /support_faq.html
+      output: web
+    - title: Communication Channels
+      url: /support_communications.html
+      output: web
+      subfolders:
+
+
+  - title: Tags
+    output: web
+    folderitems:
+    - title: Overview
+      url: /tag_overview.html
+      output: web
+    - title: FHIR&reg;
+      url: /tag_fhir.html
+      output: web
+    - title: Development
+      url: /tag_development.html
+    - title: Support
+      url: /tag_support.html
+      output: web

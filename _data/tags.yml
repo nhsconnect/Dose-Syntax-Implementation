@@ -1,0 +1,17 @@
+allowed-tags:
+  - overview
+  - fhir
+  - design
+  - development
+  - clinical
+  - identification
+  - support
+  - documents
+  - diagnostics
+  - clinical
+  - medication
+  - individuals
+  - entities
+  - foundation
+  - api
+  - noccprofile
