@@ -4,16 +4,16 @@ keywords: explore Reference
 tags: [explore,fhir]
 sidebar: overview_sidebar
 permalink: explore_s_and_r.html
-summary: "Overview of sender and receiver requirements for ITK3 payloads."
+summary: "Overview of sender and receiver requirements for XXXXXXXXXXXXXX3 payloads."
 ---
 
 
 
-These sections describe the sender and receiver requirements for ITK3 FHIR payloads.
+These sections describe the sender and receiver requirements for XXXXXXXXXXXXXX3 FHIR payloads.
 
 For the purpose of this specification: 
 
-- An ITK3 FHIR Document payload is defined as below:
+- An XXXXXXXXXXXXXX3 FHIR Document payload is defined as below:
 
 FHIR Resources can be used to build documents that represent a Composition: a set of coherent information that is a statement of healthcare information, particularly including clinical observations and services. A document is an immutable set of Resources with a fixed presentation that is authored and/or attested by humans, organizations and devices.
 

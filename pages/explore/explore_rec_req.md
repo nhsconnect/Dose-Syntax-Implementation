@@ -32,14 +32,14 @@ Receiving systems must apply basic header validation to check that the system is
 <td>1</td>
 <td colspan="3">The system <b>MUST</b> where requested either :<br/>
 <ul>
-<li>Reject the message with an appropriate <a href="explore_response_structure.html#itk3-business-level-response-codes">response code.</a></li>
+<li>Reject the message with an appropriate <a href="explore_response_structure.html#XXXXXXXXXXXXXX3-business-level-response-codes">response code.</a></li>
 <li>Accept the message and pass it through to the clinical application for processing</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>NB</td>
-<td colspan="3">The sending of responses is controlled using the appropriate flag in the ITK3 MessageHeader- ITKMessageHandling extension on the incoming FHIR document bundle.</td>
+<td colspan="3">The sending of responses is controlled using the appropriate flag in the XXXXXXXXXXXXXX3 MessageHeader- XXXXXXXXXXXXXXMessageHandling extension on the incoming FHIR document bundle.</td>
 </tr>
 </table> 
 
@@ -61,7 +61,7 @@ Receiving systems must apply basic header validation to check that the system is
 </tr>
 <tr>
 <td>NB</td>
-<td colspan="3">The sending of responses is controlled using the appropriate flag in the ITK3 MessageHeader- ITKMessageHandling extension on the incoming FHIR document bundle.</td>
+<td colspan="3">The sending of responses is controlled using the appropriate flag in the XXXXXXXXXXXXXX3 MessageHeader- XXXXXXXXXXXXXXMessageHandling extension on the incoming FHIR document bundle.</td>
 </tr>
 </table> 
 

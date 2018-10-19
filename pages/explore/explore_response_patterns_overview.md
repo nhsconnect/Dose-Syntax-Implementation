@@ -1,17 +1,17 @@
 ---
-title: ITK3 Response Patterns Overview
+title: XXXXXXXXXXXXXX3 Response Patterns Overview
 keywords: explore Reference
 tags: [explore,fhir,error codes]
 sidebar: overview_sidebar
 permalink: explore_response_patterns_overview.html
-summary: "Response Patterns used in ITK3."
+summary: "Response Patterns used in XXXXXXXXXXXXXX3."
 ---
 
 
 
 ## Overview ##
 
-The following sections detail the response patterns supported by ITK3. The pattern used is dependent on the specification for the Payload and the response types requested.
+The following sections detail the response patterns supported by XXXXXXXXXXXXXX3. The pattern used is dependent on the specification for the Payload and the response types requested.
 The actual flow between the systems will be dependent on factors such as:
 
 - What responses have been requested (handling specification extension values sent)

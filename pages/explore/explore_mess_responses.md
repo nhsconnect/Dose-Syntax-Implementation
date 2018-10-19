@@ -1,5 +1,5 @@
 ---
-title: ITK3 Message Responses
+title: XXXXXXXXXXXXXX3 Message Responses
 keywords: explore Reference
 tags: [explore,fhir]
 sidebar: overview_sidebar
@@ -9,7 +9,7 @@ summary: "This section defines the response codes to be used by sending and rece
 
 
 
-## ITK3 Message Processing ##
+## XXXXXXXXXXXXXX3 Message Processing ##
 
 The following requirements relate to all Message Response processing.
 
@@ -43,18 +43,18 @@ The following requirements relate to all Message Response processing.
 </tr>
 </table> 
 
-## ITK3 Response Codes ##
+## XXXXXXXXXXXXXX3 Response Codes ##
 
-There is only one set of response codes used for all ITK3 FHIR Document implementations.
+There is only one set of response codes used for all XXXXXXXXXXXXXX3 FHIR Document implementations.
 
 For details of the response code usage see the section on [response codes.](explore_response_codes.html)
 
-## ITK3 Message Responses - Behavioural ## 
+## XXXXXXXXXXXXXX3 Message Responses - Behavioural ## 
 
 
 In order to provide comprehensive reporting for the Message Header, (note the Handling Specification is an extension to the Message Header), independently of the transport mechanism used (MESH, SOAP other), a response code vocabulary has been developed. 
 
-This section of the requirements only applies to the response codes associated with behavioural extensions created for ITK3 FHIR Messaging.
+This section of the requirements only applies to the response codes associated with behavioural extensions created for XXXXXXXXXXXXXX3 FHIR Messaging.
 
 The approach defines response codes for:
 - Mismatch, e.g. payload ID and payload type.

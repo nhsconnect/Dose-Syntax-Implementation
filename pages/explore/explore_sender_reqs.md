@@ -9,7 +9,7 @@ summary: "A Sender needs to be aware of a number of constraints associated with 
 
 
 
-## ITK3 Number of Payloads Constraint ##
+## XXXXXXXXXXXXXX3 Number of Payloads Constraint ##
 
 <table style="width:100%;max-width: 100%;">
 <tr>
@@ -172,7 +172,7 @@ Where sending systems are connected to PDS, full PDS Synchronisation will be car
 </tr>
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-PDS-07</b></td>
-<td>Where an NHS number is known to be invalid on the PDS (error code '22' upon a PDS Retrieval), if the Document is sent (and this can only be done with ITK3 Message Specifications) other (non- NHS number) demographic details <b>MUST</b> be included.
+<td>Where an NHS number is known to be invalid on the PDS (error code '22' upon a PDS Retrieval), if the Document is sent (and this can only be done with XXXXXXXXXXXXXX3 Message Specifications) other (non- NHS number) demographic details <b>MUST</b> be included.
 <ul>
 <li>First Given Name</li>
 <li>Surname</li>
@@ -279,7 +279,7 @@ If the system is not connected to PDS at all then sufficient identifying attribu
 </tr>
 </table>  
 
-## ITK3 Documents - Text Section Exclusions ##
+## XXXXXXXXXXXXXX3 Documents - Text Section Exclusions ##
 
 <table style="width:100%;max-width: 100%;">
 <tr>
@@ -313,7 +313,7 @@ Below are examples of the type of information covered by this requirement.</td>
 </tr>
 </table> 
 
-## ITK3 FHIR Coded Entries ##
+## XXXXXXXXXXXXXX3 FHIR Coded Entries ##
 
 Where a Sending System has the functionality to support coded clinical entries for medications, FHIR documents created by that system should include coded entries where possible.
 
@@ -421,7 +421,7 @@ This section defines the general sender requirements, including the FHIR mandate
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-SR-01</b></td>
 <td>FHIR Mandate - Where it is indicated that a document recipient <u>is required to act</u> on the contents of a FHIR document, the originating system <b>MUST</b> set:<br/>
-MessageHeader.extension(ITKMessageHandling) – RecipientType = "FA"(For Action).
+MessageHeader.extension(XXXXXXXXXXXXXXMessageHandling) – RecipientType = "FA"(For Action).
 </td>
 <td bgcolor="#dfefff">Y</td>
 <td bgcolor="#dfefff">N</td>
@@ -438,7 +438,7 @@ MessageHeader.extension(ITKMessageHandling) – RecipientType = "FA"(For Action)
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-SR-02</b></td>
 <td>FHIR Mandate - Where it is indicated that a document recipient <u>is not required to act</u> on the contents of a FHIR document, the originating system <b>MUST</b> set:<br/>
-MessageHeader.extension(ITKMessageHandling) - RecipientType = "FI" (For Information).
+MessageHeader.extension(XXXXXXXXXXXXXXMessageHandling) - RecipientType = "FI" (For Information).
 </td>
 <td bgcolor="#dfefff">Y</td>
 <td bgcolor="#dfefff">N</td>
@@ -455,7 +455,7 @@ MessageHeader.extension(ITKMessageHandling) - RecipientType = "FI" (For Informat
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-SR-03</b></td>
 <td>FHIR Mandate – To indicate the Sender Reference the originating system <b>MUST</b> set:<br/>
-MessageHeader.extension(ITKMessageHandling) – SenderReference = &lt;up to any 255 character string&gt; (Default Value= None)
+MessageHeader.extension(XXXXXXXXXXXXXXMessageHandling) – SenderReference = &lt;up to any 255 character string&gt; (Default Value= None)
 </td>
 <td bgcolor="#dfefff">Y</td>
 <td bgcolor="#dfefff">N</td>
@@ -484,7 +484,7 @@ MessageHeader.extension(ITKMessageHandling) – SenderReference = &lt;up to any 
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-SR-05</b></td>
 <td>FHIR Mandate – To indicate the Message Definition the originating system <b>MUST</b> set:<br/>
-MessageHeader.extension(ITKMessageHandling) – MessageDefinition = &lt;a URI&gt;</td>
+MessageHeader.extension(XXXXXXXXXXXXXXMessageHandling) – MessageDefinition = &lt;a URI&gt;</td>
 <td bgcolor="#dfefff">Y</td>
 <td bgcolor="#dfefff">N</td>
 </tr>
@@ -501,7 +501,7 @@ MessageHeader.extension(ITKMessageHandling) – MessageDefinition = &lt;a URI&gt
 <tr>
 <td bgcolor="#dfefff"><b>FHIR-SR-06</b></td>
 <td>NHS Digital have provided a Local Extension key, that can be populated and defined to suit local requirements: -, the originating system <b>MUST</b> set: <br/> 
-MessageHeader.extension(ITKMessageHandling) – Local Extension = &lt;is of any type&gt;. (Default = String, Value= None)
+MessageHeader.extension(XXXXXXXXXXXXXXMessageHandling) – Local Extension = &lt;is of any type&gt;. (Default = String, Value= None)
 </td>
 <td bgcolor="#dfefff">Y</td>
 <td bgcolor="#dfefff">N</td>

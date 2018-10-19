@@ -1,10 +1,10 @@
 ---
-title: ITK3 Technical and Business Response Pattern
+title: XXXXXXXXXXXXXX3 Technical and Business Response Pattern
 keywords: explore Reference
 tags: [explore,fhir,error codes]
 sidebar: overview_sidebar
 permalink: explore_response_patterns_2.html
-summary: "Technical and Business response pattern used in ITK3."
+summary: "Technical and Business response pattern used in XXXXXXXXXXXXXX3."
 ---
 
 

@@ -1,10 +1,10 @@
 ---
-title: ITK3 Fire and Forget Response Pattern
+title: XXXXXXXXXXXXXX3 Fire and Forget Response Pattern
 keywords: explore Reference
 tags: [explore,fhir,error codes]
 sidebar: overview_sidebar
 permalink: explore_response_patterns_4.html
-summary: "Fire and forget response pattern used in ITK3."
+summary: "Fire and forget response pattern used in XXXXXXXXXXXXXX3."
 ---
 
 

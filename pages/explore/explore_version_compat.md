@@ -4,7 +4,7 @@ keywords: explore Reference
 tags: [explore,fhir]
 sidebar: overview_sidebar
 permalink: explore_version_compat.html
-summary: "This section defines how versions at both MessageHeader level and StructureDefinition are implemented in ITK3."
+summary: "This section defines how versions at both MessageHeader level and StructureDefinition are implemented in XXXXXXXXXXXXXX3."
 ---
 
 
@@ -15,7 +15,7 @@ A MessageDefinition will have a version number. This will be "up versioned" when
 
 ## StructureDefinition versioning ##
 
-For ITK3 the StructureDefinition is the XML representation of a FHIR resource that may be profiled within NHS Digital specifications. This section gives an overview of versioning of StructureDefinitions. These have a major version number in the name for example:
+For XXXXXXXXXXXXXX3 the StructureDefinition is the XML representation of a FHIR resource that may be profiled within NHS Digital specifications. This section gives an overview of versioning of StructureDefinitions. These have a major version number in the name for example:
 Composition-1
 This will be "up versioned" when there is a change of functionality which is deemed to be a breaking change. This version number is carried in the XML instance within the meta.profile element as below:
 

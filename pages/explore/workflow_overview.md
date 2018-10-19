@@ -11,4 +11,4 @@ summary: "Overview of work flow."
 
 ## Overview ##
 
-There is no work flow associated with ITK3 Messaging Distribution messaging, please refer to the Payload specification for any associated work flow information.
+There is no work flow associated with XXXXXXXXXXXXXX3 Messaging Distribution messaging, please refer to the Payload specification for any associated work flow information.

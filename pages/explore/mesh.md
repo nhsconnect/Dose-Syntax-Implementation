@@ -17,7 +17,7 @@ End users log into MESH either by using the MESH client, or through systems they
 
 <a href ="pages/support/MESH_Overview_Generic.pdf" target="_blank">MESH Overview Presentation</a>
 
-<a href ="pages/support/ITK3_MESH.pdf" target="_blank">ITK3 and MESH Overview Presentation</a> 
+<a href ="pages/support/XXXXXXXXXXXXXX3_MESH.pdf" target="_blank">XXXXXXXXXXXXXX3 and MESH Overview Presentation</a> 
 
 <a href ="https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh" target="_blank">MESH Website</a>
 

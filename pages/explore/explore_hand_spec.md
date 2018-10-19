@@ -4,19 +4,19 @@ keywords: workflow
 tags: [development,fhir,Profiles]
 sidebar: foundation_sidebar
 permalink: explore_hand_spec.html
-summary: "The ITK3 Handling Specification Usage."
+summary: "The XXXXXXXXXXXXXX3 Handling Specification Usage."
 ---
 
 
 
 ## Overview ##
 
-One of the important parts of the ITK3 messaging distribution is the message handling specification. The handling specification consists of a set of "keys" which allow the sender to send information in the ITK3 MessageHeader to the recipient, to indicate how the received message should be processed (handled). 
-The handling specification is implemented by adding a complex extension called the ITKMessageHandling Extension to the ITK3 MessageHeader Profile. This extension contains a number of extension elements(keys) which are used to control messaging behaviour, such as when to send a response on receipt of a message.
+One of the important parts of the XXXXXXXXXXXXXX3 messaging distribution is the message handling specification. The handling specification consists of a set of "keys" which allow the sender to send information in the XXXXXXXXXXXXXX3 MessageHeader to the recipient, to indicate how the received message should be processed (handled). 
+The handling specification is implemented by adding a complex extension called the XXXXXXXXXXXXXXMessageHandling Extension to the XXXXXXXXXXXXXX3 MessageHeader Profile. This extension contains a number of extension elements(keys) which are used to control messaging behaviour, such as when to send a response on receipt of a message.
 
 **Important Note 1: There is no default behaviour for any handling keys unless specified by the Payload specification. For example, the Payload specification may mandate that a particular handling key always be populated or define some default behaviour for a particular key. The Payload specification must always be consulted when implementing handling key behaviour on a sending or receiving system.**
 
-## ITKMessageHandling Extension ##
+## XXXXXXXXXXXXXXMessageHandling Extension ##
 
 This complex extension consists of extension elements each with their own extension URLs. Each extension element is a specific handling key with an associated allowable value which is described in the table below. 
 

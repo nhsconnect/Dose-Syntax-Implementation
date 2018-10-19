@@ -1,10 +1,10 @@
 ---
-title: ITK3 Technical Only Response Pattern
+title: XXXXXXXXXXXXXX3 Technical Only Response Pattern
 keywords: explore Reference
 tags: [explore,fhir,error codes]
 sidebar: overview_sidebar
 permalink: explore_response_patterns_3.html
-summary: "Technical Only response pattern used in ITK3."
+summary: "Technical Only response pattern used in XXXXXXXXXXXXXX3."
 ---
 
 
