@@ -108,6 +108,6 @@ Coded entries are the mechanism used to exchange structured clinical information
 <td bgcolor="#dfefff"><b>FHIR-CC-04</b></td>
 <td>References to coded entries within a document <b>MUST</b> be to resources within the same document.</td>
 <td bgcolor="#dfefff">Y</td>
-<td bgcolor="#dfefff">N</td>
+<td bgcolor="#dfefff">Non no</td>
 </tr>
 </table> 
