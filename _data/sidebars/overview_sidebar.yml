@@ -72,10 +72,22 @@ entries:
       url: /text.html
       output: web
       subfolders:
-      - title: test
+      - title: Current limitations of STU3 Dosage structure
         output: web
         subfolderitems:
-        - title: Overview
+        - title: Combination product instructions
+          url: /test.html
+          output: web
+        - title: Maximum dose per course
+          url: /test.html
+          output: web        
+        - title: Periods of no medicine administration
+          url: /test.html
+          output: web
+        - title: Instuctions for a specific device
+          url: /test.html
+          output: web
+        - title: Specifying a Trade Family / brand
           url: /test.html
           output: web
           
