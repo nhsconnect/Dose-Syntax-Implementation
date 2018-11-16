@@ -24,6 +24,8 @@ Fast Healthcare Interoperability Resources (FHIR) is a standard for exchanging h
 
 INTEROPen is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector. The INTEROPen vision is to create a library of nationally defined HL7 FHIR resources and interaction patterns that implementers can adopt to simplify integration and interoperability. A key deliverable from the INTEROPen work is a set of HL7 UK INTEROPen CareConnect Profiles for use within the UK.
 
+![alt text](images/overview/fhir-interopen.png "FHIR and INTEROPen")
+
 A FHIR Profile takes the standard base set of FHIR resources and customises them with constraints and/or extensions to meet the specific needs of an implementation. For INTEROPen this is the implementation within the UK using the FHIR STU3 base set of resources creating a set of UK CareConnect FHIR Profiles. A good example of meeting UK-specific needs is the additional of the NHS Number into all datasets that contain patient demographics. 
 
 ## NHS Dictionary of Medicines and Devices (dm+d) ##
