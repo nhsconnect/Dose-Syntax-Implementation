@@ -23,8 +23,8 @@ Two SNOMED-CT codes exist that can be used for this purpose.
   * "Then stop" (SNOMED concept identifier = 422327006)
   * "Do not stop taking this medicine except on your doctor's advice" (SNOMED concept identifier = 419444006)
 
- The use of a dosage instruction akin to "as directed" should be avoided wherever possible. However if required then this can be SNOMED coded using [421769005 Follow directions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=421769005&edition=uk-edition) or conveyed as text as a patient instruction.
+The use of a dosage instruction akin to "as directed" should be avoided wherever possible. However if required then this can be SNOMED coded using [421769005 Follow directions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=421769005&edition=uk-edition) or conveyed as text as a patient instruction.
  
-<script src="https://gist.github.com/RobertGoochUK/bdfe6b4e1aec96c27e3a17c325c14033.js"></script>
+In some cases, where the same instruction is relevant to both a clinician and patient, then the instructions may be repeated using both structures. This will ensure the receiving system makes the information available to the appropriate person.
  
- In some cases, where the same instruction is relevant to both a clinician and patient, then the instructions may be repeated using both structures. This will ensure the receiving system makes the information available to the appropriate person.
+ <script src="https://gist.github.com/RobertGoochUK/bdfe6b4e1aec96c27e3a17c325c14033.js"></script>
