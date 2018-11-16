@@ -3,7 +3,7 @@ title: Dosage text
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
-permalink: dosage-text.html
+permalink: dosage-text2.html
 summary: "Use of the text element of the dosage instruction"
 ---
 
