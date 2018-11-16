@@ -29,13 +29,9 @@ entries:
       url: /explore.html
       output: web
       type: homepage
-      subfolders:
-      - title: CareConnect-MedicationRequest-1
-        output: web
-        subfolderitems:
-        - title: Overview
-          url: /careconnect-medication-request-1.html
-          output: web
+    - title: CareConnect-Medication-Request-1
+      url: /careconnect-medication-request-1.html
+      output: web
  
   - title: Dosage Structure
     output: web,pdf
