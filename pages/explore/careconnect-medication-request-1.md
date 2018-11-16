@@ -74,19 +74,6 @@ The structured dosage instruction will be defined within **dosageInstruction**. 
 
 For primary care use cases, the prescribed quantity of a product (a dm+d Virtual Medicinal Product or Actual Medicinal Product) is defined within **dispenseRequest**. This element would typically be omitted for dose-based instructions.
 
-For example;
-
-<code>
-<dispenseRequest> <br/>
- <quantity> <br/>
-  <value value="200"/> <br/>
-  <unit value="ml"/> <br/>
-  <system value="http://snomed.info/sct"/>  <br/>
-  <code value="258773002"/> <br/>
- </quantity <br/>
-</dispenseRequest>
-</code>
-
 ## Examples ##
 
 ### VTM ###
