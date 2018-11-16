@@ -12,9 +12,6 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: The Journey
-      url: /overview_the_journey.html
-      output: web
     - title: Guide Versioning
       url: /overview_guide_versioning.html
       output: web
@@ -33,55 +30,64 @@ entries:
       output: web
       type: homepage
       subfolders:
-      - title: xxxxx
+      - title: CareConnect-MedicationRequest-1
         output: web
         subfolderitems:
         - title: Overview
-          url: /explore_bundle_overview.html
+          url: /careconnect-medication-request-1.html
           output: web
  
-  - title: xxxxxx
+  - title: Dosage Structure
     output: web,pdf
     folderitems:
     - title: Overview
-      url: /explore.html
+      url: /dosage-structure.html
       output: web
       type: homepage
-      subfolders:
-      - title: xxxxxx
-        output: web
-        subfolderitems:
-        - title: Overview
-          url: /explore_bundle_overview.html
-          output: web 
-
-  - title: Design & Build
-    output: web
-    folderitems:
-    - title: Overview
-      url: /design.html
+    - title: Use of site, route and method
+      url: /site-route-method.html
       output: web
-    - title: Data Mapping
-      url: /build_data_mapping.html
-      output: web      
-
-
-  - title: Assure
-    output: web
-    folderitems:
-    - title: Overview
-      url: /assure.html
+    - title: Use of doseQuantity, frequency and period
+      url: /doseQuantity-freq-period.html
       output: web
-
-
-  - title: Deploy
-    output: web
-    folderitems:
-    - title: Overview
-      url: /deploy.html
+    - title: Use of when, offset, dayOfWeek and timeOfDay
+      url: /when-offset-day-time.html
       output: web
-
-
+    - title: Use of duration, bounds[x] and count
+      url: /duration-bounds-count.html
+      output: web
+    - title: Use of rate[x]
+      url: /rate.html
+      output: web
+    - title: Use of sequence
+      url: /sequence.html
+      output: web
+    - title: Use of additionalInstruction and patientInstruction
+      url: /additional-patient.html
+      output: web
+    - title: Use of text
+      url: /text.html
+      output: web
+    - title: Current limitations of STU3 Dosage structure
+      url: /text.html
+      output: web
+         subfolderitems:
+        - title: Combination product instructions
+          url: /combi-products.html
+          output: web
+        - title: Maximum dose per course
+          url: /max-dose-course.html
+          output: web
+        - title: Periods of no medicine administration
+          url: /periods-not.html
+          output: web
+        - title: Instuctions for a specific device
+          url: /device-instructions.html
+          output: web
+        - title: Specifying a Trade Family / brand
+          url: /trade-family.html
+          output: web
+          
   - title: Help & Support
     output: web
     folderitems:
@@ -92,7 +98,6 @@ entries:
       url: /support_communications.html
       output: web
       subfolders:
-
 
   - title: Tags
     output: web
