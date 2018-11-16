@@ -71,21 +71,12 @@ entries:
     - title: Current limitations of STU3 Dosage structure
       url: /text.html
       output: web
-         subfolders:
-        - title: Combination product instructions
-          url: /combi-products.html
-          output: web
-        - title: Maximum dose per course
-          url: /max-dose-course.html
-          output: web
-        - title: Periods of no medicine administration
-          url: /periods-not.html
-          output: web
-        - title: Instuctions for a specific device
-          url: /device-instructions.html
-          output: web
-        - title: Specifying a Trade Family / brand
-          url: /trade-family.html
+      subfolders:
+      - title: test
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /test.html
           output: web
           
   - title: Help & Support
