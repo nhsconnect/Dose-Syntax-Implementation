@@ -26,7 +26,7 @@ entries:
     output: web,pdf
     folderitems:
     - title: Overview
-      url: /explore.html
+      url: /careconnect-overview.html
       output: web
       type: homepage
     - title: CareConnect-Medication-Request-1
