@@ -35,6 +35,4 @@ A **frequencyMax** and/or **periodMax** can also be used to define ranges.
 
 These examples are complete with respect to the definition of a dm+d medication and a clinically appropriate dosage instruction. They do not contain all the required business data to be complete example of a CareConnect-MedicationRequest-1 profiled resource. 
 
-{% include custom/examples-warning.html %}
-
 <script src="https://gist.github.com/RobertGoochUK/df1bd7c408af128a8c1817af9a60e343.js"></script>
