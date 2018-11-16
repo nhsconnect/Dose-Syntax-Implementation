@@ -66,7 +66,7 @@ entries:
       url: /dosage-additional-patient.html
       output: web
     - title: text
-      url: /dosage-text.html
+      url: /dosage-text2.html
       output: web
       subfolders:
       - title: Current limitations of STU3 Dosage structure
@@ -79,7 +79,7 @@ entries:
           url: /dosage-maxdose.html
           output: web        
         - title: Periods of no medicine administration
-          url: /dosage-nomeds.html
+          url: /dosage-no-meds.html
           output: web
         - title: Instuctions for a specific device
           url: /dosage-specific-device.html
