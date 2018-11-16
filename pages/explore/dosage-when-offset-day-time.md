@@ -9,34 +9,17 @@ summary: "Specific timing instructions (when, offset, dayOfWeek and timeOfDay)y"
 
 
 
-## Specific timing instructions (when, offset, dayOfWeek and timeOfDay) ##
-
 A dosage instruction can be tied to the specific days, dates and times, plus life events related to eating or sleeping.
 
-### Dosage.timing.when and Dosage.timing.offset ###
+## Dosage.timing.when and Dosage.timing.offset ##
 
 The when element ties to the regular life events of sleeping and eating, for example "C" = "event occurs at a meal" and "WAKE" = "event occurs [offset] after waking".
 
 An offset allows the event to be tied X minutes before or after. The offset is an unsigned integer value so different codes within the when value-set are used to define before or after.
 
-Event occurs at breakfast
-<timing>
- <when value="CM"/>
-</timing>
+<script src="https://gist.github.com/RobertGoochUK/87e846d7ce29827519a3ba317a781410.js"></script>
 
-Event occurs at 1 hour before breakfast
-<timing>
- <when value="ACM"/>
- <offset value="60" />
-</timing>
-
-Event occurs at 1 hour after breakfast
-<timing>
- <when value="PCM"/>
- <offset value="60" />
-</timing>
-
-### Dosage.timing.dayOfWeek and Dosage.timing.timeOfDay ###
+## Dosage.timing.dayOfWeek and Dosage.timing.timeOfDay ##
 
 A dosage instruction can specify specific days of the week and/or times of the day using dayOfWeek and timeOfDay.
 
@@ -73,7 +56,7 @@ A dosage instruction can specify specific days of the week and/or times of the d
  </repeat>
 </timing>
 
-### Dosage.timing.event ###
+## Dosage.timing.event ##
 
 A dosage instruction can specify specific dates and times using event.
 
@@ -88,7 +71,7 @@ A dosage instruction can specify specific dates and times using event.
  <event value="2019-12-01T22:30" />
 </timing>
 
-### Supporting "as required" or condition-bound instructions ###
+## Supporting "as required" or condition-bound instructions ##
 
 The Dosage.asNeeded structure can be used to define a simple "as required" (or "pro re nata" expressed as "PRN" for those who still prefer to use Latin abbreviations) instructions. In this case use the Dosage.asNeededBoolean option.
 
