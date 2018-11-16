@@ -32,7 +32,7 @@ A FHIR Profile takes the standard base set of FHIR resources and customises them
 
 The reader must be familiar with the NHS Dictionary of Medicines and Devices (dm+d) and SNOMED-CT. The dm+d is the NHS choice for recording details of medicines and devices in the electronic patient record and is the medicines standard approved by the Standardisation Committee for Care Information (SCCI) as an NHS Fundamental standard. All dm+d concepts are included in the SNOMED-CT UK drug extension and all dm+d codes are SNOMED-CT code. The basic dm+d structure with the associated SNOMED CT UK drug extension Trade Family concept class is shown below, with examples at each level.
 
-![alt text](images/overview/dmd-concepts.png "dm+d concepts")
+![alt text](images/overview/dmd-concepts.jpg "dm+d concepts")
 
 ## Product-based vs Dose-based Prescribing ##
 
