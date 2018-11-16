@@ -36,11 +36,11 @@ The SNOMED-CT code used within Medication resource will vary depending on the le
 
 #### VTM ####
 
-Here
+The most generic representation of a medicine using only a Virtual Therapeutic Moiety (VTM) dm+d concept.
 
 #### VTM plus Form ####
 
-Here
+A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d concept where the clinician does not want to be specific with a product-based instruction.
 
 #### VTM plus Trade Family ####
 
@@ -48,15 +48,11 @@ The use of a VTM with a Trade Family is a special case that is not directly supp
 
 A clinical example would be for the VTM "Insulin lispro" which is more commonly referenced by the leading brand "Humalog". Trade family concepts are taken from the SNOMED-CT hierarchy as a  descendant of the concept 9191801000001103 Trade family.
 
-There is no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family. The solution therefore is to convey the Trade Family within the **medication.text** narrative using the syntax "<VTM> (<Trade Family>)".
-
-For example;
-"Insulin lispro (Humalog)"
-Where "Insulin lispro" is the VTM description and "Humalog" is the Trade Family description
+There is no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family. The solution therefore is to convey the Trade Family within the **medication.text** narrative within brackets after the VTM description.
 
 #### VMP or AMP ####
 
-Where a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) are prescribed in Primary Care, the requested quantity and unit of measure of the product is also required. This can be populated within the **dispenseRequest** as part of the CareConnect-MedicationRequest-1 structure definition. The dispenseRequest contains a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of 767524001 Unit of measure (qualifier value). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of 732935002 | Unit of presentation (unit of presentation).
+Where a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) are prescribed in Primary Care, the requested quantity and unit of measure of the product is also required. This can be populated within the **dispenseRequest** as part of the CareConnect-MedicationRequest-1 structure definition. The dispenseRequest contains a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of 767524001 Unit of measure (qualifier value). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of 732935002 Unit of presentation (unit of presentation).
 
 ### medication.text ###
 
@@ -65,8 +61,8 @@ In all cases, the **medication.text** must be populated with a complete human re
 A suitable syntax for constructing an equivalent text string would be;
 
 <code>
-name = medication.code.coding.display
-form = medication.form.coding.display
+name = medication.code.coding.display <br/>
+form = medication.form.coding.display <br/>
 medication.text = name , [ " (", tradeFamily , ")" ] , [ " " , form  ]
 </code>
 
@@ -85,3 +81,17 @@ To support backwards compatibility, the **text** attribute should be populated w
 At the time of writing, implementation guidance is to use the existing textual instruction for the prescription or order.
 
 An updated version of this guidance may define a logical sequence to generate a human readable dose string from the components of the medication request structure.
+
+## Examples ##
+
+### VTM plus Form ###
+
+<script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
+
+### VTM plus Trade Family ###
+
+<script src="https://gist.github.com/RobertGoochUK/b8576feb29713055e54a6893c2a271cb.js"></script>
+
+### VMP plus dispenseRequest ###
+
+<script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
