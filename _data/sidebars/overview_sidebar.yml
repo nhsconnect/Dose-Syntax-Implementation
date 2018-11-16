@@ -44,16 +44,16 @@ entries:
       url: /dosage-overview.html
       output: web
       type: homepage
-    - title: site, route and method
+    - title: site, route, method
       url: /dosage-site-route-method.html
       output: web
-    - title: doseQuantity, frequency and period
+    - title: doseQuantity, frequency, period
       url: /dosage-doseQuantity-freq-period.html
       output: web
-    - title: when, offset, dayOfWeek and timeOfDay
+    - title: when, offset, dayOfWeek, timeOfDay
       url: /dosage-when-offset-day-time.html
       output: web
-    - title: duration, bounds[x] and count
+    - title: duration, bounds[x], count
       url: /dosage-duration-bounds-count.html
       output: web
     - title: rate[x]
@@ -62,7 +62,7 @@ entries:
     - title: sequence
       url: /dosage-sequence.html
       output: web
-    - title: additionalInstruction and patientInstruction
+    - title: additionalInstruction, patientInstruction
       url: /dosage-additional-patient.html
       output: web
     - title: text
