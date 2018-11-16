@@ -74,15 +74,24 @@ The structured dosage instruction will be defined within **dosageInstruction**. 
 
 For primary care use cases, the prescribed quantity of a product (a dm+d Virtual Medicinal Product or Actual Medicinal Product) is defined within **dispenseRequest**. This element would typically be omitted for dose-based instructions.
 
-## text ##
+For example;
 
-To support backwards compatibility, the **text** attribute should be populated with a human readable textual representation of the structured data within the resource.
-
-At the time of writing, implementation guidance is to use the existing textual instruction for the prescription or order.
-
-An updated version of this guidance may define a logical sequence to generate a human readable dose string from the components of the medication request structure.
+<code>
+<dispenseRequest> <br/>
+ <quantity> <br/>
+  <value value="200"/> <br/>
+  <unit value="ml"/> <br/>
+  <system value="http://snomed.info/sct"/>  <br/>
+  <code value="258773002"/> <br/>
+ </quantity <br/>
+</dispenseRequest>
+</code>
 
 ## Examples ##
+
+### VTM ###
+
+<script src="https://gist.github.com/RobertGoochUK/92bff409c185c985fdb85269cb912761.js"></script>
 
 ### VTM plus Form ###
 
