@@ -11,20 +11,20 @@ summary: "Overview of CareConnect profiled resources that include the Dosage str
 
 This implementation guidance applies to three CareConnect profiled resources that contain the same two structures;
 
-  * CareConnect-MedicationRequest-1
-  * CareConnect-MedicationDispense-1
-  * CareConnect-MedicationStatement-1 
+  * [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1)
+  * [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1)
+  * [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1)
 
-All contain the same two structures;
+Each contain two common structures;
 
-  * [CareConnect-Medication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1)
-  * [STU3 Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage)
+  * A reference to a [CareConnect-Medication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1) profiled resource
+  * A [STU3 Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage) structure
 
 ## Referencing a CareConnect-Medication-1 profiled resource ##
 
-Where a CareConnect profile resource uses a reference to a CareConnect-Medication-1 resource then it can be implemented in three ways;
+A reference to a CareConnect-Medication-1 resource can be implemented in three ways;
   * As an internal reference known as a "contained resource" where the resource is embedded inside the parent resource.
-  * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care where medication information is contained within a [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1) profiled resource, which itself contains a reference to a CareConnect-Medication-1 resource.
+  * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care.
   * As an external reference to a RESTful API that would return a resource. At the time of writing, such a terminology service does not exists so use of this method is **not recommended**.
 
 <script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
