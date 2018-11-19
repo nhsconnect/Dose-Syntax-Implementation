@@ -29,7 +29,7 @@ entries:
       url: /careconnect-overview.html
       output: web
       type: homepage
-    - title: CareConnect-Medication-Request-1
+    - title: CareConnect-MedicationRequest-1
       url: /careconnect-medicationRequest-1.html
       output: web
     - title: CareConnect-MedicationDispense-1
