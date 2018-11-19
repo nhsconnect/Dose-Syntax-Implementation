@@ -30,8 +30,17 @@ entries:
       output: web
       type: homepage
     - title: CareConnect-Medication-Request-1
-      url: /careconnect-medication-request-1.html
+      url: /careconnect-medicationRequest-1.html
       output: web
+    - title: CareConnect-MedicationDispense-1
+      url: /careconnect-MedicationDispenset-1.html
+      output: web
+    - title: CareConnect-MedicationOrder-1
+      url: /careconnect-MedicationOrder-1.html
+      output: web
+    - title: CareConnect-MedicationStatement-1
+      url: /careconnect-MedicationStatement-1.html
+      output: web 
  
   - title: Dosage Structure
     output: web,pdf
@@ -83,6 +92,15 @@ entries:
         - title: Specifying a Trade Family / brand
           url: /dosage-tradefamily.html
           output: web
+
+  - title: Worked Examples
+    output: web
+    folderitems:
+    - title: TBC1
+      url: /examples1.html
+      output: TBC2
+      url: /examples2.html
+      output: web
           
   - title: Help & Support
     output: web
