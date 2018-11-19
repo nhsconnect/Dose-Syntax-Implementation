@@ -33,7 +33,7 @@ entries:
       url: /careconnect-medicationRequest-1.html
       output: web
     - title: CareConnect-MedicationDispense-1
-      url: /careconnect-MedicationDispenset-1.html
+      url: /careconnect-MedicationDispense-1.html
       output: web
     - title: CareConnect-MedicationOrder-1
       url: /careconnect-MedicationOrder-1.html
