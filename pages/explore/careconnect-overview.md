@@ -28,22 +28,23 @@ However note that the CareConnect-MedicationOrder-1 profiled resource has been m
 | CareConnect-MedicationRequest-1 | Referenced CareConnect-Medication-1 | STU3 Dosage |
 | CareConnect-MedicationDispense-1 | Referenced CareConnect-Medication-1 | STU3 Dosage |
 | CareConnect-MedicationStatement-1 | Referenced CareConnect-Medication-1 |  STU3 Dosage |
-| CareConnect-MedicationOrder-1 | CodeableConcept or Referenced  |  BackboneElement aligned to STU3 Dosage |
+| CareConnect-MedicationOrder-1 | CodeableConcept or Referenced CareConnect-Medication-1 |  BackboneElement aligned to STU3 Dosage |
   
 ## Referencing a CareConnect-Medication-1 profiled resource ##
 
-Where a CareConnect profiles resource uses a reference to CareConnect-Medication-1 then it can be implemented in three ways;
-  * As an internal reference known as a "contained resource" where the CareConnect-Medication-1 resource is embedded inside the parent resource.
-  * As an internal reference to a CareConnect-Medication-1 resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care where medication information is contained within a [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1) profiled resource, which itself contains a reference to a CareConnect-Medication-1 resource.
-  * As an external reference to a RESTful API that would return a CareConnect-Medication-1 resource. At the time of writing, such a terminology service does not exists so use of this method is **not recommended**.
+Where a CareConnect profile resource uses a reference to a CareConnect-Medication-1 resource then it can be implemented in three ways;
+  * As an internal reference known as a "contained resource" where the resource is embedded inside the parent resource.
+  * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care where medication information is contained within a [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1) profiled resource, which itself contains a reference to a CareConnect-Medication-1 resource.
+  * As an external reference to a RESTful API that would return a resource. At the time of writing, such a terminology service does not exists so use of this method is **not recommended**.
   
-All references to medication must use the NHS standard of dm+d, which is published as an independent terminology product using XML format data as well as being included in the SNOMED-CT UK Drug extension.
 
 <script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
 
 ### Use of the different dm+d concepts ###
 
-The SNOMED-CT code used within Medication resource will vary depending on the level of detail required by the prescriber. The most generic instruction would specify a Virtual Therapeutic Moiety (VTM) plus a dosage instruction. The most specific instruction, for the purposes of prescribing, would specify an Actual Medicinal Product (AMP) plus a dosage instruction.
+All references to medication must use the NHS standard of dm+d, which is published as an independent terminology product using XML format data as well as being included in the SNOMED-CT UK Drug extension.
+
+The dm+d code used within a medication resource will vary depending on the level of detail required by the prescriber. The most generic instruction would specify a Virtual Therapeutic Moiety (VTM) plus a dosage instruction. The most specific instruction, for the purposes of prescribing, would specify an Actual Medicinal Product (AMP) plus a dosage instruction.
 
 ![alt text](images/overview/concepts.png "dm+d concepts and related data")
 
@@ -51,9 +52,13 @@ The SNOMED-CT code used within Medication resource will vary depending on the le
 
 The most generic representation of a medicine using only a Virtual Therapeutic Moiety (VTM) dm+d concept.
 
+<script src="https://gist.github.com/RobertGoochUK/92bff409c185c985fdb85269cb912761.js"></script>
+
 #### VTM plus Form ####
 
 A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d concept where the clinician does not want to be specific with a product-based instruction.
+
+<script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
 
 #### VTM plus Trade Family ####
 
@@ -63,11 +68,15 @@ A clinical example would be for the VTM "Insulin lispro" which is more commonly 
 
 There is no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family. The solution therefore is to convey the Trade Family within the **medication.text** narrative within brackets after the VTM description.
 
+<script src="https://gist.github.com/RobertGoochUK/b8576feb29713055e54a6893c2a271cb.js"></script>
+
 #### VMP or AMP ####
 
 For prescribing or dispensing uses cases where a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) is defined, the implementation will often require the requested or dispensed quantity of medication using the FHIR SimpleQuantity structure. This will always be the case for data sharing within Primary Care.
 
 The SimpleQuantity structure contains a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of 767524001 Unit of measure (qualifier value). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of 732935002 Unit of presentation (unit of presentation).
+
+<script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
 
 ### medication.text ###
 
