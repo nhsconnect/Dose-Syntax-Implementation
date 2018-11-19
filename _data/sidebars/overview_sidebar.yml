@@ -35,12 +35,13 @@ entries:
     - title: CareConnect-MedicationDispense-1
       url: /careconnect-MedicationDispense-1.html
       output: web
-    - title: CareConnect-MedicationOrder-1
-      url: /careconnect-MedicationOrder-1.html
-      output: web
     - title: CareConnect-MedicationStatement-1
       url: /careconnect-MedicationStatement-1.html
       output: web 
+    - title: CareConnect-MedicationOrder-1
+      url: /careconnect-MedicationOrder-1.html
+      output: web
+
  
   - title: Dosage Structure
     output: web,pdf
