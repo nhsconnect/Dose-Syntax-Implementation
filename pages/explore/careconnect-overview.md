@@ -40,7 +40,7 @@ Where a CareConnect profile resource uses a reference to a CareConnect-Medicatio
 
 <script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
 
-### Use of the different dm+d concepts ###
+## Use of the different dm+d concepts ##
 
 All references to medication must use the NHS standard of dm+d, which is published as an independent terminology product using XML format data as well as being included in the SNOMED-CT UK Drug extension.
 
@@ -48,19 +48,19 @@ The dm+d code used within a medication resource will vary depending on the level
 
 ![alt text](images/overview/concepts.png "dm+d concepts and related data")
 
-#### VTM ####
+### VTM ###
 
 The most generic representation of a medicine using only a Virtual Therapeutic Moiety (VTM) dm+d concept.
 
 <script src="https://gist.github.com/RobertGoochUK/92bff409c185c985fdb85269cb912761.js"></script>
 
-#### VTM plus Form ####
+### VTM plus Form ###
 
 A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d concept where the clinician does not want to be specific with a product-based instruction.
 
 <script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
 
-#### VTM plus Trade Family ####
+### VTM plus Trade Family ###
 
 The use of a VTM with a Trade Family is a special case that is not directly supported within FHIR STU3. This combination would be used when a prescriber wishes to describe a dose-based prescription using a specific brand of medication but without constraining the instruction to a dm+d Actual Medicinal Product (AMP). The use of an AMP would not only define the brand, but also the strength and form, as is a product-based concept.
 
@@ -70,7 +70,7 @@ There is no part of the Medication resource that is suitable to convey a SNOMED 
 
 <script src="https://gist.github.com/RobertGoochUK/b8576feb29713055e54a6893c2a271cb.js"></script>
 
-#### VMP or AMP ####
+### VMP or AMP ###
 
 For prescribing or dispensing uses cases where a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) is defined, the implementation will often require the requested or dispensed quantity of medication using the FHIR SimpleQuantity structure. This will always be the case for data sharing within Primary Care.
 
@@ -78,7 +78,7 @@ The SimpleQuantity structure contains a simple quantity and coded unit of measur
 
 <script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
 
-### medication.text ###
+## Use of medication.text ##
 
 In all cases, the **medication.text** must be populated with a complete human readable string equivalent to the coded information within the Medication resource. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element. Population of the text ensure backwards compatibility with receiving systems that do not process the coded information within the contained Medication resource.
 
@@ -89,6 +89,6 @@ form = medication.form.coding.display <br/>
 medication.text = name , [ " (", tradeFamily , ")" ] , [ " " , form  ]
 </code>
 
-## Dosage structure ##
+## Use of Dosage structure ##
 
 Refer to the section "Dosage Structure" within this documentation.
