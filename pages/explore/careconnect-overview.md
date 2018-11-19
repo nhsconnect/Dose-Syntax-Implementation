@@ -9,34 +9,23 @@ summary: "Overview of CareConnect profiled resources that include the Dosage str
 
 
 
-This implementation guidance applies to four CareConnect profiled resources that contain the same two structures;
+This implementation guidance applies to three CareConnect profiled resources that contain the same two structures;
 
   * CareConnect-MedicationRequest-1
   * CareConnect-MedicationDispense-1
   * CareConnect-MedicationStatement-1 
-  * CareConnect-MedicationOrder-1
 
 All contain the same two structures;
 
   * [CareConnect-Medication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1)
   * [STU3 Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage)
 
-However note that the CareConnect-MedicationOrder-1 profiled resource has been modelled slightly differently to the others in two respects, as per the following table.
-
-| Profiled Resource | Medication | Dosage |
-| ------------- |:-------------:| -----:|
-| CareConnect-MedicationRequest-1 | Referenced CareConnect-Medication-1 | STU3 Dosage |
-| CareConnect-MedicationDispense-1 | Referenced CareConnect-Medication-1 | STU3 Dosage |
-| CareConnect-MedicationStatement-1 | Referenced CareConnect-Medication-1 |  STU3 Dosage |
-| CareConnect-MedicationOrder-1 | CodeableConcept or Referenced CareConnect-Medication-1 |  BackboneElement aligned to STU3 Dosage |
-  
 ## Referencing a CareConnect-Medication-1 profiled resource ##
 
 Where a CareConnect profile resource uses a reference to a CareConnect-Medication-1 resource then it can be implemented in three ways;
   * As an internal reference known as a "contained resource" where the resource is embedded inside the parent resource.
   * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care where medication information is contained within a [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1) profiled resource, which itself contains a reference to a CareConnect-Medication-1 resource.
   * As an external reference to a RESTful API that would return a resource. At the time of writing, such a terminology service does not exists so use of this method is **not recommended**.
-  
 
 <script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
 
@@ -80,7 +69,7 @@ The SimpleQuantity structure contains a simple quantity and coded unit of measur
 
 ## Use of medication.text ##
 
-In all cases, the **medication.text** must be populated with a complete human readable string equivalent to the coded information within the Medication resource. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element. Population of the text ensure backwards compatibility with receiving systems that do not process the coded information within the contained Medication resource.
+In all cases, the **medication.text** must be populated with a complete human readable string equivalent to the coded information within the Medication resource. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element. Population of the text ensure backwards compatibility with receiving systems that do not process the coded information within the medication resource.
 
 A suitable syntax for constructing an equivalent text string would be;
 
