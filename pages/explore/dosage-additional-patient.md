@@ -20,8 +20,8 @@ Any coded additional instruction may be used from either the FHIR [value-set for
 There is often the need for a clinician to give explicit instructions to either stop or continue taking medication. This could be applicable for discharge medication where one medicine may be for short term pain relief and should be stopped after the prescribed quantity has been taken, while another medicine may be continued until further notice. The patient's GP would be informed of this as part of the discharge letter but having these instructions explicitly coded provides a more robust solution.
 
 Two SNOMED-CT codes exist that can be used for this purpose. 
-  * "Then stop" (SNOMED concept identifier = 422327006)
-  * "Do not stop taking this medicine except on your doctor's advice" (SNOMED concept identifier = 419444006)
+  * "Then stop" (SNOMED concept identifier = [422327006](https://termbrowser.nhs.uk/?perspective=full&conceptId1=422327006&edition=uk-edition))
+  * "Do not stop taking this medicine except on your doctor's advice" (SNOMED concept identifier = [419444006](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419444006&edition=uk-edition))
 
 The use of a dosage instruction akin to "as directed" should be avoided wherever possible. However if required then this can be SNOMED coded using [421769005 Follow directions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=421769005&edition=uk-edition) or conveyed as text as a patient instruction.
  
