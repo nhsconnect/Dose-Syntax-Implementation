@@ -1,7 +1,7 @@
 ---
 title: CareConnect Resources Overview
 keywords:  messaging
-tags: [fhir,messaging]
+tags: [overview]
 sidebar: foundations_sidebar
 permalink: careconnect-overview.html
 summary: "Overview of CareConnect profiled resources that include the Dosage structure"

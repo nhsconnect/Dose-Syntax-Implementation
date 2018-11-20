@@ -1,7 +1,7 @@
 ---
 title: Current limitations of STU3 Dosage structure
 keywords:  messaging
-tags: [fhir,messaging]
+tags: [overview]
 sidebar: foundations_sidebar
 permalink: dosage-limitations-overview.html
 summary: "Current limitations of STU3 Dosage structure"

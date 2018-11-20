@@ -1,7 +1,7 @@
 ---
 title: Dosage Structure Overview
 keywords:  messaging
-tags: [fhir,messaging]
+tags: [overview]
 sidebar: foundations_sidebar
 permalink: dosage-overview.html
 summary: "Overview of the FHIR Dosage Structure"
