@@ -103,7 +103,7 @@ entries:
       url: /dosage-examples-simple.html
       output: web
     - title: Intermediate Examples
-      url: /dosage-examples-intermediate.html
+      url: /dosage-examples-inter.html
       output: web
     - title: Complex Examples
       url: /dosage-examples-complex.html
