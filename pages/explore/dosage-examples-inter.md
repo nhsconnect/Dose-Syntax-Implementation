@@ -8,5 +8,4 @@ summary: "Intermediate Worked Examples"
 ---
 
 
-
 Here
