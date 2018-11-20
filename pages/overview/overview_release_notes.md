@@ -24,6 +24,6 @@ The following are not included within the latest version of this implementation 
 
 ## Version History ##
 
-## 1.0.0-experimental ###
+### 1.0.0-experimental ###
 First version published.
 
