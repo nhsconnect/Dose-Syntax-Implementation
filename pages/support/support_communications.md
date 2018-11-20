@@ -5,11 +5,7 @@ tags: [support]
 toc: false
 sidebar: overview_sidebar
 permalink: support_communications.html
-summary: "NHS Digital Interoperability Team communication channels used for the XXXXXXXXXXXXXX3 Messaging Distribution Specifications."
+summary: "Communication Channels"
 ---
 
-
-For general enquiries please send an email to the NHS Digital Interoperability Team Inbox at <a href="mailto:interoperabilityteam@nhs.net>">interoperabilityteam@nhs.net</a>.
-<br><br>
-
-
+{% include custom/under.construction.html content="Please check back later for any updates to this page" %}
