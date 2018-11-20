@@ -77,31 +77,38 @@ entries:
         - title: Overview
           url: /dosage-limitations-overview.html
           output: web
-        - title: Combination product instructions
+        - title: 1. Combination product instructions
           url: /dosage-combi.html
           output: web
-        - title: Maximum dose per course
+        - title: 2. Maximum dose per course
           url: /dosage-maxdose.html
           output: web        
-        - title: Periods of no medicine administration
+        - title: 3. Periods of no medicine administration
           url: /dosage-no-meds.html
           output: web
-        - title: Instuctions for a specific device
+        - title: 4. Instuctions for a specific device
           url: /dosage-specific-device.html
           output: web
-        - title: Specifying a Trade Family / brand
+        - title: 5. Specifying a Trade Family / brand
           url: /dosage-tradefamily.html
           output: web
 
   - title: Worked Examples
     output: web
     folderitems:
-    - title: TBC1
-      url: /examples1.html
-      output: TBC2
-      url: /examples2.html
+    - title: Overview
+      url: /examples-overview.html
       output: web
-          
+    - title: Simple Examples
+      url: /examples-simple.html
+      output: web
+    - title: Intermediate Examples
+      url: /examples-intermediate.html
+      output: web
+    - title: Complex Examples
+      url: /examples-complex.html
+      output: web
+      
   - title: Help & Support
     output: web
     folderitems:
