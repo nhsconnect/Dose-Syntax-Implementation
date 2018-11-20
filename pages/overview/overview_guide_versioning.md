@@ -1,17 +1,12 @@
 ---
 title: Guide Versioning
 keywords: development, versioning
-tags: [development]
+tags: [overview]
 sidebar: overview_sidebar
 permalink: overview_guide_versioning.html
 summary: An overview of this implementation guide is versioned.
 ---
 
-
-
-## Beta ##
-
-This implementation guide is currently in a beta state at the moment. Therefore, this is still under active development and subject to change.
 
 ## Semantic Versioning ##
 
