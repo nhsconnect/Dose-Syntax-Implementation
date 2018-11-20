@@ -9,18 +9,25 @@ summary: "Rate-based instructions"
 
 
 
-A rate-based quantity, such as 30 ml per hour, can be expressed as a **rateRatio** with coded numerator and denominator values. Where the unit of measure for the ratio is defined within ucom ([see Common UCUM Units](https://www.hl7.org/fhir/valueset-ucum-common.xml)), for example, "milliliter per hour", it can also be expressed using the simpler **rateQuantity** structure.
+A rate-based quantity, such as 30 ml per hour, can be expressed as a **rateRatio** with coded numerator and denominator values. Where the unit of measure for the ratio is defined within ucom (see [Common UCUM Units](https://www.hl7.org/fhir/valueset-ucum-common.xml)), for example, "milliliter per hour", it can also be expressed using the simpler **rateQuantity** structure.
 
-## Dosage.rateRatio ##
+## Dosage.rateRatio
 
 Where the rate is expressed as coded numerator and denominator values.
 
-## Dosage.rateQuantity ##
+## Dosage.rateQuantity
 
 Where the unit of measure applicable to a rate is defined within ucom which is mathematically equivalent to defining the rate using the more complex **rateRatio** structure.
 
-## Dosage.rateRange ##
+## Dosage.rateRange
 
 Where the unit of measure applicable to a rate range is defined within ucom the **rateRange** structure can be used.
 
 <script src="https://gist.github.com/RobertGoochUK/618bb18a1ad8e5397883a68032cdb4ff.js"></script>
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
