@@ -23,4 +23,4 @@ Any method can be used from either the FHIR [value-set for method](http://hl7.or
 
 ## Use of Synonyms ##
 
-The use of synonyms defined within SNOMED-CT may be particularly relevant to the data items for site, route and method. In some cases, the anatomically correct SNOMED-CT term may not be easily understood by the patient or clinician so the use of a synonoym may be preferred. Guidance for using terms that are not preferred terms is available within the published document [Guidance on the use of CodeableConcept](https://nhsconnect.github.io/gpconnect/pages/accessrecord_structured/guidance-on-the-population-of-codeableconcept.pdf).
+The use of synonyms defined within SNOMED-CT may be particularly relevant to the data items for site, route and method. In some cases, the anatomically correct SNOMED-CT term may not be easily understood by the patient or clinician so the use of a synonym may be preferred. Guidance for using terms that are not preferred terms is available within the published document [Guidance on the use of CodeableConcept](https://nhsconnect.github.io/gpconnect/pages/accessrecord_structured/guidance-on-the-population-of-codeableconcept.pdf).

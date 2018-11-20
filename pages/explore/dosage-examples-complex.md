@@ -14,7 +14,7 @@ Complex because the 7 day period where no medication should be taken has to be c
 
 <script src="https://gist.github.com/RobertGoochUK/67a2e1bf88c100ff62aba8467f5f743e.js"></script>
 
-### Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoeal. Daily dose should not exceed eight capsules (16 mg) ###
+### Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) ###
 
 Complex because has a maximum daily dose and requires administration of medication following a coded clinical event.
 

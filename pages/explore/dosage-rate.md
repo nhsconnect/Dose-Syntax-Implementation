@@ -9,7 +9,7 @@ summary: "Rate-based instructions"
 
 
 
-A rate-based quantity, such as 30 ml per kilogram, can be expressed as a **rateRatio** with coded numerator and denominator values. Where the unit of measure for the ratio is defined within ucom, for example, ml per kilogram, it can also be expressed using the simpler **rateQuantity** structure.
+A rate-based quantity, such as 30 ml per hour, can be expressed as a **rateRatio** with coded numerator and denominator values. Where the unit of measure for the ratio is defined within ucom, for example, ml per hour, it can also be expressed using the simpler **rateQuantity** structure.
 
 ## Dosage.rateRatio ##
 
