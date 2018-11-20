@@ -14,52 +14,44 @@ summary: "Simple Worked Examples"
 
 ### Ramipril 5mg capsules,1 twice daily ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/91cff732c159dabb452c52a0a92f688a.js"></script>
 
 ### Omeprazole 10mg gastro-resistant tablets, 1 tablet, ONCE a DAY, oral ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/b80afd58861658643c8265d3cb622979.js"></script>
 
 ### Trimethoprim 100mg tablets (Crescent Pharma Ltd), 2 tablets, TWICE a DAY, oral ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/55593efcf8d81d681bed1a3dc4f9d1c4.js"></script>
 
 ### Micralax Micro-enema 5ml (RPH Pharmaceuticals AB), once a day ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/15231b8269739c11bf86fe4948f7090f.js"></script>
 
 ### Aciclovir 200mg tablets, one tablet five times daily ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/9dadfd13bf632cad40883383a30c35b1.js"></script>
 
 ### Amoxil 250mg capsules (GlaxoSmithKline UK Ltd), 1 capsule, every 8 hours, oral ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/3ef048f8fb97d26bac1c0d4e13c4a6fb.js"></script>
 
 ### Diprobase ointment (Bayer Plc), 1 application, THREE times a DAY, topical ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/8c72ae276972c87272056eb2e984a956.js"></script>
 
 ### Microgynon 30 tablets (Bayer Plc), 63 tablet, as directed ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/2d5b5a1261bb9a785618fbf5380e9e20.js"></script>
 
 ### Beclometasone 0.025% cream, apply twice daily to thigh ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/5efddc06de5180593a38cd907de63443.js"></script>
 
 ### Flucloxacillin, 500mg orally three times a day for 7 days ###
 
-Here
+<script src="https://gist.github.com/RobertGoochUK/17e0acb88b76bbcb82b3b6f6c34d7f31.js"></script>
 
 ### Simvastatin 20mg tablets, 2 tablets, ONCE a DAY, oral to continue ###
 
-Here
-
-### NovoRapid Penfill 100units/ml solution for injection 3ml cartridges (Novo Nordisk Ltd), inject according to insulin requirements ###
-
-Here
-
-### Zopiclone 3.75mg tablets, 1 tablet, at BEDTIME, PRN, oral ###
-
-Here
+<script src="https://gist.github.com/RobertGoochUK/76d1dc65f3021f5c4e50409fde924a1c.js"></script>
