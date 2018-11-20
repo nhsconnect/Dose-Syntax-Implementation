@@ -24,10 +24,3 @@ Where the unit of measure applicable to a rate is defined within ucom which is m
 Where the unit of measure applicable to a rate range is defined within ucom the **rateRange** structure can be used.
 
 <script src="https://gist.github.com/RobertGoochUK/618bb18a1ad8e5397883a68032cdb4ff.js"></script>
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
