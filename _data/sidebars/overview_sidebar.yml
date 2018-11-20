@@ -74,6 +74,9 @@ entries:
       - title: Current limitations of STU3 Dosage structure
         output: web
         subfolderitems:
+        - title: Overview
+          url: /dosage-limitations-overview.html
+          output: web
         - title: Combination product instructions
           url: /dosage-combi.html
           output: web
