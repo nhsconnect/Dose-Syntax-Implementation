@@ -97,16 +97,16 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /examples-overview.html
+      url: /dosage-examples-overview.html
       output: web
     - title: Simple Examples
-      url: /examples-simple.html
+      url: /dosage-examples-simple.html
       output: web
     - title: Intermediate Examples
-      url: /examples-intermediate.html
+      url: /dosage-examples-intermediate.html
       output: web
     - title: Complex Examples
-      url: /examples-complex.html
+      url: /dosage-examples-complex.html
       output: web
       
   - title: Help & Support
