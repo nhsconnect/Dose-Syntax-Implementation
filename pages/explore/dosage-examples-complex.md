@@ -122,6 +122,12 @@ Complex because requires a rate-based dosing instruction.
 
 <script src="https://gist.github.com/RobertGoochUK/9be3ce815d05950fd5e87822f2450776.js"></script>
 
+### Oxygen by inhalation 2litres/minute via nasal route
+
+Complex because requires a rate-based dosing instruction.
+
+<script src="https://gist.github.com/RobertGoochUK/71a1192a10e7cd31fe339260aeb2d317.js"></script>
+
 ### Insulin lispro (Humalog) 16units to be given by subcutaneous injection at meal times ###
 
 Complex because requires the use of a specific bfand (within SNOMED-CT known as a Trade Family).
