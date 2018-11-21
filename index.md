@@ -22,7 +22,7 @@ Medicine will be described in a state that is appropriate for dispensing and/or 
 
 Fast Healthcare Interoperability Resources (FHIR) is a standard for exchanging healthcare information electronically and is the strategic standard for interoperability between systems within the NHS. The international FHIR standard is published by HL7.
 
-INTEROPen is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector. The INTEROPen vision is to create a library of nationally defined HL7 FHIR resources and interaction patterns that implementers can adopt to simplify integration and interoperability. A key deliverable from the INTEROPen work is a set of HL7 UK INTEROPen CareConnect Profiles for use within the UK.
+[INTEROPen](https://www.interopen.org/) is an OPEN collaboration of individuals, industry, standards organisations and health and care providers, who have agreed to work together to accelerate the development of open standards for interoperability in the health and social care sector. The INTEROPen vision is to create a library of nationally defined HL7 FHIR resources and interaction patterns that implementers can adopt to simplify integration and interoperability. A key deliverable from the INTEROPen work is a set of [HL7 UK INTEROPen CareConnect Profiles](https://fhir.hl7.org.uk/) for use within the UK.
 
 ![alt text](images/overview/fhir-interopen.png "FHIR and INTEROPen")
 
@@ -30,13 +30,13 @@ A FHIR Profile takes the standard base set of FHIR resources and customises them
 
 ## NHS Dictionary of Medicines and Devices (dm+d) ##
 
-The reader must be familiar with the NHS Dictionary of Medicines and Devices (dm+d) and SNOMED-CT. The dm+d is the NHS choice for recording details of medicines and devices in the electronic patient record and is the medicines standard approved by the Standardisation Committee for Care Information (SCCI) as an NHS Fundamental standard. All dm+d concepts are included in the SNOMED-CT UK Drug Extension and all dm+d codes are SNOMED-CT codes. The basic dm+d structure with the associated SNOMED CT UK drug extension Trade Family concept class is shown below, with examples at each level.
+The reader must be familiar with the [NHS Dictionary of Medicines and Devices](https://apps.nhsbsa.nhs.uk/DMDBrowser/DMDBrowser.do) (dm+d) and [SNOMED-CT](https://termbrowser.nhs.uk/). The dm+d is the NHS choice for recording details of medicines and devices in the electronic patient record and is the medicines standard approved by the Standardisation Committee for Care Information (SCCI) as an NHS Fundamental standard. All dm+d concepts are included in the SNOMED-CT UK Drug Extension and all dm+d codes are SNOMED-CT codes. The basic dm+d structure with the associated SNOMED CT UK drug extension Trade Family concept class is shown below, with examples at each level.
 
 ![alt text](images/overview/dmd-concepts.jpg "dm+d concepts")
 
 ## Product-based vs Dose-based Prescribing ##
 
-The reader must be familiar with how prescribing processes are sometimes different between primary and secondary care settings and should read the detailed dm+d implementation guidance for each care setting published on the NHSBSA website.
+The reader must be familiar with how prescribing processes are sometimes different between primary and secondary care settings and should read the [detailed dm+d implementation guidance](https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/dictionary-medicines-and-devices-dmd) for each care setting published on the NHSBSA website.
 
 All prescribing in primary care, the majority of which is performed within general practice, is using product-based prescriptions. The prescriber chooses a product, which in the dm+d model would be a Virtual Medicinal Product (VMP) or if a specific branded product is required, an Actual Medicinal Product (AMP). A VMP is a pre-coordinated SNOMED concept that defines the medication, strength, form, and possibly unit of presentation. An AMP additionally defines the manufacturer and a brand name where applicable.
 
