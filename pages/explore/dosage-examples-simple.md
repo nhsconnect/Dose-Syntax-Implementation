@@ -7,6 +7,7 @@ permalink: dosage-examples-simple.html
 summary: "Simple Worked Examples"
 ---
 
+{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
 ### Oxytetracycline 250mg tablets, 1 tablet, FOUR times a DAY, oral ###
 
