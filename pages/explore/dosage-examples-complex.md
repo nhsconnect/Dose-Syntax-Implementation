@@ -7,6 +7,7 @@ permalink: dosage-examples-complex.html
 summary: "Complex Worked Examples"
 ---
 
+{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %
 
 ### Microgynon 30 tablets (Bayer Plc), 1 tablet, ONCE a DAY, oral, for 21 days, subsequent courses repeated after 7-day tablet-free interval ###
 

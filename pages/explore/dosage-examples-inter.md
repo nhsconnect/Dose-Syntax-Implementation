@@ -7,6 +7,7 @@ permalink: dosage-examples-inter.html
 summary: "Intermediate Worked Examples"
 ---
 
+{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %
 
 ### NovoRapid Penfill 100units/ml solution for injection 3ml cartridges (Novo Nordisk Ltd), inject according to insulin requirements ###
 
