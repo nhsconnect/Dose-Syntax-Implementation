@@ -8,6 +8,7 @@ summary: "Overview of CareConnect profiled resources that include the Dosage str
 ---
 
 
+{% include important.html content="This guidance is under active development by NHS Digital and content may be added or updated on a regular basis." %}
 
 This implementation guidance applies to three CareConnect profiled resources that contain the same two structures;
 
