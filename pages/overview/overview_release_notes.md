@@ -1,7 +1,7 @@
 ---
 title: Release Notes
 keywords: development, versioning
-tags: [development]
+tags: [overview]
 sidebar: overview_sidebar
 permalink: overview_release_notes.html
 summary: Summary release notes of the versions of the FHIR Dose Syntax Implementation Guidance
@@ -16,11 +16,11 @@ summary: Summary release notes of the versions of the FHIR Dose Syntax Implement
 
 ### Exclusions ####
 
-The following are not included within the latest version of this implementation guidance.
-  * Implementation guidance for dose conversions, i.e. converting dose-based to product-based instructions
-  * Implementation guidance for dose equivalence checking
-  * System-generation of .text elements from structured Dosage content
-  * Implementation guidance for the population of a Dosage structure from existing order sentences
+The following will be added to future versions of this implementation guidance.
+* Guidance for converting existing prescription content (e.g. an order sentence) within an existing prescribing system into a FHIR Dosage instruction
+* Guidance for creating a human readable string from the FHIR Dosage elements
+* Guidance for converting a dose-based (VTM) instruction into an appropriate short list of (VMP/AMP) products 
+* Guidance for creating patient focussed dosage instructions when converting from a dose-based to product-based instruction
 
 ## Version History ##
 
