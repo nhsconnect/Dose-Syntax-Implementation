@@ -13,7 +13,7 @@ Use the **additionalInstruction** and/or **patientInstruction** structure for do
 
 Additional instructions can be either SNOMED-CT coded or free-text and can be repeated allowing for multiple SNOMED-CT coded instructions to be conveyed. Patient instructions can only be free-text and can only be defined once per dosage instruction.
 
-Any coded additional instruction may be used from either the FHIR [value-set for method](http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html) or any SNOMED-CT coded value. The most commonly used coded values are defined with the SNOMED-CT hierarchy as a descendant of [419492006 Additional dosage instructions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419492006&edition=uk-edition).
+Coded additional instructions are defined in a FHIR [value-set for method](http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html) which is currently identical to the SNOMED-CT hierarchy as a descendant of [419492006 Additional dosage instructions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419492006&edition=uk-edition).
 
 **Note.** The value-sets for Timing.when and Dosage.additionalInstruction do contain some overlapping values. For example, they can both describe "with or after food". In such cases, use Timing.when instead of a coded Dosage.additionalInstruction.
 
