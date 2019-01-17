@@ -21,7 +21,7 @@ Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure. Th
 
 <script src="https://gist.github.com/RobertGoochUK/82fd7c2c1ef256eaaac3c63ed5654c48.js"></script>
 
-## Dosage.timing.frequency and Dosage.timing.period ##
+## Dosage.timing.repeat.frequency and Dosage.timing.repeat.period ##
 
 Simple dosage timing instructions can be described using **frequency** and **period**. The combination of frequency and period allows for the two commonly used expressions of "X times a period" and "every X period".
 
