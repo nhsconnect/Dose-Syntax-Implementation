@@ -30,6 +30,7 @@ The following will be added to future versions of this implementation guidance.
 * Updated the 'when, offset, dayOfWeek, timeOfDay' section to include guidance on the use of the Dosage.timing.code structure.
 * Updated the 'additionalInstructions, patientInstructions' section to include a note on using coded concepts that relate to specific dosing timing instructions.
 * Added placeholder information within the CareConnect resource pages for when implementation guidance is available for the use of the *text* narrative.
+* Updated the 'Dosage doseQuantity, frequency, period' section to include guidance on doseRange.
 
 ### 1.0.0-experimental ###
 First version published.
