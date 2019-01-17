@@ -75,9 +75,12 @@ In all cases, the **medication.text** must be populated with a complete human re
 A suitable syntax for constructing an equivalent text string would be;
 
 <code>name = medication.code.coding.display <br/>
-form = medication.form.coding.display <br/>
-medication.text = name , [ " (", tradeFamily , ")" ] , [ " " , form  ]
+medication.text = name , [ " (", tradeFamily , ")" ]
 </code>
+
+**Note 1.** The inclusion of any specified Trade Family description is an interim solution pending the availability of a coded structure within a CareConnect profiled resource to specify a Trade Family coded concept.
+
+**Note 2.** Version 1.0.0 of this guidance suggested any specified medication Form should be included within the medication.text. This has been removed as any specified Form will be included within the parent resource .text structure. For example, the medicationRequest.text structure.
 
 ## Use of Dosage structure ##
 

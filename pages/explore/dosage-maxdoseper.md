@@ -4,7 +4,7 @@ keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-maxdoseper.html
-summary: "maxDosePer[x] instructions"
+summary: "Dosing 'maxDosePerPeriod', 'maxDosePerAdministration' and 'maxDosePerLifetime' instructions"
 ---
 
 
