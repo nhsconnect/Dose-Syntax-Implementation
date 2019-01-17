@@ -24,7 +24,7 @@ Three SNOMED-CT codes exist that can be used for this purpose.
   * "Then discontinue" (SNOMED concept identifier = [421484000](https://termbrowser.nhs.uk/?perspective=full&conceptId1=421484000&edition=uk-edition))
   * "Do not stop taking this medicine except on your doctor's advice" (SNOMED concept identifier = [419444006](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419444006&edition=uk-edition))
 
-**Note.** It is recognised that such coded terms are akin to timing instructions so may be more logically containing within the Dosage.timing structures, however these do not currently support coded concept terms. Implementation experience will provide evidence to support any future change to the underlying FHIR specification.
+**Note.** It is recognised that such coded terms are akin to timing instructions so may be more logically containing within the various Dosage.timing structures. These do not currently support coded concept terms. Implementation experience will provide evidence to support any future change to the underlying FHIR specification.
   
 The use of a dosage instruction akin to "as directed" should be avoided wherever possible. However if required then this can be SNOMED coded using [421769005 Follow directions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=421769005&edition=uk-edition) or conveyed as text as a patient instruction.
  
