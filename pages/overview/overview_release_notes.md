@@ -24,6 +24,11 @@ The following will be added to future versions of this implementation guidance.
 
 ## Version History ##
 
+### 1.0.1-experimental ###
+Moved the Dosage.asNeeded[x] guidance it it's own section.
+New section for the Dosage.maxDosePer[x] structure.
+Updated the 'when, offset, dayOfWeek, timeOfDay' section to include guidance on the use of the Dosage.timing.code structure.
+
 ### 1.0.0-experimental ###
 First version published.
 
