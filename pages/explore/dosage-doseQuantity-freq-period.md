@@ -1,10 +1,10 @@
 ---
-title: Dosage doseQuantity, frequency and period
+title: Dosage doseQuantity, doseRange, frequency and period
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-doseQuantity-freq-period.html
-summary: "Simple timing instructions using doseQuantity, frequency and period"
+summary: "Simple timing instructions using doseQuantity, doseRange, frequency and period"
 ---
 
 
@@ -13,13 +13,19 @@ A large proportion of cases, especially those where the medication is described 
 
 ## Dosage.doseQuantity ##
 
-The **doseQuantity** is one of two ways to describe a dose; the amount of medication per dose, as a simple coded quantity. The alternative, and slightly more complex way, is with a **doseRange** which we will cover later in this guidance.
+The **doseQuantity** is one of two ways to describe a dose; the amount of medication per dose, as a simple coded quantity. The alternative is with a **doseRange**.
 
 By default, use UCUM units of measure. The system URL for UCOM is "http://unitsofmeasure.org". Examples of when a UCUM unit of measure would be used are "gram" or "milliliter" or "percent".
 
 Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure. The system URL for SNOMED-CT is "http://snomed.info/sct". Examples of when a SNOMED-CT unit of measure would be used are "tablet", "capsule" or "ampule". Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of [767524001 Unit of measure (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition), of which most, but not all units relevant to medication dosage instructions are contained within the hierarchy as a descendant of [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).
 
 <script src="https://gist.github.com/RobertGoochUK/82fd7c2c1ef256eaaac3c63ed5654c48.js"></script>
+
+## Dosage.doseRange ##
+
+The **doseRange** is used to describe a dose that may be in a given low/high range. By default, use UCUM units of measure, but where not defined, use SNOMED-CT units.
+
+<script src="https://gist.github.com/RobertGoochUK/2a58d4caba5a91a01e76ca87e46a3fc2.js"></script>
 
 ## Dosage.timing.repeat.frequency and Dosage.timing.repeat.period ##
 
