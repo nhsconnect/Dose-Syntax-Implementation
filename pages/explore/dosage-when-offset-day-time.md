@@ -33,4 +33,4 @@ A dosage instruction can specify specific dates and times using event.
 
 ## Dosage.timing.code ##
 
-Allows a code, often a Latin abbreviation, for a timing schedule to be specified, for example, "BID" (=twice a day). It is recommended that such codes *are not* used when the rest of the Dosage structure is supported by the system. Instead use the structures like *frequency* and *period* so that a timing schedule can be computable.
+Allows a code, often a Latin abbreviation, for a timing schedule to be specified, for example, "BID" (=twice a day). It is recommended that such codes **are not** used when the rest of the Dosage structure is supported by the system. Instead use the structures like **frequency** and **period** so that a timing schedule can be computable.
