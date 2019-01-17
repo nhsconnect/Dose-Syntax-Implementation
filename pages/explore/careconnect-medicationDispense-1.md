@@ -15,10 +15,19 @@ Only those elements relevant to convey a medication dispense with a structured d
   * medicationReference
   * dosageInstruction
   * quantity
+  * text
   
 A complete and fit-for-purpose CareConnect-MedicationDispense-1 example would need additional elements populated, for example a reference to the patient within **subject** and a reference to the prescriber within **performer**.
 
-Refer to the "Overview" page of this section for guidance on **medicationReference** and **quantity**.
+## medicationReference ##
+
+Refer to the "Overview" page of this section for guidance on **medicationReference**.
+
+## quantity ##
+
+Refer to the "Overview" page of this section for guidance **quantity**.
+
+## dosageInstruction ##
 
 Refer to the "Dosage Structure" section for guidance on **dosageInstruction**.
 

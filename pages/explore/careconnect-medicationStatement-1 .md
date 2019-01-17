@@ -14,12 +14,17 @@ The [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDe
 Only those elements relevant to convey a medication statement with a structured dosage instruction are in scope of this guidance.
   * medicationReference
   * dosageInstruction
+  * text
   
 A complete and fit-for-purpose CareConnect-MedicationStatement-1 example would need additional elements populated, for example a reference to the patient within **subject**.
 
+## medicationReference ##
+
 Refer to the "Overview" page of this section for guidance on **medicationReference**.
 
-Refer to the "Dosage Structure" section for guidance on **dosage**.
+## dosageInstruction ##
+
+Refer to the "Dosage Structure" section for guidance on **dosageInstruction**.
 
 ## text ##
 
