@@ -67,7 +67,9 @@ entries:
     - title: asNeeded[x]
       url: /dosage-asneeded.html
       output: web
-    - title: additionalInstruction, patientInstruction
+    - title: maxDosePer[x]
+      url: /dosage-maxdoseper.html
+      output: web    - title: additionalInstruction, patientInstruction
       url: /dosage-additional-patient.html
       output: web
     - title: text
