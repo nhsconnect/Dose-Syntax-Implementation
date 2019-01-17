@@ -61,14 +61,17 @@ entries:
     - title: rate[x]
       url: /dosage-rate.html
       output: web
-    - title: sequence
-      url: /dosage-sequence.html
-      output: web
     - title: asNeeded[x]
       url: /dosage-asneeded.html
       output: web
+    - title: maxDosePer[x]
+      url: /dosage-maxdoseper.html
+      output: web    
     - title: additionalInstruction, patientInstruction
       url: /dosage-additional-patient.html
+      output: web
+    - title: sequence
+      url: /dosage-sequence.html
       output: web
     - title: text
       url: /dosage-text2.html
