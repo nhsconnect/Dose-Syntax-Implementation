@@ -21,3 +21,9 @@ A complete and fit-for-purpose CareConnect-MedicationDispense-1 example would ne
 Refer to the "Overview" page of this section for guidance on **medicationReference** and **quantity**.
 
 Refer to the "Dosage Structure" section for guidance on **dosageInstruction**.
+
+## text ##
+
+To support backwards compatibility, the text narrative must be populated with a medically equivalent human readable textual representation of the complete medication dispense.
+
+At the time of writing, implementation guidance is still in production and will be included within a future version of this publication.
