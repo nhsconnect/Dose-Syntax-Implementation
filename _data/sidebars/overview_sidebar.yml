@@ -1,7 +1,7 @@
 entries:
 - title: Dose Syntax Implementation 
   product: Dose Syntax Implementation for FHIR
-  version: 1.0.0 - Experimental 
+  version: 1.0.1 - Experimental 
   levels: one
   folders:
 
@@ -63,6 +63,9 @@ entries:
       output: web
     - title: sequence
       url: /dosage-sequence.html
+      output: web
+    - title: asNeeded[x]
+      url: /dosage-asneeded.html
       output: web
     - title: additionalInstruction, patientInstruction
       url: /dosage-additional-patient.html
