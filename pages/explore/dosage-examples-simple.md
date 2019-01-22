@@ -27,6 +27,12 @@ summary: "Simple Worked Examples"
 
 <script src="https://gist.github.com/RobertGoochUK/91cff732c159dabb452c52a0a92f688a.js"></script>
 
+## Ramipril - 5 milligram - oral - twice a day ##
+
+<script src="https://gist.github.com/RobertGoochUK/8ed91c4ec01ac01fd641978965842782.js"></script>
+
+# Omeprazole #
+
 ## Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day ##
 
 <script src="https://gist.github.com/RobertGoochUK/b80afd58861658643c8265d3cb622979.js"></script>
