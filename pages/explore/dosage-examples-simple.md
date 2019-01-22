@@ -27,7 +27,7 @@ summary: "Simple Worked Examples"
 
 ## Omeprazole, gastro-resistant, oral ##
 
-## Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day ##
+### Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day ###
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/b80afd58861658643c8265d3cb622979.js"></script>
@@ -53,7 +53,7 @@ TBC
 
 # Aciclovir, oral #
 
-## Aciclovir 200mg tablets, one tablet five times daily ##
+### Aciclovir 200mg tablets, one tablet five times daily ###
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/9dadfd13bf632cad40883383a30c35b1.js"></script>
@@ -71,34 +71,27 @@ TBC
 
 ## Diprobase ointment ##
 
-The VTM related to the Diprobase AMP's is a multi-ingredient concept "White soft paraffin + Liquid paraffin" and cannot be used as a prescribing concept.
-
-### Diprobase ointment (Bayer Plc), 1 application, THREE times a DAY, topical ###
-
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/8c72ae276972c87272056eb2e984a956.js"></script>
 
+{% include note.html content="Dose-based instruction using a VTM" %}
+The VTM related to the Diprobase AMP's is a multi-ingredient concept "White soft paraffin + Liquid paraffin" and cannot be used as a prescribing concept.
+
 ## Microgynon ##
-
-The VTM related to the Diprobase AMP's is a multi-ingredient concept "Ethinylestradiol + Levonorgestrel" and cannot be used as a prescribing concept.
-
-### Microgynon 30 tablets (Bayer Plc), 63 tablet, as directed ###
 
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/2d5b5a1261bb9a785618fbf5380e9e20.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
-TBC
+The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinylestradiol + Levonorgestrel" and cannot be used as a prescribing concept.
 
 ## Beclometasone, cream ##
-
-### Beclometasone 0.025% cream, apply twice daily to thigh ###
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/5efddc06de5180593a38cd907de63443.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
-TBC
+<script src="https://gist.github.com/RobertGoochUK/20eb9e3d9f0e9925a6d16e0832d9c59b.js"></script>
 
 ## Flucloxacillin, oral ##
 
@@ -118,4 +111,4 @@ TBC
 <script src="https://gist.github.com/RobertGoochUK/76d1dc65f3021f5c4e50409fde924a1c.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
-TBC
+<script src="https://gist.github.com/RobertGoochUK/19449543a736c1a65a52b996fed92443.js"></script>
