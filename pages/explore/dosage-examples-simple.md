@@ -25,10 +25,12 @@ summary: "Simple Worked Examples"
 
 ## Ramipril 5mg capsules - 1 capsule - twice a day ##
 
+{% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/91cff732c159dabb452c52a0a92f688a.js"></script>
 
 ## Ramipril - 5 milligram - oral - twice a day ##
 
+{% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/8ed91c4ec01ac01fd641978965842782.js"></script>
 
 # Omeprazole #
@@ -37,13 +39,28 @@ summary: "Simple Worked Examples"
 
 <script src="https://gist.github.com/RobertGoochUK/b80afd58861658643c8265d3cb622979.js"></script>
 
+# Trimethoprim #
+
 ## Trimethoprim 100mg tablets (Crescent Pharma Ltd), 2 tablets, TWICE a DAY, oral ##
 
+{% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/55593efcf8d81d681bed1a3dc4f9d1c4.js"></script>
+
+{% include note.html content="Dose-based instruction using a VTM" %}
+## Trimethoprim - 200 milligram - oral - twice a day ##
+<script src="https://gist.github.com/RobertGoochUK/dcf25dec1dba6a574c44f83bdab627f9.js"></script>
+
+# Sodium citrate #
 
 ## Micralax Micro-enema 5ml (RPH Pharmaceuticals AB), once a day ##
 
+{% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/15231b8269739c11bf86fe4948f7090f.js"></script>
+
+## Sodium citrate - Enema - 5 milligram - Rectal - once a day ##
+
+{% include note.html content="Dose-based instruction using a VTM" %}
+<script src="https://gist.github.com/RobertGoochUK/b6dc5df61528a1b0ff4eec3dd429a273.js"></script>
 
 ## Aciclovir 200mg tablets, one tablet five times daily ##
 
