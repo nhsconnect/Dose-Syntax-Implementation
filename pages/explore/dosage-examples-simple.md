@@ -29,8 +29,6 @@ Each example is shown as both a product-based and dose-based instruction. Produc
 
 ## Omeprazole, gastro-resistant, oral ##
 
-### Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day ###
-
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/b80afd58861658643c8265d3cb622979.js"></script>
 
