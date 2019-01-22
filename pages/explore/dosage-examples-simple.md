@@ -51,15 +51,13 @@ TBC
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/b6dc5df61528a1b0ff4eec3dd429a273.js"></script>
 
-# Aciclovir, oral #
-
-### Aciclovir 200mg tablets, one tablet five times daily ###
+## Aciclovir, oral ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/9dadfd13bf632cad40883383a30c35b1.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
-TBC
+<script src="https://gist.github.com/RobertGoochUK/11f68fa2bcf1d597eb4c7bf07c451682.js"></script>
 
 ## Amoxicillin, oral ##
 
@@ -77,7 +75,7 @@ TBC
 {% include note.html content="Dose-based instruction using a VTM" %}
 The VTM related to the Diprobase AMP's is a multi-ingredient concept "White soft paraffin + Liquid paraffin" and cannot be used as a prescribing concept.
 
-## Microgynon ##
+## Microgynon, tablets ##
 
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/2d5b5a1261bb9a785618fbf5380e9e20.js"></script>
@@ -95,17 +93,13 @@ The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinyles
 
 ## Flucloxacillin, oral ##
 
-### Flucloxacillin, 500mg orally three times a day for 7 days ###
-
 {% include note.html content="Product-based instruction using a VMP" %}
-TBC
+<script src="https://gist.github.com/RobertGoochUK/07f5889ec76d0e29452b101d482d7155.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/17e0acb88b76bbcb82b3b6f6c34d7f31.js"></script>
 
 ## Simvastatin, oral ##
-
-### Simvastatin 20mg tablets, 2 tablets, ONCE a DAY, oral to continue ###
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/76d1dc65f3021f5c4e50409fde924a1c.js"></script>
