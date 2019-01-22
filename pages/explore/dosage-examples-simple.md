@@ -9,6 +9,8 @@ summary: "Simple Worked Examples"
 
 {% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
+Each example is shown as both a product-based and dose-based instruction.
+
 ## Oxytetracycline, oral ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
