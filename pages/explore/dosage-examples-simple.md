@@ -9,11 +9,21 @@ summary: "Simple Worked Examples"
 
 {% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
+# Oxytetracycline #
+
 ## Oxytetracycline 250mg tablets - 1 tablet - oral - 4 times a day ##
 
+{% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/2b88fe64156c2d3c788328463d7a4a5d.js"></script>
 
-## Ramipril 5mg capsules - 1 - twice a day ##
+## Oxytetracycline - 250 milligram - oral - 4 times a day ##
+
+{% include note.html content="Dose-based instruction using a VTM" %}
+<script src="https://gist.github.com/RobertGoochUK/3d90859ce98769ec9b6643cfccdcc65a.js"></script>
+
+# Ramipril #
+
+## Ramipril 5mg capsules - 1 capsule - twice a day ##
 
 <script src="https://gist.github.com/RobertGoochUK/91cff732c159dabb452c52a0a92f688a.js"></script>
 
