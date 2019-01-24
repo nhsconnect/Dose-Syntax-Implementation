@@ -16,12 +16,15 @@ summary: "Logic required to generate a text narrative from the coded structures"
 CUI recommends the medication name is formatted in **bold**. The text narrative support XHTML mark-up therefore the medication name could be contained within `<b>` HTML tags.
 
 If using a VTM  concept the name will just be the name of the VTM;
+
 `Paracetamol`
 
 If using a VMP concept the name will include the strenght and form;
+
 `Paracetamol 1g tablets`
 
 if using an AMP concept the name will also include the manufctorer;
+
 `Paracetamol 1g tablets (Dawa Ltd)`
 
 ### Medication Form ### 
@@ -54,7 +57,7 @@ Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
 
 ### rateRatio / rateRange / rateQuantity ###
 
-When the denominator value is 1 (one) express a **rateRatio** as "at a rate of {numerator_value} per {denominator_unit}". Otherwise express as "at a rate of {numerator_value} every {denominator_value} {denominator_unit}".
+When the denominator value is 1 (one) express a **rateRatio** as "at a rate of {numerator_value} per {denominator_unit}". Otherwise express as "at a rate of {numerator_value} every {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
 
 `at a rate of 30 millitre per hour`
 `at a rate of 30 millitre every 2 hours`
@@ -69,7 +72,7 @@ Express a **rateQuantity** as "at a rate of {value} {units}"
 
 ### duration, durationMax ###
 
-Express a **duration** as "over {value} {units}". Express the units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
+Express a **duration** as "over {value} {units}". Express the time-based units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
 
 `over 8 hours`
 
@@ -107,7 +110,9 @@ Any **offset** will be defined as a number of minutes. If this equates to a whol
 
 The FHIR **when** value-set definitions should be modified with the text "event occurs [offset]" and "(from the Latin...)" removed. Also simplify the definition of "WAKE" to "before sleep".
 
-"{offset_value} minute(s)/hour(s)/day(s) {modified_when_value-set}"
+Express as "{offset_value} minute(s)/hour(s)/day(s) {modified_when_value-set}".
+
+`at breakfast`
 
 `30 minutes before a meal`
 
@@ -117,7 +122,7 @@ The FHIR **when** value-set definitions should be modified with the text "event 
 
 ### dayOfWeek(s) ###
 
-Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description from the FHIR value-set, i.e. "mon" = "Monday". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements.
+Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description from the FHIR value-set, i.e. "mon" = "Monday". Separate multiple statements with a comma and use the word " and " to separate the final two statements.
 
 `on Monday`
 
@@ -125,7 +130,7 @@ Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description 
 
 ### timeOfDay(s) ###
 
-Express **timeOfWeek** statements as "at {timeOfWeek}". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
+Express **timeOfWeek** statements as "at {timeOfWeek}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
 
 `at 10:00`
 
@@ -173,7 +178,7 @@ Express **count** as "repeat {value} times". If the value is 1 (one) express as 
 
 ### event(s) ###
 
-Express **event** statements as "on {event_value}". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements. Local preferences can be used to display the date in `dd/mm/yyyy` or `dd-mmm-yyyy` format.
+Express **event** statements as "on {event_value}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. Local preferences can be used to display the date in `dd/mm/yyyy` or `dd-mmm-yyyy` format.
 
 `on 25/01/2019`
 
@@ -197,7 +202,7 @@ Express a **maxDosePerLifetime** statement as "up to a maximum of {value} {unit}
 
 ### additionalInstruction(s) ###
 
-Separate multiple statements with a comma and use the word ` and ` to separate the final two statements.
+Separate multiple statements with a comma and use the word " and " to separate the final two statements.
 
 `Do not stop taking this medicine except on your doctor's advice`
 
@@ -213,12 +218,12 @@ When a complete dosing instruction is described across multiple sequences, the c
 
 ## Sequential Instructions ##
 
-Separate sequential instructions (where each <sequence> is an incremental value) with `, then `.
+Separate sequential instructions (where each <sequence> is an incremental value) with ", then ".
 
 `Anydrug - 50 milligram - daily - oral - for 1 week, then 100 milligram - daily - oral - for 3 weeks`
 
 ## Concurrent  Instructions ##
 
-Separate parallel instructions (where <sequence> is the same) with `, and `.
+Separate parallel instructions (where <sequence> is the same) with ", and ".
 
 `Anydrug - 50 milligram - daily - in the morning - oral, and 100 milligram - daily - in the evening`
