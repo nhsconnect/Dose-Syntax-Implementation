@@ -9,27 +9,45 @@ summary: "Logic required to generate a text narrative from the coded structures"
 
 
 
-# Medication Component Parts #
+## Medication Component Parts ##
 
-## Medication Name ##
+### Medication Name ###
 
-Here
+CUI recommends the medication name is formatted in **bold**. The text narrative support XHTML mark-up therefore the medication name could be contained within <b> HTML tags. 
 
-## Medication Strength ## *if not implied within a VMP/AMP name*
+### Medication Strength ### 
 
-## Medication Form ## *if not implied within a VMP/AMP name*
+*if not implied within a VMP/AMP name*
 
-## Trade Family Name ##
+TBC
 
-Not suppported yet within FHIR
+### Medication Form ### 
 
-# Dosage Structure Component Parts #
+*if not implied within a VMP/AMP name*
+
+No additional formatting required.
+
+### Trade Family Name ###
+
+Although not suppported yet within FHIR profiled resources, when available, format into UPPER case.
+
+## Dosage Structure Component Parts ##
 
 Repeated for each **sequence**;
 
-## method ##
+### method ###
 
-## doseQuantity / doseRange ##
+No additional formatting required.
+
+### doseQuantity / doseRange ###
+
+Express a **doseQuantity** as "{quantity} {units}
+
+~50 milligram~
+
+Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
+
+~20 to 40 millilitre~
 
 ## rateRatio / rateRange / rateQuantity ##
 
@@ -63,17 +81,9 @@ Repeated for each **sequence**;
 
 
 Notes....
-medication = as it comes, CUI recommends formatting in bold
 
-brand / trade family = CUI recommends forced into UPPER case
 
-drug form = if not implicit within the dm+d concept then as it comes
 
-method = as it comes
-
-doseQuantity = express as "A units" where A is obviously the dose quantity and 'units' the unit of measure, e.g. "50 milligram".
-
-doseRange = the low quantity " to " the high quantity plus the unit of measure.
 
 rateRatio = prefixed by "at a rate of" then if the denominator value is 1 then express as "A per B", otherwise express as "A every B units".
 
