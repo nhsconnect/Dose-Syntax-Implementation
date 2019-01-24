@@ -70,7 +70,7 @@ The SimpleQuantity structure contains a simple quantity and coded unit of measur
 
 ## Use of CareConnect[x].text Narrative ##
 
-Refer to the section "Text Narrative" within this documentation.
+Refer to the section "CareConnect Text Narrative" within this documentation.
 
 ## Use of medication.text ##
 

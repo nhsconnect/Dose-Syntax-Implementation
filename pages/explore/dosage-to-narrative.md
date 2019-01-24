@@ -1,5 +1,5 @@
 ---
-title: Converting Dosage to a Text Narrative
+title: CareConnect Text Narrative
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
