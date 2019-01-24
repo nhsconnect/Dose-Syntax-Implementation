@@ -99,7 +99,7 @@ entries:
           url: /dosage-tradefamily.html
           output: web
 
-  - title: Converting Dosage to a Text Narrative
+  - title: CareConnect Text Narrative
     output: web,pdf
     folderitems:
     - title: Overview
