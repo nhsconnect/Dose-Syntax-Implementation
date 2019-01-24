@@ -38,7 +38,7 @@ entries:
     - title: CareConnect-MedicationStatement-1
       url: /careconnect-MedicationStatement-1.html
       output: web 
- 
+      
   - title: Dosage Structure
     output: web,pdf
     folderitems:
@@ -99,6 +99,17 @@ entries:
           url: /dosage-tradefamily.html
           output: web
 
+  - title: Converting Dosage to a Text Narrative
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-to-narrative.html
+      output: web
+      type: homepage
+    - title: Sub page
+      url: /dosage-to-narrative2.html
+      output: web
+      
   - title: Worked Examples
     output: web
     folderitems:
