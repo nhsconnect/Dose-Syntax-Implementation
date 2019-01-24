@@ -103,11 +103,11 @@ entries:
     output: web,pdf
     folderitems:
     - title: Overview
-      url: /dosage-to-narrative.html
+      url: /dosage-to-narrative-overview.html
       output: web
       type: homepage
-    - title: Sub page
-      url: /dosage-to-narrative2.html
+    - title: Text Generation Logic
+      url: /dosage-to-narrative-logic.html
       output: web
       
   - title: Worked Examples
