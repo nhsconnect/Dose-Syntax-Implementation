@@ -13,7 +13,7 @@ summary: "Logic required to generate a text narrative from the coded structures"
 
 ### Medication Name ###
 
-CUI recommends the medication name is formatted in **bold**. The text narrative support XHTML mark-up therefore the medication name could be contained within `<b>` HTML tags.
+CUI recommends the medication name is formatted in **bold**. The text narrative supports XHTML mark-up therefore the medication name could be marked-up within `<b>` HTML tags.
 
 If using a VTM  concept the name will just be the name of the VTM;
 
