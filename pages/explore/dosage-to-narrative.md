@@ -15,15 +15,15 @@ This section details the logic required for a system to generate a suitable, cli
 ## References ##
 
 This guidance is aligned with;
-* Common User Interface (CUI) Medication Line recommendations, England, May 2010
-* National guidelines for on screen display of medicines information, Australia, December 2017
+* [Common User Interface (CUI)](https://webarchive.nationalarchives.gov.uk/20160921150545/http://systems.digital.nhs.uk/data/cui/uig) Medications line recommendations, England, May 2010
+* [National guidelines for on screen display of medicines information](https://www.safetyandquality.gov.au/our-work/medication-safety/electronic-medication-management/national-guidelines-for-on-screen-display-of-medicines-information/), Australia, December 2017
 
 ## Common Principals ##
 
 The following applies to the presentation of any component part of a medication instruction;
-* Always express units of measure using the full description, e.g. "milligram" not "mg".
-* Always turn a time based unit into the plural when applicable, e.g. "2 hour" becomes "2 hours".
-* Where multiple statements are allowed, e.g. **when** or **event** structures, then separate each statement with a comma plus whitespace. Replace the last comma separating the final two statements with the word " and ", e.g. "on Monday, Wednesday and Friday".
+* Always express units of measure using the full description, e.g. `milligram` not `mg`.
+* Always turn a time based unit into the plural when applicable, e.g. `2 hour` becomes `2 hours`.
+* Where multiple statements are allowed, e.g. **when** or **event** structures, then separate each statement with a comma plus whitespace. Replace the last comma separating the final two statements with the word ` and `, e.g. `on Monday, Wednesday and Friday`.
 
 **Note**. Non time-based units of measure should not be expressed in the plural when the quantity is not equal to 1 (one). This is because of introduces complications when using ucum units such as "microgram per millilitre" or "microgram per kilogram per hour".
 
@@ -32,13 +32,12 @@ The following applies to the presentation of any component part of a medication 
 The order in which the structures within a CareConnect profiled resouce should be listed.
 
 1. Medication Name
-2. Medication Strength (*if not implied within a VMP/AMP name*)
-3. Medication Form (*if not implied within a VMP/AMP name*)
-4. Trade Family Name
+2. Medication Form (*if not implied within a VMP/AMP name*)
+3. Trade Family Name
 
 Repeated for each **sequence** in ascending order;
 
-5. method
+4. method
 6. doseQuantity / doseRange
 7. rateRatio / rateRange / rateQuantity
 8. duration, durationMax
@@ -63,5 +62,5 @@ The rules and logic for presenting each structure is detailed on the [Text Gener
 In most cases, each component part of the medication instruction is separated by space-dash-space, e.g. " - ".
 
 Exceptions are as follows;
-* Use a single whitespace after a **method**, e.g. "Apply "
-* Use a single whitespace to separate between a **dayOfWeek** and **timeOfDay**, e.g. "on Monday at 10:30"
+* Use a single whitespace after a **method**, e.g. `Apply `
+* Use a single whitespace to separate between a **dayOfWeek** and **timeOfDay**, e.g. `on Monday at 10:30`
