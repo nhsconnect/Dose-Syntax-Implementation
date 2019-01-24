@@ -43,11 +43,11 @@ No additional formatting required.
 
 Express a **doseQuantity** as "{quantity} {units}
 
-~50 milligram~
+`50 milligram`
 
 Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
 
-~20 to 40 millilitre~
+`20 to 40 millilitre`
 
 ## rateRatio / rateRange / rateQuantity ##
 
