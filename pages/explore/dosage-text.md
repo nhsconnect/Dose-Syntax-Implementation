@@ -9,10 +9,8 @@ summary: "Use of the text element of the dosage instruction"
 
 
 
-To support backwards compatibility, the **text** attribute must be populated with a medically equivalent human readable textual representation of the structured dosage instruction.
+The FHIR specification states the **text** attribute can be used where medications are too complex to code.
 
-At the time of writing, implementation guidance is to use the existing textual dosage instruction within this field.
-
-An updated version of this guidance may define a logical sequence to generate a human readable dose string from the components of the Dosage structure.
+For the purposes of this guidance, not such cases have been identified. The population of the **text** attribute is not recommended where the dosage instruction is defined using the coded structures.
 
 

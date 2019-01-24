@@ -50,15 +50,15 @@ A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d c
 
 <script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
 
-### VTM plus Trade Family ###
+### VTM plus Trade Family - Not current supported, use an AMP ###
 
-The use of a VTM with a Trade Family is a special case that is not directly supported within FHIR STU3. This combination would be used when a prescriber wishes to describe a dose-based prescription using a specific brand of medication but without constraining the instruction to a dm+d Actual Medicinal Product (AMP). The use of an AMP would not only define the brand, but also the strength and form, as is a product-based concept.
+The use of a VTM with a Trade Family is a use case not currently supported within FHIR STU3, or through a UK extension.
 
-A clinical example would be for the VTM "Insulin lispro" which is more commonly referenced by the leading brand "Humalog". Trade family concepts are taken from the SNOMED-CT hierarchy as a  descendant of the concept 9191801000001103 Trade family.
+** INTERIM GUIDANCE **
 
-There is no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family. The solution therefore is to convey the Trade Family within the **medication.text** narrative within brackets after the VTM description.
+*Until supported within a FHIR profiled resource as a coded concept, where a specific Trade Family (i.e brand name) is to be specified, an AMP concept must be used.*
 
-<script src="https://gist.github.com/RobertGoochUK/b8576feb29713055e54a6893c2a271cb.js"></script>
+There is currently no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family.
 
 ### VMP or AMP ###
 
@@ -68,19 +68,13 @@ The SimpleQuantity structure contains a simple quantity and coded unit of measur
 
 <script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
 
+## Use of CareConnect[x].text Narrative ##
+
+Refer to the section "Text Narrative" within this documentation.
+
 ## Use of medication.text ##
 
-In all cases, the **medication.text** must be populated with a complete human readable string equivalent to the coded information within the Medication resource. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element. Population of the text ensure backwards compatibility with receiving systems that do not process the coded information within the medication resource.
-
-A suitable syntax for constructing an equivalent text string would be;
-
-<code>name = medication.code.coding.display <br/>
-medication.text = name , [ " (", tradeFamily , ")" ]
-</code>
-
-**Note 1.** The inclusion of any specified Trade Family description is an interim solution pending the availability of a coded structure within a CareConnect profiled resource to specify a Trade Family coded concept.
-
-**Note 2.** Version 1.0.0 of this guidance suggested any specified medication Form should be included within the medication.text. This has been removed as any specified Form will be included within the parent resource .text structure. For example, the medicationRequest.text structure.
+In all cases, the **medication.text** must be populated with the description of the coded medication concept. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element.
 
 ## Use of Dosage structure ##
 
