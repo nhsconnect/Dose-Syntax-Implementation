@@ -52,7 +52,7 @@ Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
 
 `20 to 40 millilitre`
 
-## rateRatio / rateRange / rateQuantity ##
+### rateRatio / rateRange / rateQuantity ###
 
 When the denominator value is 1 (one) express a **rateRatio** as "at a rate of {numerator_value} per {denominator_unit}". Otherwise express as "at a rate of {numerator_value} every {denominator_value} {denominator_unit}".
 
@@ -67,7 +67,7 @@ Express a **rateQuantity** as "at a rate of {value} {units}"
 
 `at a rate of 1 microgram per kilogram per hour` (**Note**. This example uses the ucum unit "microgram per kilogram per hour")
 
-## duration, durationMax ##
+### duration, durationMax ###
 
 Express a **duration** as "over {value} {units}". Express the units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
 
@@ -75,7 +75,7 @@ Express a **duration** as "over {value} {units}". Express the units in plural wh
 
 `over 4 hours (maximum 8 hours)`
 
-## frequency, frequencyMax, period and periodMax ##
+### frequency, frequencyMax, period and periodMax ###
 
 Gets very complicated so I'll finish this section off another time and just list examples for all the combinations.
 
@@ -101,7 +101,7 @@ Gets very complicated so I'll finish this section off another time and just list
 
 `2 to 3 times every 6 to 8 hours`
 
-## offset, when(s) ##
+### offset, when(s) ###
 
 Any **offset** will be defined as a number of minutes. If this equates to a whole number of hours of days then express as a number of hours (=60 minutes) or days (=1440 minutes). Use the plural expression of time when required. 
 
@@ -115,7 +115,7 @@ The FHIR **when** value-set definitions should be modified with the text "event 
 
 `2 hours after breakfast`
 
-## dayOfWeek(s) ##
+### dayOfWeek(s) ###
 
 Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description from the FHIR value-set, i.e. "mon" = "Monday". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements.
 
@@ -123,7 +123,7 @@ Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description 
 
 `on Monday, Wednesday and Friday`
 
-## timeOfDay(s) ##
+### timeOfDay(s) ###
 
 Express **timeOfWeek** statements as "at {timeOfWeek}". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
 
@@ -131,15 +131,15 @@ Express **timeOfWeek** statements as "at {timeOfWeek}". Separate multiple statem
 
 `at 10:00 and 15:00`
 
-## route ##
+### route ###
 
 No additional formatting required.
 
-## site ##
+### site ###
 
 No additional formatting required.
 
-## asNeededCodeableConcept / asNeeded ##
+### asNeededCodeableConcept / asNeeded ###
 
 Express the **asNeededBoolean** statement as "as required".
 
@@ -149,7 +149,7 @@ Express the **asNeededCodeableConcept** as "as required for {coded_value_descrip
 
 `as required for Migraine`
 
-## boundsDuration / boundsRange ##
+### boundsDuration / boundsRange ###
 
 Express **boundsDuration** as "for {value} {units}". Express the units in plural when required.
 
@@ -159,7 +159,7 @@ Express **boundRange** as "for {low_value} to {high_value} {high_units}". Expres
 
 `for 2 to 4 hours`
 
-## count, countMax ##
+### count, countMax ###
 
 Express **count** as "repeat {value} times". If the value is 1 (one) express as "once". If the value is 2 (two) express as "repeat twice". If a **countMax** is define then express as "repeat {value} to {max_value} times".
 
@@ -171,7 +171,7 @@ Express **count** as "repeat {value} times". If the value is 1 (one) express as 
 
 `repeat 3 to 4 times`
 
-## event(s) ##
+### event(s) ###
 
 Express **event** statements as "on {event_value}". Separate multiple statements with a comma and use the word ` and ` to separate the final two statements. Local preferences can be used to display the date in `dd/mm/yyyy` or `dd-mmm-yyyy` format.
 
@@ -181,7 +181,7 @@ Express **event** statements as "on {event_value}". Separate multiple statements
 
 `on 25/01/2019, 25/02/2019 and 25/03/2019`
 
-## maxDosePerPeriod / maxDosePerAdministration / maxDosePerLifetime ##
+### maxDosePerPeriod / maxDosePerAdministration / maxDosePerLifetime ###
 
 Express a **maxDosePerPeriod** statement as "up to a maximum of {numerator_value} {numerator_unit} over {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
 
@@ -195,7 +195,7 @@ Express a **maxDosePerLifetime** statement as "up to a maximum of {value} {unit}
 
 `up to a maximum of 60 milligram for the lifetime of patient`
 
-## additionalInstruction(s) ##
+### additionalInstruction(s) ###
 
 Separate multiple statements with a comma and use the word ` and ` to separate the final two statements.
 
@@ -203,7 +203,7 @@ Separate multiple statements with a comma and use the word ` and ` to separate t
 
 `Dissolve or mix with water before taking and Contains aspirin`
 
-## patientInstruction ##
+### patientInstruction ###
 
 No additional formatting required.
 
