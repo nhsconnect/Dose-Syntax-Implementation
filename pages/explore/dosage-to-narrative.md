@@ -75,9 +75,28 @@ Exceptions are as follows;
 
 A web service is in development by NHS Digital that will implement this logic and translate a CareConnect medication-related profiled resource and return a string suitable for use as the text narrative. When available, this web service can be used by system suppliers during their software prototyping and design phases. It should also be suitable as an operational service so that system suppliers so not have to implement this complex logic within their own solutions.
 
+<script type='text/javascript'>
+function callWebService(out,divName) {
+    
+    var myElement = document.getElementById("dosage");
+    var uri = "http://www.mklacrosse.co.uk/milk/getDosageText.php?o=" + out + "&d=" + encodeURIComponent(myElement.value);
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById(divName).innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", uri, true);
+    xmlhttp.send();
+}
+</script>
+
 <div>
+	<p>
+		<textarea name="dosage" id="dosage"></textarea>
+	</p>
     <p>
-    <button type="button" onclick="callGetDosageTextForm('text','divOutputBox')" class="gray-small-button">Plain Text</button>
+    <button type="button" onclick="callWebService('text','divOutputBox')" class="gray-small-button">Call Web Service</button>
     &nbsp;
     <span style="font-family:courier;">{base_url}/getDosageText.php?o=text&d={urlencoded FHIR XML}</span>
     </p>
