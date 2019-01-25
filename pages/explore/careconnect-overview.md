@@ -58,15 +58,15 @@ The use of a VTM with a Trade Family is a use case not currently supported withi
 
 *Until supported within a FHIR profiled resource as a coded concept, where a specific Trade Family (i.e brand name) is to be specified, an AMP concept must be used.*
 
-There is currently no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED code Trade Family.
+There is currently no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED coded Trade Family.
 
 ### VMP or AMP ###
 
-For prescribing or dispensing uses cases where a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) is defined, the implementation will often require the requested or dispensed quantity of medication using the FHIR SimpleQuantity structure. This will always be the case for data sharing within Primary Care.
+A Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) coded product. Both are pre-coordinated SNOMED-CT coded concepts. A VMP comprises of a medication + strength + form. An AMP may use either the same term for the medication name as it's parent VMP or use [9191801000001103 Trade family (product)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=9191801000001103&edition=uk-edition) for the medication name. An AMP also defines the manufacturer.
 
-The SimpleQuantity structure contains a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of 767524001 Unit of measure (qualifier value). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of 732935002 Unit of presentation (unit of presentation).
+<script src="https://gist.github.com/RobertGoochUK/574f6ae7053f908e2cc95abc6224dd76.js"></script>
 
-<script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
+<script src="https://gist.github.com/RobertGoochUK/b0de11fbd88a3e2949532a66168659f4.js"></script>
 
 ## Use of CareConnect[x].text Narrative ##
 
@@ -74,7 +74,7 @@ Refer to the section "CareConnect Text Narrative" within this documentation.
 
 ## Use of medication.text ##
 
-In all cases, the **medication.text** must be populated with the description of the coded medication concept. The text is a narrative data type therefore must be marked up as xhtml within a <div> element together with an associated <status> element.
+In all cases, the **medication.text** must be populated with the description of the coded medication concept. The text is a narrative data type containing `<div>` and `<status>` elements. Within the `<div>` the content could contain XHTML marked-up but receiving systems may choose to ignore any mark-up if they want to be in control of the presentation.
 
 ## Use of Dosage structure ##
 
