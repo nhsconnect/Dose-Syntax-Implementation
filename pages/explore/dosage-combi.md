@@ -1,5 +1,5 @@
 ---
-title: STU3 Limitation - Combination product instruction
+title: STU3 Limitation - Combination product instructions
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
