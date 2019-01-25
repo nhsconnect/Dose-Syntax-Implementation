@@ -96,7 +96,7 @@ Where both **frequencyMax** and **periodMax** are defined, express as "{frequenc
 
 `2 to 3 times every 6 to 8 hours`
 
-Where a **frequencyMax** is defined without a **frequency** then express as "up to {{frequencyMax}...".
+Where a **frequencyMax** is defined without a **frequency** then express as "up to {frequencyMax}...".
 
 `up to 3 times a day`
 
