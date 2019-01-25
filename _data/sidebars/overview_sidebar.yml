@@ -6,7 +6,7 @@ entries:
   folders:
 
   - title: Overview
-    output: web
+    output: web,pdf
     folderitems:
     - title: Introduction
       url: /index.html
@@ -76,28 +76,28 @@ entries:
     - title: text, code
       url: /dosage-text2.html
       output: web
-      subfolders:
-      - title: Current limitations of STU3 Dosage structure
-        output: web
-        subfolderitems:
-        - title: Overview
-          url: /dosage-limitations-overview.html
-          output: web
-        - title: 1. Combination product instructions
-          url: /dosage-combi.html
-          output: web
-        - title: 2. Maximum dose per course
-          url: /dosage-maxdose.html
-          output: web        
-        - title: 3. Periods of no medicine administration
-          url: /dosage-no-meds.html
-          output: web
-        - title: 4. Instuctions for a specific device
-          url: /dosage-specific-device.html
-          output: web
-        - title: 5. Specifying a Trade Family / brand
-          url: /dosage-tradefamily.html
-          output: web
+      
+  - title: Current Limitations of STU3 Dosage Structure
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-limitations-overview.html
+      output: web
+    - title: 1. Combination product instructions
+      url: /dosage-combi.html
+      output: web
+    - title: 2. Maximum dose per course
+      url: /dosage-maxdose.html
+      output: web        
+    - title: 3. Periods of no medicine administration
+      url: /dosage-no-meds.html
+      output: web
+    - title: 4. Instuctions for a specific device
+      url: /dosage-specific-device.html
+      output: web
+    - title: 5. Specifying a Trade Family / brand
+      url: /dosage-tradefamily.html
+      output: web
 
   - title: CareConnect Text Narrative
     output: web,pdf
@@ -111,7 +111,7 @@ entries:
       output: web
       
   - title: Worked Examples
-    output: web
+    output: web,pdf
     folderitems:
     - title: Overview
       url: /dosage-examples-overview.html
