@@ -118,37 +118,37 @@ Where a **periodMax** is defined without a **period** then express as "{frequenc
 
 #### Special Cases ####
 
-When frequency is 1 (one) and defined without a period, express as "once".
+When **frequency** is 1 (one) and defined without a **period**, express as "once".
 
 `once`
 
-When frequency is 2 (two) and defined without a period, express as "twice".
+When **frequency** is 2 (two) and defined without a **period**, express as "twice".
 
 `twice`
 
-When frequency is greater than 2 (two) and defined without a period, express as "{frequency} times".
+When **frequency** is greater than 2 (two) and defined without a **period**, express as "{frequency} times".
 
 `3 times`
 
-When frequency and period are both 1 (one) express as "once a {period_unit}".
+When **frequency** and **period** are both 1 (one) express as "once a {period_unit}".
 
 `once a week`
 
-When frequency is 1 (one) and  period is greater than 1 (one) express as "every {period_value} {period_unit}" or "every {period_value} to {periodMax_value} {period_unit}".
+When **frequency** is 1 (one) and **period** is greater than 1 (one) express as "every {period_value} {period_unit}" or "every {period_value} to {periodMax_value} {period_unit}".
 
 `every 8 hours`
 
 `every 6 to 8 hours`
 
-When frequency is 2 (two) and  period is 1 (one) express as "twice a {unit}".
+When **frequency** is 2 (two) and **period** is 1 (one) express as "twice a {unit}".
 
 `twice a day`
 
-When frequency is greater than 2 (two) and  period is 1 (one) express as "{frequency} times a {unit}".
+When **frequency** is greater than 2 (two) and **period** is 1 (one) express as "{frequency} times a {unit}".
 
 `4 times a day`
 
-When frequency is 2 (two) and  period is greater than 1 (one) express as "twice every {period_value} {period_unit}" or "twice every {period_value} to {periodMax_value} {period_unit}".
+When **frequency** is 2 (two) and **period** is greater than 1 (one) express as "twice every {period_value} {period_unit}" or "twice every {period_value} to {periodMax_value} {period_unit}".
 
 `twice every 8 hours`
 
