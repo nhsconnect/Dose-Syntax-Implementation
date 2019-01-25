@@ -30,7 +30,3 @@ A dosage instruction can specify specific days of the week and/or times of the d
 A dosage instruction can specify specific dates and times using event.
 
 <script src="https://gist.github.com/RobertGoochUK/01338160314cb372216b05d329c45656.js"></script>
-
-## Dosage.timing.code ##
-
-Allows a code, often a Latin abbreviation, for a timing schedule to be specified, for example, "BID" (=twice a day). It is recommended that such codes **are not** used when the rest of the Dosage structure is supported by the system. Instead use the structures like **frequency** and **period** so that a timing schedule can be computable.

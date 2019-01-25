@@ -1,10 +1,10 @@
 ---
-title: Dosage doseQuantity, doseRange, frequency and period
+title: Dosage dose[x], frequency and period
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-doseQuantity-freq-period.html
-summary: "Simple timing instructions using doseQuantity, doseRange, frequency and period"
+summary: "Simple timing instructions using dose[x], frequency and period"
 ---
 
 

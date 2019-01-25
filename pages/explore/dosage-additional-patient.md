@@ -15,7 +15,7 @@ Additional instructions can be either SNOMED-CT coded or free-text and can be re
 
 Coded additional instructions are defined in a FHIR [value-set for method](http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html) which is currently identical to the SNOMED-CT hierarchy as a descendant of [419492006 Additional dosage instructions (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=419492006&edition=uk-edition).
 
-**Note.** The value-sets for Timing.when and Dosage.additionalInstruction do contain some overlapping values. For example, they can both describe "with or after food". In such cases, use Timing.when instead of a coded Dosage.additionalInstruction.
+**Note.** The value-sets for **Timing.when** and **Dosage.additionalInstruction** do contain some overlapping values. For example, they can both describe "with or after food". In such cases, use **Timing.when** instead of a coded **Dosage.additionalInstruction**.
 
 There may be the need for a clinician to give explicit instructions to either stop or continue taking medication. This could be applicable for discharge medication where one medicine may be for short term pain relief and should be stopped after the prescribed quantity has been taken, while another medicine must be continued until further notice. The patient's GP would be informed of this as part of the discharge letter but having these instructions explicitly coded provides a more robust solution.
 
