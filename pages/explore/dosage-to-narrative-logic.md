@@ -19,11 +19,11 @@ If using a VTM  concept the name will just be the name of the VTM;
 
 `Paracetamol`
 
-If using a VMP concept the name will include the strenght and form;
+If using a VMP concept the name will include the strength and form;
 
 `Paracetamol 1g tablets`
 
-if using an AMP concept the name will also include the manufctorer;
+if using an AMP concept the name will also include the manufacturer;
 
 `Paracetamol 1g tablets (Dawa Ltd)`
 
