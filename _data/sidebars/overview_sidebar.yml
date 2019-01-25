@@ -1,7 +1,7 @@
 entries:
 - title: Dose Syntax Implementation 
   product: Dose Syntax Implementation for FHIR
-  version: 1.0.1 - Experimental 
+  version: 1.1.0 - Experimental 
   levels: one
   folders:
 
