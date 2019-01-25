@@ -81,10 +81,11 @@ function callWebService(out,divName) {
     var myElement = document.getElementById("dosage");
     var uri = "http://www.mklacrosse.co.uk/milk/getDosageText.php?o=" + out + "&d=" + encodeURIComponent(myElement.value);
 	//alert(uri);
-	document.getElementById(divName).innerHTML = uri;
+	//document.getElementById(divName).innerHTML = uri;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+			alert("here");
             document.getElementById(divName).innerHTML = this.responseText;
         }
     };
@@ -95,11 +96,13 @@ function callWebService(out,divName) {
 
 <div>
 	<p>
-		<textarea style="width:100%;height:100px;" name="dosage" id="dosage">{insert valid FHIR XML here2}</textarea>
+		<textarea style="width:100%;height:100px;" name="dosage" id="dosage">{insert valid FHIR XML here}</textarea>
 	</p>
     <p>
 		<button type="button" onclick="callWebService('text','divOutputBox')">Call Web Service</button>
 		&nbsp;<span style="font-family:courier;">{base_url}/getDosageText.php?o=text&d={urlencoded FHIR XML}</span>
     </p>
-    <div style="width:100%;font-family:courier;" name="divOutputBox" id="divOutputBox">{see the output here}</div>
+	<p>
+		<div style="width:100%;font-family:courier;" name="divOutputBox" id="divOutputBox">{see the output here}</div>
+	</p>
 </div>
