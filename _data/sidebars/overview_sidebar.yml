@@ -49,7 +49,7 @@ entries:
     - title: site, route, method
       url: /dosage-site-route-method.html
       output: web
-    - title: doseQuantity, frequency, period
+    - title: dose[x], frequency, period
       url: /dosage-doseQuantity-freq-period.html
       output: web
     - title: when, offset, dayOfWeek, timeOfDay
@@ -67,13 +67,13 @@ entries:
     - title: maxDosePer[x]
       url: /dosage-maxdoseper.html
       output: web    
-    - title: additionalInstruction, patientInstruction
+    - title: additional, patientInstruction
       url: /dosage-additional-patient.html
       output: web
     - title: sequence
       url: /dosage-sequence.html
       output: web
-    - title: text
+    - title: text, code
       url: /dosage-text2.html
       output: web
       subfolders:
