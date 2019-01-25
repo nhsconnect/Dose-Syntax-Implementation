@@ -77,9 +77,9 @@ A web service is in development by NHS Digital that will implement this logic an
 
 <script type='text/javascript'>
 function callWebService(out,divName) {
-    alert("test");
     var myElement = document.getElementById("dosage");
     var uri = "http://www.mklacrosse.co.uk/milk/getDosageText.php?o=" + out + "&d=" + encodeURIComponent(myElement.value);
+	alert(uri);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -93,7 +93,7 @@ function callWebService(out,divName) {
 
 <div>
 	<p>
-		<textarea style="width:100%;" name="dosage" id="dosage">{insert valid FHIR XML here}</textarea>
+		<textarea style="width:100%;height:100px;" name="dosage" id="dosage">{insert valid FHIR XML here}</textarea>
 	</p>
     <p>
     <button type="button" onclick="callWebService('text','divOutputBox')" class="gray-small-button">Call Web Service</button>
