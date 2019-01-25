@@ -93,12 +93,12 @@ function callWebService(out,divName) {
 
 <div>
 	<p>
-		<textarea name="dosage" id="dosage">Test1</textarea>
+		<textarea style="width:100%;" name="dosage" id="dosage">{insert valid FHIR XML here}</textarea>
 	</p>
     <p>
     <button type="button" onclick="callWebService('text','divOutputBox')" class="gray-small-button">Call Web Service</button>
     &nbsp;
     <span style="font-family:courier;">{base_url}/getDosageText.php?o=text&d={urlencoded FHIR XML}</span>
     </p>
-    <div name="divOutputBox" id="divOutputBox" class="outputBox">Test2</div>
+    <div style="width:100%;" name="divOutputBox" id="divOutputBox" class="outputBox">{see the output here}</div>
 </div>
