@@ -31,11 +31,11 @@ The following will be added to future versions of this implementation guidance.
 * 'Dosage Structure' section updated
   * Moved the Dosage.asNeeded[x] guidance it it's own section.
   * New section for the Dosage.maxDosePer[x] structure.
-  * Updated the 'when, offset, dayOfWeek, timeOfDay' section to include guidance on the use of the Dosage.timing.code structure.
   * Updated the 'additionalInstructions, patientInstructions' section to include a note on using coded concepts that relate to specific dosing timing instructions.
   * Change to use of Dosage.text and inclusion of Dosage.timing.code
   * Updated the 'Dosage doseQuantity, frequency, period' section to include guidance on doseRange.
 * 'CareConnect Text Narrative' section added
+* Fixed bugs within many of the worked FHIR XML examples 
 
 ### 1.0.0-experimental ###
 First version published.
