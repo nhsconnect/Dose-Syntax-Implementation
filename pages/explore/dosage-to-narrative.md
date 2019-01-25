@@ -80,7 +80,8 @@ function callWebService(out,divName) {
 	document.getElementById(divName).innerHTML = "Calling web service...";
     var myElement = document.getElementById("dosage");
     var uri = "http://www.mklacrosse.co.uk/milk/getDosageText.php?o=" + out + "&d=" + encodeURIComponent(myElement.value);
-	alert(uri);
+	//alert(uri);
+	document.getElementById(divName).innerHTML = uri;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -97,9 +98,9 @@ function callWebService(out,divName) {
 		<textarea style="width:100%;height:100px;" name="dosage" id="dosage">{insert valid FHIR XML here}</textarea>
 	</p>
     <p>
-    <button type="button" onclick="callWebService('text','divOutputBox')" class="gray-small-button">Call Web Service</button>
+    <button type="button" onclick="callWebService('text','divOutputBox')">Call Web Service</button>
     &nbsp;
     <span style="font-family:courier;">{base_url}/getDosageText.php?o=text&d={urlencoded FHIR XML}</span>
     </p>
-    <div style="width:100%;" name="divOutputBox" id="divOutputBox" class="outputBox">{see the output here}</div>
+    <div style="width:100%;font-family:courier;" name="divOutputBox" id="divOutputBox">{see the output here}</div>
 </div>
