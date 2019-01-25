@@ -77,17 +77,18 @@ A web service is in development by NHS Digital that will implement this logic an
 
 <script type='text/javascript'>
 function callWebService(out,divName) {
+	document.getElementById(divName).innerHTML = "Calling web service...";
     var myElement = document.getElementById("dosage");
     var uri = "http://www.mklacrosse.co.uk/milk/getDosageText.php?o=" + out + "&d=" + encodeURIComponent(myElement.value);
 	alert(uri);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById(divName).innerHTML = this.responseText;
+            //document.getElementById(divName).innerHTML = this.responseText;
         }
     };
-    xmlhttp.open("GET", uri, true);
-    xmlhttp.send();
+    //xmlhttp.open("GET", uri, true);
+    //xmlhttp.send();
 }
 </script>
 
