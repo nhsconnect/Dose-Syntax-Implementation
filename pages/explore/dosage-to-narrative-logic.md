@@ -80,35 +80,81 @@ Express a **duration** as "over {value} {units}". Express the time-based units i
 
 ### frequency, frequencyMax, period and periodMax ###
 
-Gets very complicated so I'll finish this section off another time and just list examples for all the combinations.
-
-`once a day`
-
-`twice a week`
-
-`every 8 hours`
-
-`twice every 8 hours`
+Express the combination of **frequency** and **period** as "{frequency} times every {period_value} {period_unit}".
 
 `3 times every 8 hours`
 
-`4 times a day`
+Where a **frequencyMax** is defined, express as "{frequency} to {frequencyMax} times every {period_value} {period_unit}".
 
 `2 to 3 times every 8 hours`
 
-`once every 6 to 8 hours`
-
-`twice every 6 to 8 hours`
+Where a **periodMax** is defined, express as "{frequency} times every {period_value} to {periodMax_value} {period_unit}".
 
 `3 times every 6 to 8 hours`
 
+Where both **frequencyMax** and **periodMax** are defined, express as "{frequency} to {frequencyMax} times every {period_value} to {periodMax_value} {period_unit}".
+
 `2 to 3 times every 6 to 8 hours`
+
+Where a **frequencyMax** is defined without a **frequency** then express as "up to {{frequencyMax}...".
+
+`up to 3 times a day`
+
+`up to 4 times every 8 hours`
+
+`up to 6 times every 3 to 4 weeks`
+
+Where a **periodMax** is defined without a **period** then express as "{frequency} times up to {periodMax_value} {period_unit}".
+
+`3 times up to 8 hours`
+
+`2 to 3 times up to 8 hours`
+
+**Note**. The omission of both a **frequency** and **frequencyMax** when either a **period** or **periodMax** is present is allowed as per cardinality rules but should be prevented in practice as does not result in a logical timing instruction. 
+
+#### Special Cases ####
+
+When frequency is 1 (one) and defined without a period, express as "once".
+
+`once`
+
+When frequency is 2 (two) and defined without a period, express as "twice".
+
+`twice`
+
+When frequency is greater than 2 (two) and defined without a period, express as "{frequency} times".
+
+`3 times`
+
+When frequency and period are both 1 (one) express as "once a {period_unit}".
+
+`once a week`
+
+When frequency is 1 (one) and  period is greater than 1 (one) express as "every {period_value} {period_unit}" or "every {period_value} to {periodMax_value} {period_unit}".
+
+`every 8 hours`
+
+`every 6 to 8 hours`
+
+When frequency is 2 (two) and  period is 1 (one) express as "twice a {unit}".
+
+`twice a day`
+
+When frequency is greater than 2 (two) and  period is 1 (one) express as "{frequency} times a {unit}".
+
+`4 times a day`
+
+When frequency is 2 (two) and  period is greater than 1 (one) express as "twice every {period_value} {period_unit}" or "twice every {period_value} to {periodMax_value} {period_unit}".
+
+`twice every 8 hours`
+
+`twice every 6 to 8 hours`
 
 ### offset, when(s) ###
 
-Any **offset** will be defined as a number of minutes. If this equates to a whole number of hours of days then express as a number of hours (=60 minutes) or days (=1440 minutes). Use the plural expression of time when required. 
+Any **offset** will be defined as a number of minutes. If this equates to a whole number of hours or days then express as the number of hours (=60 minutes) or days (=1440 minutes). Use the singular or plural expression of time when required. 
 
-The FHIR **when** value-set definitions should be modified with the text "event occurs [offset]" and "(from the Latin...)" removed. Also simplify the definition of "WAKE" to "before sleep".
+The FHIR [event timing value-set](http://hl7.org/fhir/stu3/valueset-event-timing.html) used for **when** should have descriptions modified to make them more human readable. Remove the text "event occurs [offset]" and "(from the Latin...)" from the descriptions. Simplify the definition of "WAKE" to "before sleep".
 
 Express as "{offset_value} minute(s)/hour(s)/day(s) {modified_when_value-set}".
 

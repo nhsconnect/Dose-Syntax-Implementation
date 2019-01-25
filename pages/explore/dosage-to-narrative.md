@@ -18,7 +18,7 @@ This guidance is aligned with;
 * [Common User Interface (CUI)](https://webarchive.nationalarchives.gov.uk/20160921150545/http://systems.digital.nhs.uk/data/cui/uig) Medications line recommendations, England, May 2010
 * [National guidelines for on screen display of medicines information](https://www.safetyandquality.gov.au/our-work/medication-safety/electronic-medication-management/national-guidelines-for-on-screen-display-of-medicines-information/), Australia, December 2017
 
-**Note**. The Australian guidelines include the use of [Tall-Man](https://en.wikipedia.org/wiki/Tall_Man_lettering) within medication names. This has been excluded from this guidance.
+**Note**. The Australian guidelines include the use of [Tall-Man](https://en.wikipedia.org/wiki/Tall_Man_lettering) within medication names which has been excluded from this guidance.
 
 ## Common Principals ##
 
