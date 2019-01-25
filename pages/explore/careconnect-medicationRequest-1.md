@@ -11,15 +11,15 @@ summary: "How medication and dosage instructions are defined within the CareConn
 
 The [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1) structure definition contains a number of elements that are out of scope for this implementation guidance. Only those elements relevant to convey a medication request with a structured dosage instruction are in scope of this guidance.
   * medicationReference
-  * dosageInstruction
   * dispenseRequest
   * text
+  * dosageInstruction
   
 A complete and fit-for-purpose CareConnect-MedicationRequest-1 example would need additional elements populated, for example a reference to the patient within **subject** and a reference to the prescriber within **requester**.
 
 ## medicationReference ##
 
-Refer to the "Overview" page of this section for guidance on **medicationReference**.
+See [Overview](careconnect-overview.html).
 
 ## dispenseRequest ##
 
@@ -31,9 +31,8 @@ The **dispenseRequest** structure contains a simple quantity and coded unit of m
 
 ## text ##
 
-Refer to the section [CareConnect Text Narrative](dosage-to-narrative-overview.html) within this documentation.
+See [CareConnect Text Narrative](dosage-to-narrative-overview.html).
 
 ## dosageInstruction ##
 
-Refer to the [Dosage Structure](dosage-overview.html) section for guidance on **dosageInstruction**.
-
+See [Dosage Structure](dosage-overview.html).

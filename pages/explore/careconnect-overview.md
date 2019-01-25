@@ -50,32 +50,24 @@ A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d c
 
 <script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
 
-### VTM plus Trade Family - Not current supported, use an AMP ###
+### VTM plus Trade Family ###
 
-The use of a VTM with a Trade Family is a use case not currently supported within FHIR STU3, or through a UK extension.
+{% include important.html content="Trade Family coded concepts are not currently supported within FHIR profiles. Where a Trade Family needs to be specified, use an Actual Medicinal Product (AMP) concept." %}
 
-** INTERIM GUIDANCE **
-
-*Until supported within a FHIR profiled resource as a coded concept, where a specific Trade Family (i.e brand name) is to be specified, an AMP concept must be used.*
-
-There is currently no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED coded Trade Family.
+The use of a VTM with a Trade Family is a use case not currently supported within FHIR STU3, or through a UK extension. There is currently no part of the Medication resource that is suitable to convey a SNOMED coded Trade Family. This includes the "manufacturer" which is a reference to a CareConnect-Organization-1 structure that is used for organisational contact details such as name, address, ODS code etc. opposed to a SNOMED coded Trade Family.
 
 ### VMP or AMP ###
 
-A Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) coded product. Both are pre-coordinated SNOMED-CT coded concepts. A VMP comprises of a medication + strength + form. An AMP may use either the same term for the medication name as it's parent VMP or use [9191801000001103 Trade family (product)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=9191801000001103&edition=uk-edition) for the medication name. An AMP also defines the manufacturer.
+A Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) coded concept. Both are pre-coordinated SNOMED-CT coded concepts. A VMP comprises of a medication + strength + form. An AMP may use either the same medication term as the parent VMP or use a [9191801000001103 Trade family (product)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=9191801000001103&edition=uk-edition) for the medication name. An AMP also defines the manufacturer.
+
+#### Virtual Medicinal Product (VMP) Example ####
 
 <script src="https://gist.github.com/RobertGoochUK/574f6ae7053f908e2cc95abc6224dd76.js"></script>
 
+#### Actual Medicinal Product (AMP) Example ####
+
 <script src="https://gist.github.com/RobertGoochUK/b0de11fbd88a3e2949532a66168659f4.js"></script>
-
-## Use of CareConnect[x].text Narrative ##
-
-Refer to the section "CareConnect Text Narrative" within this documentation.
 
 ## Use of medication.text ##
 
 In all cases, the **medication.text** must be populated with the description of the coded medication concept. The text is a narrative data type containing `<div>` and `<status>` elements. Within the `<div>` the content could contain XHTML marked-up but receiving systems may choose to ignore any mark-up if they want to be in control of the presentation.
-
-## Use of Dosage structure ##
-
-Refer to the section "Dosage Structure" within this documentation.

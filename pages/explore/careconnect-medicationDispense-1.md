@@ -9,30 +9,28 @@ summary: "How medication and dosage instructions are defined within the CareConn
 
 
 
-The [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1) structure definition contains a number of elements that are out of scope for this implementation guidance. 
-
-Only those elements relevant to convey a medication dispense with a structured dosage instruction are in scope of this guidance.
+The [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1) structure definition contains a number of elements that are out of scope for this implementation guidance. Only those elements relevant to convey a medication dispense with a structured dosage instruction are in scope of this guidance.
   * medicationReference
-  * dosageInstruction
-  * quantity
+  * quantity 
   * text
+  * dosageInstruction
   
 A complete and fit-for-purpose CareConnect-MedicationDispense-1 example would need additional elements populated, for example a reference to the patient within **subject** and a reference to the prescriber within **performer**.
 
 ## medicationReference ##
 
-Refer to the "Overview" page of this section for guidance on **medicationReference**.
+See [Overview](careconnect-overview.html).
 
 ## quantity ##
 
-Refer to the "Overview" page of this section for guidance **quantity**.
+The dispensed **quantity** as a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of [767524001 Unit of measure (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).
 
-## dosageInstruction ##
-
-Refer to the "Dosage Structure" section for guidance on **dosageInstruction**.
+<script src="https://gist.github.com/RobertGoochUK/3cb5966ef061ba9d4cc58793c704d7d8.js"></script>
 
 ## text ##
 
-To support backwards compatibility, the text narrative must be populated with a medically equivalent human readable textual representation of the complete medication dispense.
+See [CareConnect Text Narrative](dosage-to-narrative-overview.html).
 
-At the time of writing, implementation guidance is still in production and will be included within a future version of this publication.
+## dosageInstruction ##
+
+See [Dosage Structure](dosage-overview.html).
