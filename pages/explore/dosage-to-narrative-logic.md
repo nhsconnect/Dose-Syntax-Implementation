@@ -270,10 +270,10 @@ When a complete dosing instruction is described across multiple sequences, the c
 
 Separate sequential instructions (where each <sequence> is an incremental value) with ", then ".
 
-`Anydrug - 50 milligram - daily - oral - for 1 week, then 100 milligram - daily - oral - for 3 weeks`
+`Anydrug - 50 milligram - once a day - oral - for 1 week, then 100 milligram - once a day - oral - for 3 weeks`
 
 ### Concurrent  Instructions ###
 
 Separate parallel instructions (where <sequence> is the same) with ", and ".
 
-`Anydrug - 50 milligram - daily - in the morning - oral, and 100 milligram - daily - in the evening`
+`Anydrug - 50 milligram - once a day - in the morning - oral, and 100 milligram - once a day - in the evening`
