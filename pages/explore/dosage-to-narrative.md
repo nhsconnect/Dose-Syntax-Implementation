@@ -74,3 +74,12 @@ Exceptions are as follows;
 ## Dose-to-Text Conversion Web Service ##
 
 A web service is in development by NHS Digital that will implement this logic and translate a CareConnect medication-related profiled resource and return a string suitable for use as the text narrative. When available, this web service can be used by system suppliers during their software prototyping and design phases. It should also be suitable as an operational service so that system suppliers so not have to implement this complex logic within their own solutions.
+
+<div>
+    <p>
+    <button type="button" onclick="callGetDosageTextForm('text','divOutputBox')" class="gray-small-button">Plain Text</button>
+    &nbsp;
+    <span style="font-family:courier;">{base_url}/getDosageText.php?o=text&d={urlencoded FHIR XML}</span>
+    </p>
+    <div name="divOutputBox" id="divOutputBox" class="outputBox"></div>
+</div>
