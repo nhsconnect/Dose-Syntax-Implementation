@@ -80,6 +80,10 @@ Express a **duration** as "over {value} {units}". Express the time-based units i
 
 ### frequency, frequencyMax, period and periodMax ###
 
+{% include important.html content="Logic to produce human readable timing instructions is complex with both generic rules and a number of special cases." %}
+
+#### Generic Rules ####
+
 Express the combination of **frequency** and **period** as "{frequency} times every {period_value} {period_unit}".
 
 `3 times every 8 hours`
@@ -96,7 +100,7 @@ Where both **frequencyMax** and **periodMax** are defined, express as "{frequenc
 
 `2 to 3 times every 6 to 8 hours`
 
-Where a **frequencyMax** is defined without a **frequency** then express as "up to {frequencyMax}...".
+Where a **frequencyMax** is defined without a **frequency** then express as "up to {frequencyMax} times...".
 
 `up to 3 times a day`
 
@@ -258,17 +262,17 @@ Separate multiple statements with a comma and use the word " and " to separate t
 
 No additional formatting required.
 
-# Multi-Sequence Instructions #
+## Multi-Sequence Instructions ##
 
 When a complete dosing instruction is described across multiple sequences, the complete string is concatinated with each sequence. The original medication information is not repeated.
 
-## Sequential Instructions ##
+### Sequential Instructions ###
 
 Separate sequential instructions (where each <sequence> is an incremental value) with ", then ".
 
 `Anydrug - 50 milligram - daily - oral - for 1 week, then 100 milligram - daily - oral - for 3 weeks`
 
-## Concurrent  Instructions ##
+### Concurrent  Instructions ###
 
 Separate parallel instructions (where <sequence> is the same) with ", and ".
 
