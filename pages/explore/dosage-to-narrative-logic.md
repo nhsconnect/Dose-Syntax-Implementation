@@ -72,11 +72,11 @@ Express a **rateQuantity** as "at a rate of {value} {units}"
 
 ### duration, durationMax ###
 
-Express a **duration** as "over {value} {units}". Express the time-based units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
+Express a **duration** as "over/in {value} {units}". Express the time-based units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
 
-`over 8 hours`
+`over/in 8 hours`
 
-`over 4 hours (maximum 8 hours)`
+`over/in 4 hours (maximum 8 hours)`
 
 ### frequency, frequencyMax, period and periodMax ###
 
@@ -238,9 +238,9 @@ Express **event** statements as "on {event_value}". Separate multiple statements
 
 ### maxDosePerPeriod / maxDosePerAdministration / maxDosePerLifetime ###
 
-Express a **maxDosePerPeriod** statement as "up to a maximum of {numerator_value} {numerator_unit} over {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
+Express a **maxDosePerPeriod** statement as "up to a maximum of {numerator_value} {numerator_unit} over/in {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
 
-`up to a maximum of 1000 milligram over 24 hours`
+`up to a maximum of 1000 milligram over/in 24 hours`
 
 Express a **maxDosePerAdministration** statement as "up to a maximum of {value} {unit} per dose".
 
