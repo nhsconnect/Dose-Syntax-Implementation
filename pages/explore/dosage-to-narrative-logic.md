@@ -72,11 +72,11 @@ Express a **rateQuantity** as "at a rate of {value} {units}"
 
 ### duration, durationMax ###
 
-Express a **duration** as "over/in {value} {units}". Express the time-based units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
+Express a **duration** as "over {value} {units}". Express the time-based units in plural when required. Where a **durationMax** is defined, append with "(maximum {max_value} {max_units})".
 
-`over/in 8 hours`
+`over 8 hours`
 
-`over/in 4 hours (maximum 8 hours)`
+`over 4 hours (maximum 8 hours)`
 
 ### frequency, frequencyMax, period and periodMax ###
 
