@@ -1,5 +1,4 @@
 ---
----
 title: CareConnect Text Narrative Logic
 keywords:  messaging
 tags: [fhir,messaging]
