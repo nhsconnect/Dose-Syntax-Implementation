@@ -24,9 +24,9 @@ This guidance is aligned with;
 
 The following applies to the presentation of any component part of a medication instruction;
 * Always express units of measure using the full description, e.g. `milligram` not `mg`.
-* Always express a time-based unit of measure into the plural when applicable, e.g. `2 hour` becomes `2 hours`.
-* Always express a SNOMED-CT [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition) into the plural when applicable, e.g. `2 tablet` becomes `2 tablets`.
-* **Do not** convert ucum units of measure into the plural as this introduces complications with units such as `microgram per millilitre` or `microgram per kilogram per hour`.
+* Always express a time-based unit of measure in the plural when applicable, e.g. `2 hour` becomes `2 hours`.
+<!--* Always express a SNOMED-CT [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition) into the plural when applicable, e.g. `2 tablet` becomes `2 tablets`.-->
+* **Do not** express other units of measure in the plural as this introduces complications with units such as `microgram per millilitre` or `microgram per kilogram per hour`.
 * Where multiple statements are allowed, e.g. **when** or **event** structures, then separate each statement with a comma plus whitespace. Replace the last comma separating the final two statements with the word " and ", e.g. `on Monday, Wednesday and Friday`.
 
 ## Logicial Display Order

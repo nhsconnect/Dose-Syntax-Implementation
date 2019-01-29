@@ -1,4 +1,5 @@
 ---
+---
 title: CareConnect Text Narrative Logic
 keywords:  messaging
 tags: [fhir,messaging]
@@ -156,9 +157,19 @@ When **frequency** is 2 (two) and **period** is greater than 1 (one) express as 
 
 ### offset, when(s) ###
 
-Any **offset** will be defined as a number of minutes. If this equates to a whole number of hours or days then express as the number of hours (=60 minutes) or days (=1440 minutes). Use the singular or plural expression of time when required. 
+Any **offset** will be defined as a number of minutes. If this equates to a whole number of hours or days then express as the number of hours (=60 minutes) or days (=1440 minutes). Use the singular or plural expression of time when required. Separate multiple statements with a comma and use the word " and " to separate the final two statements.
 
-The FHIR [event timing value-set](http://hl7.org/fhir/stu3/valueset-event-timing.html) used for **when** should have descriptions modified to make them more human readable. Remove the text "event occurs [offset]" and "(from the Latin...)" from the descriptions. Simplify the definition of "WAKE" to "before sleep".
+The FHIR [event timing value-set](http://hl7.org/fhir/stu3/valueset-event-timing.html) used for **when** should have descriptions modified to make them more human readable. Remove the text "event occurs [offset]" and "(from the Latin...)" from the descriptions.
+
+Simplify the following value-set definitions;
+
+ * Display: "After Sleep" - Use definition "once asleep"
+ * Display: "HS" - Use definition "before sleep"
+ * Display: "WAKE" - Use definition "upon waking"
+ * Display: "C" - Use Definition "at a meal" 
+ * Display: "CM" - Use Definition "at breakfast" 
+ * Display: "CD" - Use Definition "at lunch" 
+ * Display: "CV" - Use Definition "at dinner" 
 
 Express as "{offset_value} minute(s)/hour(s)/day(s) {modified_when_value-set}".
 
@@ -169,6 +180,8 @@ Express as "{offset_value} minute(s)/hour(s)/day(s) {modified_when_value-set}".
 `1 hour before sleep`
 
 `2 hours after breakfast`
+
+`during the morning and during the evening`
 
 ### dayOfWeek(s) ###
 
@@ -238,9 +251,9 @@ Express **event** statements as "on {event_value}". Separate multiple statements
 
 ### maxDosePerPeriod / maxDosePerAdministration / maxDosePerLifetime ###
 
-Express a **maxDosePerPeriod** statement as "up to a maximum of {numerator_value} {numerator_unit} over/in {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
+Express a **maxDosePerPeriod** statement as "up to a maximum of {numerator_value} {numerator_unit} in {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
 
-`up to a maximum of 1000 milligram over/in 24 hours`
+`up to a maximum of 1000 milligram in 24 hours`
 
 Express a **maxDosePerAdministration** statement as "up to a maximum of {value} {unit} per dose".
 
