@@ -36,9 +36,3 @@ The unit of the period must be one of the UCUM units; s = second; min = minute; 
 A **frequencyMax** and/or **periodMax** can also be used to define ranges.
 
 <script src="https://gist.github.com/RobertGoochUK/8a7de6eb02731e129f5a4157e3b3db20.js"></script>
-
-## Complete simple dosage examples ##
-
-These examples are complete with respect to the definition of a dm+d medication and a clinically appropriate dosage instruction. They do not contain all the required business data to be complete example of a CareConnect-MedicationRequest-1 profiled resource. 
-
-<script src="https://gist.github.com/RobertGoochUK/df1bd7c408af128a8c1817af9a60e343.js"></script>
