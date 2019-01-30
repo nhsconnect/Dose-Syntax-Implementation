@@ -118,11 +118,17 @@ Where a **periodMax** is defined without a **period** then express as "{frequenc
 
 #### Special Cases ####
 
-When **frequency** is 1 (one) and defined without a **period**, express as "once".
+When **period** is 1 (one) without a **frequency**, express as "daily", "weekly", "monthly" or "annually" depending on the **periodUnit**. In theory, the **periodUnit** could be `"s"` (seconds) or `"min"` (minutes) but the use of these without an associated **frequency** is illogical.
+
+`daily`
+
+`weekly`
+
+When **frequency** is 1 (one) without a **period**, express as "once".
 
 `once`
 
-When **frequency** is 2 (two) and defined without a **period**, express as "twice".
+When **frequency** is 2 (two) defined without a **period**, express as "twice".
 
 `twice`
 
