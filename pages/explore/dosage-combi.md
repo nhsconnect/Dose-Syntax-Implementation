@@ -8,6 +8,7 @@ summary: "STU3 Limitation - Combination product instructions"
 ---
 
 
+{% include important.html content="Workaround: Use a free-text Dosage.additionalInstruction." %}
 
 It is common practice to provide a dosage instruction for the combination pack "Migraleve tablets" with instructions for when to take the pink tablets and when to take the yellow tablets. With the current STU3 Dosage structure, these instructions would have to be conveyed in free-text using the **Dosage.patientInstructions**.
 

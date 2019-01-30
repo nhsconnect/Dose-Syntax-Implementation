@@ -8,6 +8,7 @@ summary: "STU3 Limitation - Defining a maximum dose per course"
 ---
 
 
+{% include important.html content="Workaround: Use a free-text Dosage.additionalInstruction." %}
 
 A maximum dose for three scenarios is supported within the STU3 Dosage structure;
   * maxDosePerPeriod - define a maximum dose over a given period of time
