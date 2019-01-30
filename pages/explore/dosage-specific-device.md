@@ -8,7 +8,7 @@ summary: "STU3 Limitation - Instructions for a specific device"
 ---
 
 
-{% include important.html content="Workaround: Use a VMP or AMP or express within a free-text Dosage.additionalInstruction." %}
+{% include important.html content="Workaround: Use a Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) concept, or express within a free-text Dosage.additionalInstruction." %}
 
 In some cases, with a dose-based instruction, the type of device to use for the administration of the medication needs to be specified.
 

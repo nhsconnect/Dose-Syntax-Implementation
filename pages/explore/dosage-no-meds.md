@@ -14,6 +14,8 @@ The example given for the current limitation for defining a [maximum dose per co
 
 Another clinical example would be for a Lidocaine medicated plaster. A typical written dosage instruction would be;
 
-`Apply 2 patches once daily to the affected area for up to 12 hours, followed by a 12-hour plaster-free period; to be applied to intact, dry, non-hairy, non-irritated skin`
+`Apply 2 patches once daily to the affected area for up to 12 hours,
+followed by a 12-hour plaster-free period; to be applied to intact,
+dry, non-hairy, non-irritated skin`
 
 The FHIR STU3 Dosage structure can describe all the above except for the clause `followed by a 12-hour plaster-free period`. In a dose-based instruction this would needs to be expressed as free-text within a **Dosage.additionalInstruction**.
