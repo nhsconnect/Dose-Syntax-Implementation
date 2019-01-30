@@ -47,11 +47,12 @@ td.tick {
 }
 tr.examples {
 	text-align:right;
-	background-color: #eee;
+	vertical-align:bottom;
+	bbackground-color: #eee;
 }
 </style>
 <table class="examplesTable">
-<th class="normal"><div><span>medication</span></div></th>
+<th class="normal"><div><span>Example</span></div></th>
 <th class="rotate"><div><span>sequence</span></div></th>
 <th class="rotate"><div><span>method</span></div></th>
 <th class="rotate"><div><span>doseQuantity</span></div></th>
