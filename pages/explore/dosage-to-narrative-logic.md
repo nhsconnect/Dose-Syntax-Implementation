@@ -15,15 +15,15 @@ summary: "Logic required to generate a text narrative from the coded structures"
 
 CUI recommends the medication name is formatted in **bold**. The text narrative supports XHTML mark-up therefore the medication name could be marked-up within `<b>` HTML tags.
 
-If using a VTM  concept the name will just be the name of the VTM;
+If using a VTM  concept the name will just be the name of the VTM.
 
 `Paracetamol`
 
-If using a VMP concept the name will include the strength and form;
+If using a VMP concept the name will include the strength and form. The unit of measure associated with the strength may use an abbreviated term as this is part of the dm+d standard.
 
 `Paracetamol 1g tablets`
 
-if using an AMP concept the name will also include the manufacturer;
+if using an AMP concept the name will also include the manufacturer. The unit of measure associated with the strength may use an abbreviated term as this is part of the dm+d standard.
 
 `Paracetamol 1g tablets (Dawa Ltd)`
 
