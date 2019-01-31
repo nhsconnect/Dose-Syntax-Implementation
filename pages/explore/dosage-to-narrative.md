@@ -22,8 +22,8 @@ This guidance is aligned with;
 
 ## Common Principals
 
-The following applies to the presentation of any component part of a medication instruction;
-* Always express units of measure using the full description, e.g. `milligram` not `mg`.
+The following applies to the presentation of any component part of the dosage instruction;
+* Always express units of measure using the full description, e.g. `milligram` not `mg`. **Note**: This principal does not apply to units of measure as part of pre-coordinated dm+d concept descriptions , e.g. `Ramipril 5mg capsules`.
 * Always express a time-based unit of measure in the plural when applicable, e.g. `2 hour` becomes `2 hours`.
 <!--* Always express a SNOMED-CT [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition) into the plural when applicable, e.g. `2 tablet` becomes `2 tablets`.-->
 * **Do not** express other units of measure in the plural as this introduces complications with units such as `microgram per millilitre` or `microgram per kilogram per hour`.
@@ -35,7 +35,7 @@ The order in which the structures within a CareConnect profiled resouce should b
 
 1. Medication Name
 2. Medication Form (*if not implied within a VMP/AMP name*)
-3. Trade Family Name
+3. Trade Family Name (*if not implied within an AMP name*)
 
 Then for each **dosageInstruction**;
 
@@ -74,6 +74,8 @@ Exceptions are as follows;
 ## Dose-to-Text Conversion Web Service
 
 A web service is in development by NHS Digital that will implement this logic and translate a CareConnect medication-related profiled resource and return a string suitable for use as the text narrative. When available, this web service can be used by system suppliers during their software prototyping and design phases. It should also be suitable as an operational service so that system suppliers so not have to implement this complex logic within their own solutions.
+
+Have a play with the [Experimental Alpha Web Services](http://ec2-18-130-128-118.eu-west-2.compute.amazonaws.com/) hosted on AWS.
 
 <!--
 <script type='text/javascript'>
