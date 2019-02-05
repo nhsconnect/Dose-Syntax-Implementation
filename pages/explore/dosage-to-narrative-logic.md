@@ -234,17 +234,15 @@ Express **boundRange** as "for {low_value} to {high_value} {high_units}". Expres
 
 ### count, countMax ###
 
-Express **count** as "repeat {value} times". If the value is 1 (one) express as "once". If the value is 2 (two) express as "repeat twice". If a **countMax** is define then express as "repeat {value} to {max_value} times".
+Express **count** as "take {value} times". If the value is 1 (one) express as "once". If the value is 2 (two) express as "take twice". If a **countMax** is define then express as "take {value} to {max_value} times".
 
-`repeat 3 times`
+`take 3 times`
 
 `once`
 
-`repeat twice`
+`take twice`
 
-`repeat 3 to 4 times`
-
-{% include important.html content="The count structure refers to the total number of instances for a drug administration. A value of 3 means take/repeat twice, opposed to take once then repeat a further 3 times. %}
+`take 3 to 4 times`
 
 ### event(s) ###
 
