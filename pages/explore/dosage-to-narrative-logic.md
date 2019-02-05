@@ -23,7 +23,7 @@ If using a VMP concept the name will include the strength and form. The unit of 
 
 `Paracetamol 1g tablets`
 
-if using an AMP concept the name will also include the manufacturer. The unit of measure associated with the strength may use an abbreviated term as this is part of the dm+d standard.
+If using an AMP concept the name will be the AMP description which include the supplier name. The unit of measure associated with the strength may use an abbreviated term as this is part of the dm+d standard.
 
 `Paracetamol 1g tablets (Dawa Ltd)`
 
@@ -198,7 +198,7 @@ Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description 
 
 ### timeOfDay(s) ###
 
-Express **timeOfWeek** statements as "at {timeOfWeek}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
+Express **timeOfDay** statements as "at {timeOfDay}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
 
 `at 10:00`
 
@@ -243,6 +243,8 @@ Express **count** as "repeat {value} times". If the value is 1 (one) express as 
 `repeat twice`
 
 `repeat 3 to 4 times`
+
+{% include important.html content="The 'count' structure refers to the total number of instances for a drug administration. A value of "3" means take/repeat twice, opposed to take once then repeat a further 3 times. %}
 
 ### event(s) ###
 
