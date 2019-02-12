@@ -92,7 +92,7 @@ entries:
     - title: 3. Periods of no medicine administration
       url: /dosage-no-meds.html
       output: web
-    - title: 4. Instuctions for a specific device
+    - title: 4. Instructions for a specific device
       url: /dosage-specific-device.html
       output: web
     - title: 5. Specifying a Trade Family / brand
