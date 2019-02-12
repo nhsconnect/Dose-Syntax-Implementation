@@ -89,7 +89,7 @@ The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinyles
 <script src="https://gist.github.com/RobertGoochUK/5efddc06de5180593a38cd907de63443.js"></script>
 
 {% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/20eb9e3d9f0e9925a6d16e0832d9c59b.js"></script>
+Where a concentration is required it is expected that the prescribing concept would be a VMP or AMP.
 
 ## Flucloxacillin, 500mg, oral, 3 times a day for 7 days ##
 

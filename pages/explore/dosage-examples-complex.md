@@ -39,7 +39,7 @@ Complex because the instruction to "adjusted according to response" cannot be co
 
 <script src="https://gist.github.com/RobertGoochUK/a5d896f2dba7119f98bbdd69be8e3a7f.js"></script>
 
-## Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd), one to be taken once a week, start one week before travel and continue until 4 weeks after return ##
+## Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd), two to be taken once a week, start one week before travel and continue until 4 weeks after return ##
 
 Complex because the instruction to "start one week before travel and continue until 4 weeks after return" cannot be a coded instruction so is conveyed as free-text within **patientlInstruction**.
 
@@ -119,7 +119,7 @@ Complex because is a dose-based instruction but with a specific form.
 
 ## Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd), infuse intravenously at a rate of 30ml/kg for 10 hours ##
 
-Complex because requires a rate-based dosing instruction.
+Complex because it requires a rate and a dose duration.
 
 <script src="https://gist.github.com/RobertGoochUK/9be3ce815d05950fd5e87822f2450776.js"></script>
 

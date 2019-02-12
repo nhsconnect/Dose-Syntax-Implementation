@@ -33,6 +33,12 @@ summary: "Intermediate Worked Examples"
 
 <script src="https://gist.github.com/RobertGoochUK/58c53f158c5453308e082f25d782a94f.js"></script>
 
+## Ibuprofen 400mg orally three times daily for 5 days to start tomorrow ##
+
+For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10th March 2019.
+
+<script src="https://gist.github.com/RobertGoochUK/ad4a8db957700cc528fd8ea1b8f4253f.js"></script>
+
 ## Timolol 0.1% gel eye drops, 1 drop in the left eye once daily ##
 
 <script src="https://gist.github.com/RobertGoochUK/184f6e053a1714347739c827a3de8773.js"></script>
