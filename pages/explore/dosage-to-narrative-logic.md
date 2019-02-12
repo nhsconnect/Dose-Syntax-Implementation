@@ -60,6 +60,7 @@ Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
 When the denominator value is 1 (one) express a **rateRatio** as "at a rate of {numerator_value} per {denominator_unit}". Otherwise express as "at a rate of {numerator_value} every {denominator_value} {denominator_unit}". Express the time-based units in plural when required.
 
 `at a rate of 30 millitre per hour`
+
 `at a rate of 30 millitre every 2 hours`
 
 Express a **rateRange** as "at a rate of {low_value} to {high_value} {high_units}"
