@@ -74,7 +74,7 @@ entries:
       url: /dosage-sequence.html
       output: web
     - title: text, code
-      url: /dosage-text2.html
+      url: /dosage-text.html
       output: web
       
   - title: Current Limitations of STU3 Dosage Structure
