@@ -1,5 +1,5 @@
 ---
-title: Simple Worked Examples
+title: Simple Fully Machine-Readable Examples
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar

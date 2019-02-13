@@ -1,5 +1,5 @@
 ---
-title: Intermediate Worked Examples
+title: Complex Fully Machine-Readable Examples
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
@@ -8,7 +8,7 @@ summary: "Complex Fully Machine-Readable Examples"
 ---
 
 
-These **medicationRequest** examples are fully machine-readable in that they **do not** include any free-text instructions within either *additionalInstruction* or *patientInstruction*. They are more complex than the simple examples
+These **medicationRequest** examples are fully machine-readable in that they **do not** include any free-text instructions within either *additionalInstruction* or *patientInstruction*.
 
 Examples use combinations of the following elements of the CareConnect medicationRequest and FHIR Dosage structure;
 * dispenseRequest
@@ -111,3 +111,9 @@ Complex because requires a rate-based dosing instruction.
 
 {% include note.html content="Product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/abd7ce473f5fe38ed1865134a9cfa1b5.js"></script>
+
+## Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) ##
+
+Includes a maximum daily dose and requires administration of medication following a coded clinical event.
+
+<script src="https://gist.github.com/RobertGoochUK/c42500071f3a22af8d8b268f9aec7e3c.js"></script>

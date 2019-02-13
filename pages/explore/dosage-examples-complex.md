@@ -1,11 +1,14 @@
 ---
-title: Complex Worked Examples
+title: Semi Machine Readable Examples
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-examples-complex.html
-summary: "Complex Worked Examples"
+summary: "Semi Machine Readable Examples"
 ---
+
+
+These **medicationRequest** examples are only semi machine readable as they require part of the instruction to be expressed as free-text within either *additionalInstruction* or *patientInstruction*.
 
 {% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
@@ -30,12 +33,6 @@ Complex because the 7 day period where no medication should be taken has to be c
 ## Hydrocortisone 0.1% cream, apply 2-3 times daily to area around lips ##
 
 <script src="https://gist.github.com/RobertGoochUK/340ff8c4c169f972532b62a1b3f32a37.js"></script>
-
-## Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) ##
-
-Complex because has a maximum daily dose and requires administration of medication following a coded clinical event.
-
-<script src="https://gist.github.com/RobertGoochUK/c42500071f3a22af8d8b268f9aec7e3c.js"></script>
 
 ## Phenoxymethylpenicillin 250mg tablets, 2 tablets every 6 hours an hour before food or on an empty stomach, oral ##
 
