@@ -13,7 +13,7 @@ A dosage instruction to be administered over a period of time is defined by a **
 
 An instruction to limit a single course of medication uses the **bounds** structure. This can be implemented in three ways;
   * boundsDuration - a period of time, e.g. "for 7 days"
-  * boundsRange - a low/high quantity, e.g. "for 3 to 3 weeks"
+  * boundsRange - a low/high quantity, e.g. "for 2 to 3 weeks"
   * boundsPeriod - a date/time start to end period. e.g. "from 01/11/2018 to 10/11/2018" 
 
 An instruction for a set number of doses, including the use case of "once", plus also any maximum number of doses, is defined by **count** and **countMax**.
