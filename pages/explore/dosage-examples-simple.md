@@ -17,6 +17,7 @@ summary: "Simple Worked Examples"
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/3d90859ce98769ec9b6643cfccdcc65a.js"></script>
 
+<!--
 ## Ramipril, 5mg, oral, twice a day ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
@@ -24,6 +25,7 @@ summary: "Simple Worked Examples"
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/8ed91c4ec01ac01fd641978965842782.js"></script>
+-->
 
 ## Omeprazole, gastro-resistant, oral ##
 
@@ -43,7 +45,7 @@ TBC
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/dcf25dec1dba6a574c44f83bdab627f9.js"></script>
 
-## Sodium citrate / Micralax Micro-enema enema, 5ml, once a day ##
+## Sodium citrate / Micralax Micro-enema enema ##
 
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/15231b8269739c11bf86fe4948f7090f.js"></script>
@@ -51,6 +53,7 @@ TBC
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/b6dc5df61528a1b0ff4eec3dd429a273.js"></script>
 
+<!--
 ## Aciclovir, 200mg, oral, 5 times a day ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
@@ -66,7 +69,7 @@ TBC
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/aac459d1e17e6c7061e2db29340f7576.js"></script>
-
+-->
 ## Diprobase ointment, 1 application, Topical, 3 times a day ##
 
 {% include note.html content="Product-based instruction using an AMP" %}
@@ -90,7 +93,7 @@ The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinyles
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 Where a concentration is required it is expected that the prescribing concept would be a VMP or AMP.
-
+<!--
 ## Flucloxacillin, 500mg, oral, 3 times a day for 7 days ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
@@ -106,3 +109,4 @@ Where a concentration is required it is expected that the prescribing concept wo
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/19449543a736c1a65a52b996fed92443.js"></script>
+-->

@@ -24,7 +24,7 @@ summary: "Intermediate Worked Examples"
 ## Salbutamol, 5mg to be given via a nebuliser. Repeat every 20-30 minutes as required ##
 
 <script src="https://gist.github.com/RobertGoochUK/ddf9ad03106e7203180b91436bd38689.js"></script>
-
+<!--
 ## Ondansetron 4mg tablets, 1 tablet, THREE times a DAY, oral, for 2 days ##
 
 <script src="https://gist.github.com/RobertGoochUK/61fc58eb264eb84d9b1411cbb4e3c2bc.js"></script>
@@ -32,7 +32,7 @@ summary: "Intermediate Worked Examples"
 ## Ibuprofen 400mg capsules, 1 capsule, TWICE a DAY, with or after food, oral, for 7 days ##
 
 <script src="https://gist.github.com/RobertGoochUK/58c53f158c5453308e082f25d782a94f.js"></script>
-
+-->
 ## Ibuprofen 400mg orally three times daily for 5 days to start tomorrow ##
 
 For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10th March 2019.
