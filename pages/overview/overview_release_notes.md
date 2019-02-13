@@ -35,8 +35,9 @@ The following will be added to future versions of this implementation guidance.
   * Change to use of Dosage.text and inclusion of Dosage.timing.code
   * Updated the 'Dosage doseQuantity, frequency, period' section to include guidance on doseRange.
 * 'CareConnect Text Narrative' section added
-* Fixed bugs within many of the worked FHIR XML examples 
-* Additional worked examples added to highlight difference between dose-based and product-based instructions
+* Fixed bugs within some of the worked FHIR XML examples 
+* Additional FHIR XML examples to highlight difference between dose-based and product-based instructions.
+* Some examples removed where these covered duplicate aspects of the Dosage structure.
 
 ### 1.0.0-experimental ###
 First version published.
