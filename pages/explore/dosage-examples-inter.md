@@ -4,32 +4,79 @@ keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-examples-inter.html
-summary: "Intermediate Worked Examples"
+summary: "Complex Fully Machine-Readable Examples"
 ---
+
+
+These **medicationRequest** examples are fully machine-readable in that they **do not** include any free-text instructions within either *additionalInstruction* or *patientInstruction*. They are more complex than the simple examples
+
+Examples use combinations of the following elements of the CareConnect medicationRequest and FHIR Dosage structure;
+* additionalInstruction (using a coded concept)
+* here
 
 {% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
-## Simvastatin, 40mg, oral, once a day ##
+## Microgynon 30 tablets (Bayer Plc), 63 tablets ##
 
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/76d1dc65f3021f5c4e50409fde924a1c.js"></script>
+This example includes a **dispenseRequest** instruction so represents the clinical information that could be shared as part of a FHIR-based primary care prescription between a prescribing and dispensing clinical system.
+
+{% include note.html content="Product-based instruction using an AMP" %}
+<script src="https://gist.github.com/RobertGoochUK/2d5b5a1261bb9a785618fbf5380e9e20.js"></script>
+
+## Simvastatin, 40mg, oral, once a day ##
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/19449543a736c1a65a52b996fed92443.js"></script>
 
-## NovoRapid Penfill 100units/ml solution for injection 3ml cartridges (Novo Nordisk Ltd), inject according to insulin requirements ##
+## Furosemide 40mg tablets, take two in the morning and one at midday for one week ##
 
-<script src="https://gist.github.com/RobertGoochUK/029d9e231bc54fb3b0ac6386f9e0b501.js"></script>
+Complex because requires a parallel/concurrent dosage instructions. 
 
-## Salbutamol, 100-200mcg to be inhaled when required up to 4 times daily, using the metered dose device ##
+<script src="https://gist.github.com/RobertGoochUK/bc29af1df30e9f0b86da1d2224a76b39.js"></script>
 
-<script src="https://gist.github.com/RobertGoochUK/3058adde9517ffb68a62f55112e036f0.js"></script>
+## Metformin 500mg tablets, initially 500 mg once daily for 1 week, dose to be taken with breakfast, then 500 mg twice daily for week, dose to be taken with breakfast and evening meal, then 500 mg 3 times a day, dose to be taken with breakfast, lunch and evening meal; maximum 2 g per day ##
 
-## Salbutamol, 5mg to be given via a nebuliser. Repeat every 20-30 minutes as required ##
+Complex because of a specific differences in dosing over a period of time.
 
-<script src="https://gist.github.com/RobertGoochUK/ddf9ad03106e7203180b91436bd38689.js"></script>
+<script src="https://gist.github.com/RobertGoochUK/c24aa67aa4e10dfefb95e0623ae989b4.js"></script>
 
-## Hydrocortisone 0.1% cream, apply 2-3 times daily to area around lips ##
+## Metoclopramide, orally 10mg to be taken when required for nausea up to three times daily ##
 
-<script src="https://gist.github.com/RobertGoochUK/340ff8c4c169f972532b62a1b3f32a37.js"></script>
+Includes an instruction based on a coded clinical event.
 
+<script src="https://gist.github.com/RobertGoochUK/8a3bd9f5bbd25a7cf9ffd23975dbeedf.js"></script>
+
+## Aspirin 300mg dispersible tablets, two tablets to be taken four times daily well diluted in water. To be taken with or after food. ##
+
+Includes a specific dosing instruction that is luckily also a SNOMED-CT coded term. 
+
+<script src="https://gist.github.com/RobertGoochUK/472df255d63ccd7b0f6116e600248071.js"></script>
+
+## Aspirin suppository, 600mg rectally every 4 hours. Maximum 3.6gm per 24 hours ##
+
+Includes a dose-based instruction with a specific form and contains a maximum dose per period instruction.
+
+<script src="https://gist.github.com/RobertGoochUK/12facda56854c648a1c678101c34c965.js"></script>
+
+## Morphine modified release capsule, 20mg orally every 12 hours ##
+
+Complex because is a dose-based instruction but with a specific form.
+
+<script src="https://gist.github.com/RobertGoochUK/0b373b241f7044f937f801232863ee8b.js"></script>
+
+## Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd), infuse intravenously at a rate of 30ml/kg for 10 hours ##
+
+Complex because it requires a rate and a dose duration.
+
+<script src="https://gist.github.com/RobertGoochUK/9be3ce815d05950fd5e87822f2450776.js"></script>
+
+## Oxygen by inhalation 2litres/minute via nasal route
+
+Complex because requires a rate-based dosing instruction.
+
+<script src="https://gist.github.com/RobertGoochUK/71a1192a10e7cd31fe339260aeb2d317.js"></script>
+
+## Prednisolone 5mg tablets, have 8 tablets a day after food for 7 days then stop ##
+
+{% include note.html content="Product-based instruction using a VMP" %}
+<script src="https://gist.github.com/RobertGoochUK/abd7ce473f5fe38ed1865134a9cfa1b5.js"></script>

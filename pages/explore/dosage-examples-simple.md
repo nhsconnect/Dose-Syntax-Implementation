@@ -22,7 +22,6 @@ Examples use combinations of the following elements of the CareConnect medicatio
 * boundsDuration
 * count
 * event
-* additionalInstructions (using coded concepts)
 
 Where clinically appropriate, each example is shown as both a **dose-based** and **product-based** instruction.
 
@@ -68,14 +67,6 @@ Where clinically appropriate, each example is shown as both a **dose-based** and
 {% include note.html content="Dose-based instruction using a VTM" %}
 The VTM related to the Diprobase AMP's is a multi-ingredient concept "White soft paraffin + Liquid paraffin" and cannot be used as a prescribing concept.
 
-## Microgynon 30 tablets (Bayer Plc), 63 tablets ##
-
-{% include note.html content="Product-based instruction using an AMP" %}
-<script src="https://gist.github.com/RobertGoochUK/2d5b5a1261bb9a785618fbf5380e9e20.js"></script>
-
-{% include note.html content="Dose-based instruction using a VTM" %}
-The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinylestradiol + Levonorgestrel" and cannot be used as a prescribing concept.
-
 ## Beclometasone 0.025% cream, Apply Thigh, twice a day ##
 
 {% include note.html content="Product-based instruction using a VMP" %}
@@ -105,11 +96,6 @@ For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10t
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/adaed4fbce1276ae287178417b2985c5.js"></script>
-
-## Prednisolone 5mg tablets, have 8 tablets a day after food for 7 days then stop ##
-
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/abd7ce473f5fe38ed1865134a9cfa1b5.js"></script>
 
 ## Morphine, 30mg, intravenously, injection, four times a day over 24 hours ##
 
