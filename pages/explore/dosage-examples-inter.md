@@ -90,12 +90,14 @@ Includes a **rateRatio** and a **duration**.
 
 **Note**. The rateRatio could also be modelled using a ucum unit within a **doseQuantity**.
 
-`<doseQuantity>
-` <value value="30"/>
-` <unit value="millilitres per kilogram"/>
-` <system value="http://unitsofmeasure.org"/>
-` <code value="ml/kg"/>
-`</doseQuantity>
+```xml
+<doseQuantity>
+   <value value="30"/>
+   <unit value="millilitres per kilogram"/>
+   <system value="http://unitsofmeasure.org"/>
+   <code value="ml/kg"/>
+</doseQuantity>
+```
 
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/9be3ce815d05950fd5e87822f2450776.js"></script>
