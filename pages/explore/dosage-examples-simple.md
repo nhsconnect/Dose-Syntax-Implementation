@@ -14,7 +14,6 @@ Examples use combinations of the following elements of the CareConnect medicatio
 * method
 * doseQuantity
 * frequency, period and frequencyMax
-* duration
 * when
 * route
 * site
@@ -101,11 +100,6 @@ For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10t
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/5b987bcdafe267b597c9c432a9a11c11.js"></script>
-
-## Glucose 5% infusion 500ml bags, 500ml, intravenous, continuous infusion, over 8 hours ##
-
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/6a992f5415ef2ba7ddfab2d4e69337a7.js"></script>
 
 ## Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd), one to be given by IM injection into the anterior abdominal wall on 1st November 2019 ##
 
