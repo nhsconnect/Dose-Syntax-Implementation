@@ -116,13 +116,13 @@ entries:
     - title: Overview
       url: /dosage-examples-overview.html
       output: web
-    - title: Simple Examples
+    - title: Simple Fully Machine-Readable Examples
       url: /dosage-examples-simple.html
       output: web
-    - title: Intermediate Examples
+    - title: Complex Fully Machine-Readable Examples
       url: /dosage-examples-inter.html
       output: web
-    - title: Complex Examples
+    - title: Semi Machine Readable Examples
       url: /dosage-examples-complex.html
       output: web
       
