@@ -13,9 +13,15 @@ summary: "Use of Dosage site, route and method"
 
 Three simple coded data items that can define the **site**, **route** or **method** for the medication instruction.
 
+### Site ###
+
 Any site can be used from the SNOMED-CT hierarchy as a descendant of the concept [123037004 Body structure (body structure)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=123037004&edition=uk-edition).
 
+### Route ###
+
 Any route can be used from the SNOMED-CT hierarchy as a  descendant of the concept [284009009 Route of administration value (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=284009009&edition=uk-edition).
+
+### Method ###
 
 The [999000041000001103 ePrescribing method simple reference set (foundation metadata concept)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=999000041000001103&edition=uk-edition) reference set collates the commonly used terms for **method** for use in the United Kingdom.
 
