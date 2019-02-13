@@ -4,10 +4,12 @@ keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-examples-simple.html
-summary: "Simple Worked Examples"
+summary: "Simple Fully Machine-Readable Examples"
 ---
 
 {% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
+
+These **medicationRequest** examples are fully machine-readable in that they **do not** include any free-text instructions within either *additionalInstruction* or *patientInstruction*.
 
 ## Oxytetracycline, 250mg, oral, 4 times a day ##
 
@@ -16,16 +18,6 @@ summary: "Simple Worked Examples"
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/3d90859ce98769ec9b6643cfccdcc65a.js"></script>
-
-<!--
-## Ramipril, 5mg, oral, twice a day ##
-
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/91cff732c159dabb452c52a0a92f688a.js"></script>
-
-{% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/8ed91c4ec01ac01fd641978965842782.js"></script>
--->
 
 ## Omeprazole, gastro-resistant, oral ##
 
@@ -53,23 +45,6 @@ TBC
 {% include note.html content="Dose-based instruction using a VTM" %}
 <script src="https://gist.github.com/RobertGoochUK/b6dc5df61528a1b0ff4eec3dd429a273.js"></script>
 
-<!--
-## Aciclovir, 200mg, oral, 5 times a day ##
-
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/9dadfd13bf632cad40883383a30c35b1.js"></script>
-
-{% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/11f68fa2bcf1d597eb4c7bf07c451682.js"></script>
-
-## Amoxicillin, 250mg, oral, every 8 hours ##
-
-{% include note.html content="Product-based instruction using an AMP" %}
-<script src="https://gist.github.com/RobertGoochUK/3ef048f8fb97d26bac1c0d4e13c4a6fb.js"></script>
-
-{% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/aac459d1e17e6c7061e2db29340f7576.js"></script>
--->
 ## Diprobase ointment, 1 application, Topical, 3 times a day ##
 
 {% include note.html content="Product-based instruction using an AMP" %}
@@ -93,20 +68,33 @@ The VTM related to the Microgynon AMP's is a multi-ingredient concept "Ethinyles
 
 {% include note.html content="Dose-based instruction using a VTM" %}
 Where a concentration is required it is expected that the prescribing concept would be a VMP or AMP.
-<!--
-## Flucloxacillin, 500mg, oral, 3 times a day for 7 days ##
 
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/07f5889ec76d0e29452b101d482d7155.js"></script>
+## Zopiclone 3.75mg tablets, 1 tablet, at BEDTIME, PRN, oral ##
 
-{% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/17e0acb88b76bbcb82b3b6f6c34d7f31.js"></script>
+<script src="https://gist.github.com/RobertGoochUK/355dcf9b4e71f740e5b197b77f80818d.js"></script>
 
-## Simvastatin, 40mg, oral, once a day ##
+## Ibuprofen 400mg orally three times daily for 5 days to start tomorrow ##
 
-{% include note.html content="Product-based instruction using a VMP" %}
-<script src="https://gist.github.com/RobertGoochUK/76d1dc65f3021f5c4e50409fde924a1c.js"></script>
+For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10th March 2019.
 
-{% include note.html content="Dose-based instruction using a VTM" %}
-<script src="https://gist.github.com/RobertGoochUK/19449543a736c1a65a52b996fed92443.js"></script>
--->
+<script src="https://gist.github.com/RobertGoochUK/ad4a8db957700cc528fd8ea1b8f4253f.js"></script>
+
+## Timolol 0.1% gel eye drops, 1 drop in the left eye once daily ##
+
+<script src="https://gist.github.com/RobertGoochUK/184f6e053a1714347739c827a3de8773.js"></script>
+
+## Epoetin alfa, 4500units, ONCE a DAY, subcutaneous injection ##
+
+<script src="https://gist.github.com/RobertGoochUK/adaed4fbce1276ae287178417b2985c5.js"></script>
+
+## Prednisolone 5mg tablets, have 8 tablets a day after food for 7 days then stop ##
+
+<script src="https://gist.github.com/RobertGoochUK/abd7ce473f5fe38ed1865134a9cfa1b5.js"></script>
+
+## Morphine, 30mg, intravenously, injection, four times a day over 24 hours ##
+
+<script src="https://gist.github.com/RobertGoochUK/5b987bcdafe267b597c9c432a9a11c11.js"></script>
+
+## Glucose 5% infusion 500ml bags, 500ml, intravenous, continuous infusion, over 8 hours ##
+
+<script src="https://gist.github.com/RobertGoochUK/6a992f5415ef2ba7ddfab2d4e69337a7.js"></script>

@@ -23,9 +23,8 @@ This guidance is aligned with;
 ## Common Principals
 
 The following applies to the presentation of any component part of the dosage instruction;
-* Always express units of measure using the full description, e.g. `milligram` not `mg`. This principal does not apply to units of measure as part of pre-coordinated dm+d concept descriptions, e.g. `Ramipril 5mg capsules`.
+* Always express units of measure using the full description, e.g. `milligram` not `mg`. **Important**: This principal does not apply to units of measure as part of pre-coordinated dm+d concept descriptions, e.g. `Ramipril 5mg capsules`.
 * Always express a time-based unit of measure in the plural when applicable, e.g. `2 hour` becomes `2 hours`.
-<!--* Always express a SNOMED-CT [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition) into the plural when applicable, e.g. `2 tablet` becomes `2 tablets`.-->
 * **Do not** express other units of measure in the plural as this introduces complications with units such as `microgram per millilitre` or `microgram per kilogram per hour`.
 * Where multiple statements are allowed, e.g. **when** or **event** structures, then separate each statement with a comma plus whitespace. Replace the last comma separating the final two statements with the word " and ", e.g. `on Monday, Wednesday and Friday`.
 
