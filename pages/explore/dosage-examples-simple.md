@@ -98,3 +98,15 @@ For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10t
 ## Glucose 5% infusion 500ml bags, 500ml, intravenous, continuous infusion, over 8 hours ##
 
 <script src="https://gist.github.com/RobertGoochUK/6a992f5415ef2ba7ddfab2d4e69337a7.js"></script>
+
+## Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd), one to be given by IM injection into the anterior abdominal wall on 1st November 2019 ##
+
+<script src="https://gist.github.com/RobertGoochUK/53c52eb0dd8a7ca7e0535e62e7ce74e0.js"></script>
+
+## Hyoscine 1mg/72hours transdermal patches, one patch to be applied once every 3 days ##
+
+<script src="https://gist.github.com/RobertGoochUK/1b9c0c0481221e93f294f1ba9a8bacac.js"></script>
+
+## Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd), one tablet to be taken twice daily on Mondays, Wednesdays and Fridays ##
+
+<script src="https://gist.github.com/RobertGoochUK/36e517d24a23bd5b617fcb9ca13f16f8.js"></script>
