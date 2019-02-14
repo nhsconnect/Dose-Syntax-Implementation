@@ -121,7 +121,7 @@ Includes a maximum daily dose and requires administration of medication followin
 
 <script src="https://gist.github.com/RobertGoochUK/c42500071f3a22af8d8b268f9aec7e3c.js"></script>
 
-## Hydroxocobalamin 10mg/2ml solution for injection ampoules, one to be given by IM injection into the shoulder, 3 times per week for 6 doses, then every 3months, starting on 1st November 2019 -->
+## Hydroxocobalamin 10mg/2ml solution for injection ampoules, one to be given by IM injection into the shoulder, 3 times per week for 6 doses, then every 3 months, starting on 1st November 2019
 
 Includes a two-part **sequence** and two different timing instructions.
 
