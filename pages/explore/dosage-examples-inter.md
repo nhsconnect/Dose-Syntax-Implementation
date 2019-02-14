@@ -17,6 +17,7 @@ Examples use combinations of the following elements of the CareConnect medicatio
 * maxDosePerPeriod
 * asNeededCodableConcept
 * rateRatio
+* rateRange
 * duration
 * periodMax
 
@@ -88,7 +89,7 @@ Includes a dose duration.
 
 Includes a **rateRatio** and a **duration**.
 
-**Note**. The rateRatio could also be modelled using a ucum unit within a **doseQuantity**.
+**Note**. The rateRatio could also be modelled using a ucum unit within a **doseQuantity**. In this example we are using the slightly more complex **rateRatio** structure.
 
 ```xml
 <doseQuantity>
@@ -102,11 +103,11 @@ Includes a **rateRatio** and a **duration**.
 {% include note.html content="Product-based instruction using an AMP" %}
 <script src="https://gist.github.com/RobertGoochUK/9be3ce815d05950fd5e87822f2450776.js"></script>
 
-## Oxygen by inhalation 2litres/minute via nasal route
+## Oxygen by inhalation 1 to 2 litres per minute via nasal cannula
 
-Complex because requires a rate-based dosing instruction.
+Includes a **rateRange** instruction and an **additionalInstruction** for the administration device.
 
-{% include note.html content="Dose-based instruction using a VTM" %}
+{% include note.html content="product-based instruction using a VMP" %}
 <script src="https://gist.github.com/RobertGoochUK/71a1192a10e7cd31fe339260aeb2d317.js"></script>
 
 ## Prednisolone 5mg tablets, have 8 tablets a day after food for 7 days then stop ##
@@ -119,3 +120,9 @@ Complex because requires a rate-based dosing instruction.
 Includes a maximum daily dose and requires administration of medication following a coded clinical event.
 
 <script src="https://gist.github.com/RobertGoochUK/c42500071f3a22af8d8b268f9aec7e3c.js"></script>
+
+## Hydroxocobalamin 10mg/2ml solution for injection ampoules, one to be given by IM injection into the shoulder, 3 times per week for 6 doses, then every 3months, starting on 1st November 2019 -->
+
+Includes a two-part **sequence** and two different timing instructions.
+
+<script src="https://gist.github.com/RobertGoochUK/97fb7d6e13bb98f3da3cb6fcc8a21ab4.js"></script>
