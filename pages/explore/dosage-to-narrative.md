@@ -3,7 +3,7 @@ title: CareConnect Text Narrative
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
-permalink: dosage-to-narrative-overview.html
+permalink: dosage-to-narrative-overview2.html
 summary: "Use of the text narrative within CareConnect profiled resources"
 ---
 
