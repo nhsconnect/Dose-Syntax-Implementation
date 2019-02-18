@@ -51,6 +51,8 @@ Express a **doseQuantity** as "{quantity} {units}"
 
 `50 milligram`
 
+`2 tablets`
+
 Express a **doseRange** as "{low_quantity} to {high_quantity} {high_units}"
 
 `20 to 40 millilitre`
@@ -77,7 +79,7 @@ Express a **duration** as "over {value} {units}". Express the time-based units i
 
 `over 8 hours`
 
-`over 4 hours (maximum 8 hours)`
+`over 4 hours (maximum 6 hours)`
 
 ### frequency, frequencyMax, period and periodMax ###
 
@@ -199,7 +201,7 @@ Express **dayOfWeek** statements as "on {dayOfWeek}" using the full description 
 
 ### timeOfDay(s) ###
 
-Express **timeOfDay** statements as "at {timeOfDay}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always be provided times using the 24 hour clock.
+Express **timeOfDay** statements as "at {timeOfDay}". Separate multiple statements with a comma and use the word " and " to separate the final two statements. If a time is expressed with `:00` seconds then express just in terms of hours and minutes. Sending systems should always provide times using the 24 hour clock. Receiving systems may apply local preferences for display, i.e. `15:00` or `3:00pm`.
 
 `at 10:00`
 

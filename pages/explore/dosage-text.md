@@ -13,9 +13,9 @@ summary: "Use of the dosage.text and dosage.timing.code elements of the dosage i
 
 The [FHIR specification](http://hl7.org/fhir/stu3/dosage-definitions.html#Dosage.text) for the **Dosage.text** attribute is ambiguous and not clear on it's intended use. The approach used within this guidance is to provide the complete human readable string representation of the dosage instruction within the **text** narrative of the parent CareConnect profiled resource.
 
-Therefore until such a time when the FHIR specification is clearer (Note. The STU4 definition is slightly better but still ambiguous) the use of the **Dosage.text** attribute is not recommended where the dosage instruction is defined using the coded structures.
+Therefore until such a time when the FHIR specification is clearer (Note. The STU4 definition is slightly better but still ambiguous) the use of the **Dosage.text** attribute is not recommended where the dosage instruction is defined using the coded structures. This position may be subject to change as a result of initial implementation experience or feedback from the FHIR community.
 
-The **Dosage.text** attribute would therefore only be populated in an implementation which does not support the coded structures.
+The **Dosage.text** attribute would be populated in an implementation which does not support the coded structures.
 
 ## Dosage.timing.code ##
 
