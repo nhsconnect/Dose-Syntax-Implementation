@@ -110,7 +110,7 @@ entries:
       url: /dosage-to-narrative-logic.html
       output: web
       
-  - title: Dose to Product Conversion
+  - title: Dose to Product Translation
     output: web,pdf
     folderitems:
     - title: Overview
