@@ -8,11 +8,9 @@ summary: "Logic for translating a dose-based instruction into a list of suitable
 ---
 
 
-To be written
-
 The dm+d data fields used for this process are;
 
-VTM | VMP | VMP VPI | VMP FORM | VMP ROUTE
+**VTM** | **VMP** | **VMP-VPI** | **VMP-FORM** | **VMP-ROUTE**
 VTMID | VTMID | | |
  | VPID | VPID | VPID | VPID
 NM | NM | | |
@@ -25,6 +23,6 @@ INVALID | INVALID | | |
  | | STRNT_NMRTR_UOMCD | |
  | | STRNT_DNMTR_VAL | |
  | | STRNT_DNMTR_UOMCD | |
- | | | FORMCD |
- | | | ROUTECD |
- 
+ | | | FORMCD | ROUTECD
+
+Together with the FORM, ROUTE and UNIT_OF_MEASURE vocabularies from the dm+d **lookup** data.

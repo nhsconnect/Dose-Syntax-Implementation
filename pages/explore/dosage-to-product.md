@@ -32,24 +32,6 @@ SNOMED/dm+d code | ucum unit
 258770004 | liter
 258770004 | l
 
-The dm+d data fields used for this process are;
-
-VTM | VMP | VMP VPI | VMP FORM | VMP ROUTE
-VTMID | VTMID | | |
- | VPID | VPID | VPID | VPID
-NM | NM | | |
-INVALID | INVALID | | |
- | NON_AVAILCD
- | UDFS | | |
- | UDFS_UOMCD | | |
- | UNIT_DOSE_UOMCD | |
- | | STRNT_NMRTR_VAL | |
- | | STRNT_NMRTR_UOMCD | |
- | | STRNT_DNMTR_VAL | |
- | | STRNT_DNMTR_UOMCD | |
- | | | FORMCD |
- | | | ROUTECD |
-
 ### Step 1 - Get child VMPs of the VTM
 
 VMP's flagged within dm+d as invalid or where actual products are not available must be ignored.
