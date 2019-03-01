@@ -1,7 +1,7 @@
 ---
 title: Dose to Product Translation Overview
 keywords:  messaging
-tags: [fhir,messaging]
+tags: [dm+d,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-to-product-overview.html
 summary: "Translating a dose-based instruction into a list of suitable product-based instructions"
@@ -21,16 +21,6 @@ A GP would translate dose-based medication requests within a discharge letter in
 **IMPORTANT** - The process described here is to create a suitable short list of products to fulfil the medication request. It is not intended to identify a single product. A local implementation may choose to further filter the list of products on factors like local availability (stock), local formulary or cost. The order of products listed may also be locally condfigured to promote or demote products based on licensing status or local needs such as paediatric use.
 
 The translation process requires the use of the NHS Dictionary of Medicines and Devices (dm+d) plus a mapping table for ucum units of measure that use different terms than dm+d. For example; `gram` is a dm+d unit of measure with `g` is the equivalant within ucum, and ucum spells `liter` differently to the dm+d `litre`.
-
-SNOMED/dm+d code | ucum unit
-258683005 | kilogram
-258682000 | g
-258684004 | milligram
-258686002 | ng
-258685003 | ug
-258773002 | milliliter
-258770004 | liter
-258770004 | l
 
 ### Step 1 - Get child VMPs of the VTM
 
