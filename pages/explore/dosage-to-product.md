@@ -16,11 +16,11 @@ A hospital pharmacist would translate dose-based orders coming from the ward int
 
 A GP would translate dose-based medication requests within a discharge letter into product-based repeat prescriptions.
 
-## The Translation Process
+## Translation Process
 
 **IMPORTANT** - The process described here is to create a suitable short list of products to fulfil the medication request. It is not intended to identify a single product. A local implementation may choose to further filter the list of products on factors like local availability (stock), local formulary or cost. The order of products listed may also be locally condfigured to promote or demote products based on licensing status or local needs such as paediatric use.
 
-The translation process requires the use of the NHS Dictionary of Medicines and Devices (dm+d) plus a mapping table for ucum units of measure that use different terms than dm+d. For example; "gram" is a dm+d unit of measure with "g" is the equivalant within ucum.
+The translation process requires the use of the NHS Dictionary of Medicines and Devices (dm+d) plus a mapping table for ucum units of measure that use different terms than dm+d. For example; `gram` is a dm+d unit of measure with `g` is the equivalant within ucum, and ucum spells `liter` differently to the dm+d `litre`.
 
 SNOMED/dm+d code | ucum unit
 258683005 | kilogram
@@ -93,9 +93,11 @@ Where the quantity calculated from Step 2 is less than 1 then push to the bottom
 
 Using the above example, the resulting sort order would be;
 
-Product | Quantity to fulfil 250 milligram
+Product (VMP) | Quantity to fulfil 250 milligrams
 Oxytetracycline 250mg tablets | 1 tablet
 Oxytetracycline 250mg/5ml oral suspension | 5 ml
 Oxytetracycline 125mg/5ml oral suspension | 10 ml
 Oxytetracycline 500mg/5ml oral suspension | 2.5 ml
 Oxytetracycline 100mg/5ml oral suspension | 12.5 ml
+
+A demonstrator is available as part of [Experimental Alpha Web Services](http://ec2-18-130-128-118.eu-west-2.compute.amazonaws.com/) hosted on AWS, which can be used to test and verify this dose-to-product translation logic.
