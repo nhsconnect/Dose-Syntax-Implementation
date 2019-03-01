@@ -1,12 +1,12 @@
 entries:
 - title: Dose Syntax Implementation 
   product: Dose Syntax Implementation for FHIR
-  version: 1.0.1 - Experimental 
+  version: 1.2.0 - Experimental 
   levels: one
   folders:
 
   - title: Overview
-    output: web
+    output: web,pdf
     folderitems:
     - title: Introduction
       url: /index.html
@@ -38,7 +38,7 @@ entries:
     - title: CareConnect-MedicationStatement-1
       url: /careconnect-MedicationStatement-1.html
       output: web 
- 
+      
   - title: Dosage Structure
     output: web,pdf
     folderitems:
@@ -49,7 +49,7 @@ entries:
     - title: site, route, method
       url: /dosage-site-route-method.html
       output: web
-    - title: doseQuantity, frequency, period
+    - title: dose[x], frequency, period
       url: /dosage-doseQuantity-freq-period.html
       output: web
     - title: when, offset, dayOfWeek, timeOfDay
@@ -67,51 +67,73 @@ entries:
     - title: maxDosePer[x]
       url: /dosage-maxdoseper.html
       output: web    
-    - title: additionalInstruction, patientInstruction
+    - title: additional, patientInstruction
       url: /dosage-additional-patient.html
       output: web
     - title: sequence
       url: /dosage-sequence.html
       output: web
-    - title: text
-      url: /dosage-text2.html
+    - title: text, code
+      url: /dosage-text.html
       output: web
-      subfolders:
-      - title: Current limitations of STU3 Dosage structure
-        output: web
-        subfolderitems:
-        - title: Overview
-          url: /dosage-limitations-overview.html
-          output: web
-        - title: 1. Combination product instructions
-          url: /dosage-combi.html
-          output: web
-        - title: 2. Maximum dose per course
-          url: /dosage-maxdose.html
-          output: web        
-        - title: 3. Periods of no medicine administration
-          url: /dosage-no-meds.html
-          output: web
-        - title: 4. Instuctions for a specific device
-          url: /dosage-specific-device.html
-          output: web
-        - title: 5. Specifying a Trade Family / brand
-          url: /dosage-tradefamily.html
-          output: web
+      
+  - title: Current Limitations of STU3 Dosage Structure
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-limitations-overview.html
+      output: web
+    - title: 1. Combination product instructions
+      url: /dosage-combi.html
+      output: web
+    - title: 2. Maximum dose per course
+      url: /dosage-maxdose.html
+      output: web        
+    - title: 3. Periods of no medicine administration
+      url: /dosage-no-meds.html
+      output: web
+    - title: 4. Instructions for a specific device
+      url: /dosage-specific-device.html
+      output: web
+    - title: 5. Specifying a Trade Family / brand
+      url: /dosage-tradefamily.html
+      output: web
 
+  - title: CareConnect Text Narrative
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-to-narrative-overview2.html
+      output: web
+      type: homepage
+    - title: Text Generation Logic
+      url: /dosage-to-narrative-logic.html
+      output: web
+      
+  - title: Dose to Product Conversion
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-to-product-overview.html
+      output: web
+      type: homepage
+    - title: Dose to Product Logic
+      url: /dosage-to-product-logic.html
+      output: web
+      
   - title: Worked Examples
-    output: web
+    output: web,pdf
     folderitems:
     - title: Overview
       url: /dosage-examples-overview.html
       output: web
-    - title: Simple Examples
+    - title: Simple Fully Machine Readable
       url: /dosage-examples-simple.html
       output: web
-    - title: Intermediate Examples
+    - title: Complex Fully Machine Readable
       url: /dosage-examples-inter.html
       output: web
-    - title: Complex Examples
+    - title: Semi Machine Readable
       url: /dosage-examples-complex.html
       output: web
       
