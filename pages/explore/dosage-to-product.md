@@ -32,6 +32,24 @@ SNOMED/dm+d code | ucum unit
 258770004 | liter
 258770004 | l
 
+The dm+d data fields used for this process are;
+
+VTM | VMP | VMP VPI | VMP FORM | VMP ROUTE
+VTMID | VTMID | | |
+ | VPID | VPID | VPID | VPID
+NM | NM | | |
+INVALID | INVALID | | |
+ | NON_AVAILCD
+ | UDFS | | |
+ | UDFS_UOMCD | | |
+ | UNIT_DOSE_UOMCD | |
+ | | STRNT_NMRTR_VAL | |
+ | | STRNT_NMRTR_UOMCD | |
+ | | STRNT_DNMTR_VAL | |
+ | | STRNT_DNMTR_UOMCD | |
+ | | | FORMCD |
+ | | | ROUTECD |
+
 ### Step 1 - Get child VMPs of the VTM
 
 VMP's flagged within dm+d as invalid or where actual products are not available must be ignored.
@@ -74,7 +92,7 @@ Oxytetracycline 250mg tablets | `250/(250)=1/1=1` | tablet
 Oxytetracycline 250mg/5ml oral suspension | `250/(50/)=5` | ml
 Oxytetracycline 500mg/5ml oral suspension | `250/(100/1)=2.5` | ml
 
-**NB**. The above VMP has a Unit Dose Form Strength defined of "1 tablet"
+**NB**. The VMP `Oxytetracycline 250mg tablets` has a Unit Dose Form Strength (UDFS) defined of "1 tablet"
 
 ### Step 3 - Order the list of VMPs in a clinically suitable order
 
