@@ -41,10 +41,15 @@ Where the dose-based instruction specifies a coded **Route** or coded **Form** t
 In pseudo-code;
 
 `return vmp's`
+
 `where parent_vtm = {vtm_id}`
+
 `and vmp is valid`
+
 `and vmp has actual products available`
+
 `and vmp_form = {form_id}` (if specified)
+
 `and vmp_route = {route_id}`  (if specified)
 
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
@@ -56,7 +61,7 @@ Each VMP contains strength information for the active ingredients. It would not 
 The strength of the ingredient may need to be converted into the same units as the requested dose for comparision purposes. For example, if the requested dose is `1gram` but the VMP ingredient is expressed as `500mg` then it would need to be converted into `0.5gram` to calculate that the VMP is half the required strength. Whilst most dosage instructions would be expressed in terms of strength, the same conversion is required for volume (litre, millitre etc.) and length (metre, centimetre, etc.).
 
 With all units of measure expressed in the same scaler terms, the amount of the VMP to fulfil the requested dose can be calculated as;
-`QUANTITY OF VMP = ( REQUESTED DOSE QUANTITY / VMP INGREDIENT STRENGTH ) / VMP UNIT DOSE FORM STRENGTH (where defined for the VMP)`.
+`QUANTITY OF VMP = ( REQUESTED DOSE QUANTITY / VMP INGREDIENT STRENGTH ) / VMP UNIT DOSE FORM STRENGTH (where defined for the VMP)`
 
 **Worked Example**
 
@@ -66,7 +71,7 @@ Oxytetracycline 100mg/5ml oral suspension -> `250/(20/1)=12.5` (ml)
 
 Oxytetracycline 125mg/5ml oral suspension -> `250/(25/1)=10` (ml)
 
-Oxytetracycline 250mg tablets -> `250/(250)=1/1 tablet =1 tablet`
+Oxytetracycline 250mg tablets -> `250/(250)=1/1=1` (tablet)
 
 **NB**. The above VMP has a Unit Dose Form Strength defined of "1 tablet"
 
@@ -89,13 +94,8 @@ Where the quantity calculated from Step 2 is less than 1 then push to the bottom
 Using the above example, the resulting sort order would be;
 
 Product | Quantity to fulfil 250 milligram
-
 Oxytetracycline 250mg tablets | 1 tablet
-
 Oxytetracycline 250mg/5ml oral suspension | 5 ml
-
 Oxytetracycline 125mg/5ml oral suspension | 10 ml
-
 Oxytetracycline 500mg/5ml oral suspension | 2.5 ml
-
 Oxytetracycline 100mg/5ml oral suspension | 12.5 ml
