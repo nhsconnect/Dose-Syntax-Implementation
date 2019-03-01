@@ -67,17 +67,14 @@ With all units of measure expressed in the same scaler terms, the amount of the 
 
 Requested dose-dased instruction = **Oxytetracycline** DOSE 250 milligram
 
-Oxytetracycline 100mg/5ml oral suspension -> `250/(20/1)=12.5` (ml)
-
-Oxytetracycline 125mg/5ml oral suspension -> `250/(25/1)=10` (ml)
-
-Oxytetracycline 250mg tablets -> `250/(250)=1/1=1` (tablet)
+Product (VMP) | Quantity Calculation | Unit of Measure
+Oxytetracycline 100mg/5ml oral suspension | `250/(20/1)=12.5` | ml
+Oxytetracycline 125mg/5ml oral suspension | `250/(25/1)=10` | ml
+Oxytetracycline 250mg tablets | `250/(250)=1/1=1` | tablet
+Oxytetracycline 250mg/5ml oral suspension | `250/(50/)=5` | ml
+Oxytetracycline 500mg/5ml oral suspension | `250/(100/1)=2.5` | ml
 
 **NB**. The above VMP has a Unit Dose Form Strength defined of "1 tablet"
-
-Oxytetracycline 250mg/5ml oral suspension -> `250/(50/)=5` (ml)
-
-Oxytetracycline 500mg/5ml oral suspension -> `250/(100/1)=2.5` (ml)
 
 ### Step 3 - Order the list of VMPs in a clinically suitable order
 
