@@ -68,17 +68,19 @@ Oxytetracycline 500mg/5ml oral suspension | `250/(100/1)=2.5` | ml
 
 ### Step 3 - Order the list of VMPs in a clinically suitable order
 
-This guidance suggests ordering by least divisibility.
-
-Whole products that can fulfil the request are listed above products that may have to be divided.
-
 This approach **does not** include where two or more products of different strengths may be used. For example a dose of 75mg requested and fulfilled by one 50mg product and one 25mg product.
 
-Where the quantity calculated from Step 2 is not divisible by 1 then push down the list.
+This guidance suggests ordering by least divisibility.
 
-Where the quantity calculated from Step 2 is less than 1 then push lower in the list.
+1. Whole products that can fulfil the request are listed above products that may have to be divided.
 
-Producs containing multiple active ingredents are pushed to the bottom of the list as the translation calculatation is not possible.
+2. Where the quantity calculated from Step 2 is not divisible by 1, hence the product has to be divided (e.g. 1.5 tablets) then push down the list.
+
+3. Where the quantity calculated from Step 2 is less than 1 (e.g. 0.5 tablets) then push lower in the list.
+
+4. In either case, when a product needs to be divided and if the product has a dose form that is not typically divisable then push  even lower in the list.
+
+5. Products containing multiple active ingredents are pushed to the bottom of the list as the translation calculatation is not possible.
 
 Using the above example, the resulting sort order would be;
 
