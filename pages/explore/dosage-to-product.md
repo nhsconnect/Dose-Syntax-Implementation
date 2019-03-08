@@ -46,7 +46,7 @@ In pseudo-code;
 
 Take the dose from the **doseQuantity** or **doseRange.low** structures. This will be a combination of a quantity and a coded unit of measure. If the unit of measure is using a ucum unit then the SNOMED code needs to be looked-up from dm+d. This is where the addition mapping table applies.
 
-Each VMP contains strength information for the active ingredients. It would not be expected to use a dose-based prescription for combination drugs (e.g. anything beginning "co-") so this only applies to VMPs with a single ingredient.
+Each VMP contains strength information for the active ingredients. It would not be expected to use a dose-based prescription for combination drugs (e.g. anything beginning "co-") nor any VTM where some associated products contained multiple ingredents (e.g. Phosphate). In such cases translation from dose to products is not possible.
 
 The strength of the ingredient may need to be converted into the same units as the requested dose for comparision purposes. For example, if the requested dose is `1gram` but the VMP ingredient is expressed as `500mg` then it would need to be converted into `0.5gram` to calculate that the VMP is half the required strength. Whilst most dosage instructions would be expressed in terms of strength, the same conversion is required for volume (litre, millitre etc.) and length (metre, centimetre, etc.).
 
@@ -76,11 +76,13 @@ This approach **does not** include where two or more products of different stren
 
 Where the quantity calculated from Step 2 is not divisible by 1 then push down the list.
 
-Where the quantity calculated from Step 2 is less than 1 then push to the bottom of the list.
+Where the quantity calculated from Step 2 is less than 1 then push lower in the list.
+
+Producs containing multiple active ingredents are pushed to the bottom of the list as the translation calculatation is not possible.
 
 Using the above example, the resulting sort order would be;
 
-Product (VMP) | Quantity to fulfil 250 milligrams
+Product (VMP) | Quantity (to fulfil 250 milligrams)
 Oxytetracycline 250mg tablets | 1 tablet
 Oxytetracycline 250mg/5ml oral suspension | 5 ml
 Oxytetracycline 125mg/5ml oral suspension | 10 ml
