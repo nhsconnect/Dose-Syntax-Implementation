@@ -70,11 +70,23 @@ The vast majority of VMPs are defined with a Virtual Product Ingredient (VPI) st
 This inaccuracy of values like `333.33` or `8.333` not being mathmetically the same as one third of a milligram means the mathematics used in these calcations does not result in a whole number. For example;
 
 VMP = Oxybutynon 3mg/15ml bladder irrigation vials
+
 Requested Dose = `1 milligram`
+
 Calculated Quantity = `3.003003 vials`
 
+and
+
 VMP = Methotrexate 25mg/3ml solution for injection pre-filled syringes
+
 Requested Dose = `25 milligram`
+
 Calculated Quantity = `1.041667 pre-filled disposable injection`
 
 It would be unwise to add bespoke logic to round up to the nearest whole number in such cases as this would require an assumption that this is the intention of the prescriber.
+
+A possible solution that will be discussed with the owners of the NHS dm+d would be to expressed the strength in a way that uses absolute values. For example;
+
+1. **Oxybutynon 3mg/15ml bladder irrigation vials**, VPI strength = 1 mg / 3 ml
+
+2. **Methotrexate 25mg/3ml solution for injection pre-filled syringes**, VPI strength = 25 mg / 3 ml
