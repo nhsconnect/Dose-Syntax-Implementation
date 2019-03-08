@@ -51,12 +51,30 @@ SNOMED/dm+d code | ucum unit
 
 Intro text...
 
-Dose Form | SNOMED/dm+d code
-Capsule | 385049006
-Modified-release capsule | 385054002
-Modified-release tablet | 385061003
-Spray | 421720008
+SNOMED/dm+d code | Dose Form
+385049006 | Capsule
+385054002 | Modified-release capsule
+385061003 | Modified-release tablet
+421720008 | Spray
 
-## Next Section
+## Known Issues
 
-Here
+### Products (VMPs) where the VPI strength is expressed as an inaccurate decimal value
+
+The vast majority of VMPs are defined with a Virtual Product Ingredient (VPI) strength as a whole number, e.g. numerator = 5 (mg) and denominator = 1 (ml). A small percentage of VMPs are defined with a numerator expressed as an incurate decimal value. Two examples are;
+
+1. **Oxybutynon 3mg/15ml bladder irrigation vials**, VPI strength = 333.33 micrograms / 1 ml
+
+2. **Methotrexate 25mg/3ml solution for injection pre-filled syringes**, VPI strength = 8.333 mg / 1 ml
+
+This inaccuracy of values like `333.33` or `8.333` not being mathmetically the same as one third of a milligram means the mathematics used in these calcations does not result in a whole number. For example;
+
+VMP = Oxybutynon 3mg/15ml bladder irrigation vials
+Requested Dose = `1 milligram`
+Calculated Quantity = `3.003003 vials`
+
+VMP = Methotrexate 25mg/3ml solution for injection pre-filled syringes
+Requested Dose = `25 milligram`
+Calculated Quantity = `1.041667 pre-filled disposable injection`
+
+It would be unwise to add bespoke logic to round up to the nearest whole number in such cases as this would require an assumption that this is the intention of the prescriber.
