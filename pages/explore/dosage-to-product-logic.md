@@ -47,6 +47,16 @@ SNOMED/dm+d code | ucum unit
 258770004 | liter
 258770004 | l
 
+## Identification of dose forms that are typically not divisable
+
+Intro text...
+
+Dose Form | SNOMED/dm+d code
+Capsule | 385049006
+Modified-release capsule | 385054002
+Modified-release tablet | 385061003
+Spray | 421720008
+
 ## Next Section
 
 Here
