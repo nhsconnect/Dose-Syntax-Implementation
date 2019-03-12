@@ -8,9 +8,7 @@ summary: "Logic for translating a dose-based instruction into a list of suitable
 ---
 
 
-## Introduction
-
-Here
+Refer to the Overview page for the high level description of the translation process.
 
 ## dm+d Data Requirements
 
@@ -36,8 +34,6 @@ Together with the FORM, ROUTE and UNIT_OF_MEASURE vocabularies from the dm+d **L
 When dm+d data is imported into a relational database, concepts marked as INVALID or VMP concepts flagged as "not actual products available" may be excluded from the import.
 
 ## Translation Process Detail
-
-Refer to the Overview page for the high level description of the translation process.
 
 ### Step 1 - Get child VMPs of the VTM
 
@@ -80,7 +76,7 @@ Within the dm+d, units of mass have the greatest range; **kilogram**, **gram**, 
 
 A suitable SQL function to calculate the quantity of a given VMP to fulfil the requested dose quantity would be as follows.
 
-`FUNCTION calc_qty(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL)`
+`FUNCTION calc_qty(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL(9,3))`
 
 `RETURNS decimal(30,12)`
 
@@ -145,9 +141,9 @@ Where **formid** is the dm+d code for the requested dose quantity unit of measur
 The rules for the ranking are best shown in a table.
 
 **Calculated Quantity** | **Ranking** | **Ranking Reason**
-Decimal less than 1 | 3 | Requires part of a a single dose
 Integer | 1 | Can be fulfilled by one or more complete doses
 Decimal greater than 1 | 2 | Requires a number of doses include part doses 
+Decimal less than 1 | 3 | Requires part of a a single dose
 Decimal using a dose form typically not divisable | 4 | Unlikely to the clinically safe to use this product
 
 By adding the calculated **quantity** and **rank** to the main SQL query, the suitable sort order is `ORDER BY rank, quantity`.
