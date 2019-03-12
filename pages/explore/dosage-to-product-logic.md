@@ -33,6 +33,22 @@ Together with the FORM, ROUTE and UNIT_OF_MEASURE vocabularies from the dm+d **L
 
 When dm+d data is imported into a relational database, concepts marked as INVALID or VMP concepts flagged as "not actual products available" may be excluded from the import.
 
+### Mapping between ucum and SNOMED/dm+d
+
+The following mapping table needs to be available to the implementing system. It is required to identify the SNOMED/dm+d coded unit of measure when a ucum unit code and value is used AND the ucum standard uses a different term to the dm+d.
+
+For example `g` is a ucum code but dm+d uses the term `gram` so both need to maps to the SNOMED code of `258682000`. This mapping table may need to be extended within a local implementation depending on which ucum units are to be expected.
+
+SNOMED/dm+d code | ucum unit
+258683005 | kilogram
+258682000 | g
+258684004 | milligram
+258686002 | ng
+258685003 | ug
+258773002 | milliliter
+258770004 | liter
+258770004 | l
+
 ## Translation Process Detail
 
 ### Step 1 - Get child VMPs of the VTM
