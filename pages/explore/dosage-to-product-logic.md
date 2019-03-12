@@ -67,6 +67,13 @@ A suitable SQL query to return child VMPs for a VTM, with optional Route or Form
 
 A function is required to convert a VTM ingredient strength into the same units as the requested dose quantity. For example, if a required dose quantity is `12.5 milligram` but a VMP for that drug is expressed with a strength in micrograms, e.g. `500 microgram`, then that strength needs to be expressed in milligrams before the mathematical function can be executed. Thus, `500 microgram` would be converted into `0.5 milligram`. All conversation between units will be either a multiplication or division to a factor of 1000.
 
+For example;
+
+`convert_units(vpi.strnt_nmrtr_val, vpi.strnt_nmrtr_uomcd, dose_uom_cd)`
+
+`##Convert 500 micrograms into milligrams
+`SELECT convert_units(500, 258685003, 258684004)` would return `0.5`.
+
 Within the dm+d, units of mass have the greatest range; **kilogram**, **gram**, **milligram**, **microgram** and **nanogram**. Due to this range, the data type used within SQL must be a `DECIMAL(30,12)`.
 
 #### Function for quantity
@@ -101,7 +108,7 @@ Where
 
 Uses the **calc_qty** function from above then calculates a ranking value which can be used to order the overall SQL query.
 
-`FUNCTION `calc_rank`(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL, formid BIGINT UNSIGNED)`
+`FUNCTION calc_rank(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL, formid BIGINT UNSIGNED)`
 
 `RETURNS SMALLINT(5) UNSIGNED`
 
@@ -137,7 +144,7 @@ Where **formid** is the dm+d code for the requested dose quantity unit of measur
 
 The rules for the ranking are best shown in a table.
 
-Calculated Quantity | Ranking | Reason
+**Calculated Quantity** | **Ranking** | **Ranking Reason**
 Decimal less than 1 | 3 | Requires part of a a single dose
 Integer | 1 | Can be fulfilled by one or more complete doses
 Decimal greater than 1 | 2 | Requires a number of doses include part doses 
@@ -149,7 +156,7 @@ By adding the calculated **quantity** and **rank** to the main SQL query, the su
 
 The following dose forms are typically not divisible. This is not always the case. For example there are some modified-release tablets with a score along the centre to aid division, but in most cases, modified-release products should not be divided. The same applies for products as capsules. These represent the more common dose forms used within dm+d concepts. Other un-divisible dose forms may exist but their use would be rare, but this reference table can be extended or customised as required for a local implementation.
 
-SNOMED/dm+d code | Dose Form
+**SNOMED/dm+d code** | **Dose Form**
 385049006 | Capsule
 385054002 | Modified-release capsule
 385061003 | Modified-release tablet
@@ -157,7 +164,31 @@ SNOMED/dm+d code | Dose Form
 
 ## Complete Stored Procedure
 
-Here
+PROCEDURE sp_VTMtoVMP(
+IN IN_vtm_id BIGINT UNSIGNED, 
+IN IN_dose_qty DECIMAL, 
+IN IN_dose_uom_cd BIGINT UNSIGNED, 
+IN IN_form_id BIGINT UNSIGNED, 
+IN IN_route_id BIGINT UNSIGNED)
+BEGIN
+SELECT DISTINCT
+vmp.vmpid, 
+vmp.name,
+calc_qty(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs) AS qty,
+vmp.udfs_dose_uomcd,
+vpi.strnt_dnmtr_uomcd,
+calc_rank(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs,vmpform.formid) AS rank
+FROM vtm 
+INNER JOIN vmp ON vtm.vtmid = vmp.vtmid 
+INNER JOIN vmpform ON vmp.vmpid = vmpform.vmpid 
+INNER JOIN vmproute ON vmp.vmpid = vmproute.vmpid 
+INNER JOIN vpi ON vmp.vmpid = vpi.vmpid
+INNER JOIN lookup ON vpi.strnt_nmrtr_uomcd = lookup.id
+WHERE vtm.vtmid = IN_vtm_id 
+AND ( vmpform.formid = IN_form_id OR IsNull(IN_form_id) )
+AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) )
+ORDER BY rank, qty;
+END
 
 ## Known Issues
 
