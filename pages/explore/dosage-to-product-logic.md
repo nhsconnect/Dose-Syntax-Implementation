@@ -62,23 +62,6 @@ A suitable SQL query to return child VMPs for a VTM, with optional Route or Form
 `AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) );`
 
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
-<!---
-This first requires some additional data from outside dm+d and some algorithmic functions.
-
-#### Mapping between ucum and SNOMED/dm+d
-
-The following mapping table needs to be available to the implementing system. It is required to identify the SNOMED/dm+d coded unit of measure when a ucum unit is used that differs from the SNOMED term. For example; For example; `gram` is a dm+d unit of measure with `g` is the equivalant within ucum, and ucum spells `liter` differently to the dm+d `litre`.
-
-SNOMED/dm+d code | ucum unit
-258683005 | kilogram
-258682000 | g
-258684004 | milligram
-258686002 | ng
-258685003 | ug
-258773002 | milliliter
-258770004 | liter
-258770004 | l
---->
 
 #### Conversion between scaler units of measure, e.g. gram to milligram
 
