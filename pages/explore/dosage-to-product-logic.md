@@ -41,19 +41,9 @@ Refer to the Overview page for the high level description of the translation pro
 
 ### Step 1 - Get child VMPs of the VTM
 
-A suitable SQL query to return child VMPs for a VTM, with optional Route or Form constraints would be as follows. This assumed INVALID and VMPs where no actual products are available has been excluded fron the database.
+A suitable SQL query to return child VMPs for a VTM, with optional Route or Form constraints would be as follows. This assumes INVALID concepts and VMPs where no actual products are available has been excluded from the database.
 
-`SELECT`
-
-`vmp.vmpid,` 
-
-`vmp.name,`
-
-`vmp.udfs_dose_uomcd,`
-
-`vpi.strnt_dnmtr_uomcd,`
-
-`vmp.pres_statcd,`
+`SELECT vmp.vmpid, vmp.name, vmp.udfs_dose_uomcd, vpi.strnt_dnmtr_uomcd`
 
 `FROM vtm` 
 
@@ -72,6 +62,8 @@ A suitable SQL query to return child VMPs for a VTM, with optional Route or Form
 `AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) );`
 
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
+<!--
+This first requires some additional data from outside dm+d and some algorithmic functions.
 
 #### Mapping between ucum and SNOMED/dm+d
 
@@ -86,10 +78,11 @@ SNOMED/dm+d code | ucum unit
 258773002 | milliliter
 258770004 | liter
 258770004 | l
+-->
 
-#### Conversion of between units of measure
+#### Conversion between scaler units of measure, e.g. gram to milligram
 
-A function is required to convert a dose quantity into a larger or smaller unit of measure. For example, if a required dose quantity is `12.5 milligram` but a VMP for that drug is expressed with a strength in micrograms, e.g. `500 microgram`, then that strength needs to be expressed in milligrams before the mathematical function can be executed. Thus, `500 microgram' would be converted into `0.5 milligram`. All conversation between units will be either a multiplication or division to a factor of 1000.
+A function is required to convert a VTM ingredient strength into the same units as the requested dose quantity. For example, if a required dose quantity is `12.5 milligram` but a VMP for that drug is expressed with a strength in micrograms, e.g. `500 microgram`, then that strength needs to be expressed in milligrams before the mathematical function can be executed. Thus, `500 microgram` would be converted into `0.5 milligram`. All conversation between units will be either a multiplication or division to a factor of 1000.
 
 Within the dm+d, units of mass have the greatest range; **kilogram**, **gram**, **milligram**, **microgram** and **nanogram**. Due to this range, the data type used within SQL must be a `DECIMAL(30,12)`.
 
@@ -110,6 +103,8 @@ A suitable SQL function to calculate the quantity of a given VMP to fulfil the r
 `    RETURN ( doseQ / ( num / den ) ) / udfs;`
 
 `END`
+
+Where
 
 **doseQ** is the required dose quantity, e.g. 12.5
 
@@ -155,19 +150,21 @@ Uses the **calc_qty** function from above then calculates a ranking value which 
 	
 `END`
 
+Where **formid** is the dm+d code for the requested dose quantity unit of measure.
+
 The rules for the ranking are best shown in a table.
 
-Calculated Qty | Ranking | Reason
+Calculated Quantity | Ranking | Reason
 Decimal less than 1 | 3 | Requires part of a a single dose
 Integer | 1 | Can be fulfilled by one or more complete doses
 Decimal greater than 1 | 2 | Requires a number of doses include part doses 
-Decimal by dose form typically not divisable | 4 | Unlikely to the clinically safe to use this product
+Decimal using a dose form typically not divisable | 4 | Unlikely to the clinically safe to use this product
 
-By adding the calculated **qty** and **rank** to the main SQL query, the suitable sort order is `ORDER BY rank, qty, vmp.name`.
+By adding the calculated **quantity** and **rank** to the main SQL query, the suitable sort order is `ORDER BY rank, quantity`.
 
 #### Identification of dose forms that are typically not divisable
 
-Intro text...
+The following dose forms are typically not divisible. This is not always the case. For example there are some modified-release tablets with a score along the centre to aid division, but in most cases, modified-release products should not be divided. The same applies for products as capsules. These represent the more common dose forms used within dm+d concepts. Other un-divisible dose forms may exist but their use would be rare, but this reference table can be extended or customised as required for a local implementation.
 
 SNOMED/dm+d code | Dose Form
 385049006 | Capsule
