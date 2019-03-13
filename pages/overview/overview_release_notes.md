@@ -24,6 +24,9 @@ The following will be added to future versions of this implementation guidance.
 
 ## Version History ##
 
+### 1.2.0-experimental ###
+* 'Dose to Product Translation' section added
+
 ### 1.1.0-experimental ###
 * 'CareConnect Resources' section updated
   * Where a specific Trade Family (i.e brand name) is to be specified, an AMP concept must be used until a FHIR profiled resource can support a coded Trade Family concept.
