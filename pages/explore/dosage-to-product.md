@@ -29,19 +29,14 @@ VMP's flagged within dm+d as invalid or where actual products are not available 
 Where the dose-based instruction specifies a coded **Route** or coded **Form** then these are used in the query to return only VMPs for the given route and/or form.
 
 In pseudo-code;
-
-`return vmp's`
-
-`where parent_vtm = {vtm_id}`
-
-`and vmp is valid`
-
-`and vmp has actual products available`
-
-`and vmp_form = {form_id}` (if specified)
-
-`and vmp_route = {route_id}`  (if specified)
-
+```
+return vmp's
+where parent_vtm = {vtm_id}
+and vmp is valid
+and vmp has actual products available
+and vmp_form = {form_id} (if specified)
+and vmp_route = {route_id}  (if specified)
+```
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
 
 Take the dose from the **doseQuantity** or **doseRange.low** structures. This will be a combination of a quantity and a coded unit of measure. If the unit of measure is using a ucum unit then the SNOMED code needs to be looked-up from dm+d. This is where the addition mapping table applies.
