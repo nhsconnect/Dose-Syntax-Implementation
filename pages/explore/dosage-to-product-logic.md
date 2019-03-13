@@ -37,7 +37,7 @@ When dm+d data is imported into a relational database, concepts marked as INVALI
 
 The logical entity relationship diagram for this dm+d set is;
 
-{*insert diagram*}
+![alt text](images/explore/e-r.jpg "dm+d Entity Relationship Diagram")
 
 ### Mapping between ucum and SNOMED/dm+d
 
