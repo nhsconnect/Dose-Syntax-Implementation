@@ -75,7 +75,7 @@ AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) );
 
 #### Conversion between scaler units of measure, e.g. gram to milligram
 
-A function is required to convert a VTM ingredient strength into the same units as the requested dose quantity. For example, if a required dose quantity is `12.5 milligram` but a VMP for that drug is expressed with a strength in micrograms, e.g. `500 microgram`, then that strength needs to be expressed in milligrams before the mathematical function can be executed. Thus, `500 microgram` would be converted into `0.5 milligram`. All conversation between units will be either a multiplication or division to a factor of 1000.
+A function is required to convert a VTM ingredient strength into the same units as the requested dose quantity. For example, if a required dose quantity is `12.5 milligram` but a VMP for that drug is expressed with a strength in micrograms, e.g. `500 microgram`, then that strength needs to be expressed in milligrams before the mathematical function can be executed. Thus `500 microgram` would be converted into `0.5 milligram`.
 
 For example;
 
@@ -109,14 +109,14 @@ A suitable SQL function to calculate the quantity of a given VMP to fulfil the r
 ```
 FUNCTION calc_qty(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL(9,3))
 RETURNS decimal(30,12)
-BEGIN`
+BEGIN
 	IF den = 0 THEN
 		SET den = 1;
 	END IF;
-    IF udfs = 0 THEN 
+	IF udfs = 0 THEN 
 		RETURN doseQ / ( num / den ); 
 	END IF;
-    RETURN ( doseQ / ( num / den ) ) / udfs;
+	RETURN ( doseQ / ( num / den ) ) / udfs;
 END
 ```
 Where
@@ -152,8 +152,8 @@ BEGIN
 		IF ( !IsNull(divisable) ) THEN
 			SET rank = 4; 
 		END IF;
-    END IF;
-    RETURN rank;
+	END IF;
+	RETURN rank;
 END
 ```
 
@@ -188,24 +188,23 @@ IN IN_dose_uom_cd BIGINT UNSIGNED,
 IN IN_form_id BIGINT UNSIGNED, 
 IN IN_route_id BIGINT UNSIGNED)
 BEGIN
-SELECT DISTINCT
-vmp.vmpid, 
-vmp.name,
-calc_qty(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs) AS qty,
-vmp.udfs_dose_uomcd,
-vpi.strnt_dnmtr_uomcd,
-calc_rank(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs,vmpform
-.formid) AS rank
-FROM vtm 
-INNER JOIN vmp ON vtm.vtmid = vmp.vtmid 
-INNER JOIN vmpform ON vmp.vmpid = vmpform.vmpid 
-INNER JOIN vmproute ON vmp.vmpid = vmproute.vmpid 
-INNER JOIN vpi ON vmp.vmpid = vpi.vmpid
-INNER JOIN lookup ON vpi.strnt_nmrtr_uomcd = lookup.id
-WHERE vtm.vtmid = IN_vtm_id 
-AND ( vmpform.formid = IN_form_id OR IsNull(IN_form_id) )
-AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) )
-ORDER BY rank, qty;
+	SELECT DISTINCT
+	vmp.vmpid, 
+	vmp.name,
+	calc_qty(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs) AS qty,
+	vmp.udfs_dose_uomcd,
+	vpi.strnt_dnmtr_uomcd,	calc_rank(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs,vmpform
+	.formid) AS rank
+	FROM vtm 
+	INNER JOIN vmp ON vtm.vtmid = vmp.vtmid 
+	INNER JOIN vmpform ON vmp.vmpid = vmpform.vmpid 
+	INNER JOIN vmproute ON vmp.vmpid = vmproute.vmpid 
+	INNER JOIN vpi ON vmp.vmpid = vpi.vmpid
+	INNER JOIN lookup ON vpi.strnt_nmrtr_uomcd = lookup.id
+	WHERE vtm.vtmid = IN_vtm_id 
+	AND ( vmpform.formid = IN_form_id OR IsNull(IN_form_id) )
+	AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) )
+	ORDER BY rank, qty;
 END
 ```
 ## Known Issues
