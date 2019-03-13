@@ -35,8 +35,6 @@ Together with the FORM, ROUTE and UNIT_OF_MEASURE vocabularies from the dm+d **L
 
 When dm+d data is imported into a relational database, concepts marked as INVALID or VMP concepts flagged as "not actual products available" may be excluded from the import.
 
-The logical entity relationship diagram for this dm+d set is;
-
 ![alt text](images/explore/e-r.jpg "dm+d Entity Relationship Diagram")
 
 ### Mapping between ucum and SNOMED/dm+d
