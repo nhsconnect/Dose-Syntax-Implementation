@@ -58,6 +58,9 @@ For example `g` is a ucum code for "gram" and the equivalent within dm+d is `gra
 ### Step 1 - Get child VMPs of the VTM
 
 A suitable SQL query to return child VMPs for a VTM, with optional Route or Form constraints would be as follows. This assumes INVALID concepts and VMPs where no actual products are available has been excluded from the database.
+
+<script src="https://gist.github.com/RobertGoochUK/96ace5fc8babc8b172526517cf28bbfc.js"></script>
+
 ```
 SELECT vmp.vmpid, vmp.name, vmp.udfs_dose_uomcd, vpi.strnt_dnmtr_uomcd
 FROM vtm
@@ -104,6 +107,9 @@ Length | metre | 258669008  | 1
 #### Function for quantity
 
 A suitable SQL function to calculate the quantity of a given VMP to fulfil the requested dose quantity would be as follows.
+
+<script src="https://gist.github.com/RobertGoochUK/1ea9d2aa9f0265adac11228aad6480f7.js"></script>
+
 ```
 FUNCTION calc_qty(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL(9,3))
 RETURNS decimal(30,12)
@@ -130,6 +136,9 @@ Where
 #### Function for ranking / ordering
 
 Uses the **calc_qty** function from above then calculates a ranking value which can be used to order the overall SQL query.
+
+<script src="https://gist.github.com/RobertGoochUK/83b0d62e205134d7589f454b858b8449.js"></script>
+
 ```
 FUNCTION calc_rank(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL, formid BIGINT UNSIGNED)
 RETURNS SMALLINT(5) UNSIGNED
@@ -178,6 +187,9 @@ The following dose forms are typically not divisible. This is not always the cas
 421720008 | Spray
 
 ## Complete Stored Procedure
+
+<script src="https://gist.github.com/RobertGoochUK/2ff8abae399fc6908d477d7ed1ec7134.js"></script>
+
 ```
 PROCEDURE sp_VTMtoVMP(
 IN IN_vtm_id BIGINT UNSIGNED, 
