@@ -61,17 +61,6 @@ A suitable SQL query to return child VMPs for a VTM, with optional Route or Form
 
 <script src="https://gist.github.com/RobertGoochUK/96ace5fc8babc8b172526517cf28bbfc.js"></script>
 
-```
-SELECT vmp.vmpid, vmp.name, vmp.udfs_dose_uomcd, vpi.strnt_dnmtr_uomcd
-FROM vtm
-INNER JOIN vmp ON vtm.vtmid = vmp.vtmid
-INNER JOIN vmpform ON vmp.vmpid = vmpform.vmpid
-INNER JOIN vmproute ON vmp.vmpid = vmproute.vmpid
-INNER JOIN vpi ON vmp.vmpid = vpi.vmpid
-WHERE vtm.vtmid = {insert_vtm_id}
-AND ( vmpform.formid = IN_form_id OR IsNull(IN_form_id) )
-AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) );
-```
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
 
 #### Conversion between scaler units of measure, e.g. gram to milligram
@@ -110,19 +99,6 @@ A suitable SQL function to calculate the quantity of a given VMP to fulfil the r
 
 <script src="https://gist.github.com/RobertGoochUK/1ea9d2aa9f0265adac11228aad6480f7.js"></script>
 
-```
-FUNCTION calc_qty(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL(9,3))
-RETURNS decimal(30,12)
-BEGIN
-	IF den = 0 THEN
-		SET den = 1;
-	END IF;
-	IF udfs = 0 THEN 
-		RETURN doseQ / ( num / den ); 
-	END IF;
-	RETURN ( doseQ / ( num / den ) ) / udfs;
-END
-```
 Where
 
 **doseQ** is the required dose quantity, e.g. 12.5
@@ -138,31 +114,6 @@ Where
 Uses the **calc_qty** function from above then calculates a ranking value which can be used to order the overall SQL query.
 
 <script src="https://gist.github.com/RobertGoochUK/83b0d62e205134d7589f454b858b8449.js"></script>
-
-```
-FUNCTION calc_rank(doseQ DECIMAL(9,3), num DECIMAL(30,12), den DECIMAL(9,3), udfs DECIMAL, formid BIGINT UNSIGNED)
-RETURNS SMALLINT(5) UNSIGNED
-BEGIN
-	DECLARE qty DECIMAL(30,12) UNSIGNED;
-	DECLARE rank SMALLINT UNSIGNED;
-	DECLARE divisable BIGINT UNSIGNED;
-	SET qty = calc_qty(doseQ, num, den, udfs);
-	IF ( qty < 1 ) THEN
-		SET rank = 3;
-	ELSEIF ( ( qty % 1 ) != 0 ) THEN 
-		SET rank = 2;
-	ELSE 
-		SET rank = 1;
-	END IF;
-	IF (rank != 1) THEN
-		SELECT name FROM lookup WHERE valueset="NOTDIVISABLE" AND id = formid INTO divisable;
-		IF ( !IsNull(divisable) ) THEN
-			SET rank = 4; 
-		END IF;
-	END IF;
-	RETURN rank;
-END
-```
 
 Where **formid** is the dm+d code for the requested dose quantity unit of measure.
 
@@ -190,33 +141,6 @@ The following dose forms are typically not divisible. This is not always the cas
 
 <script src="https://gist.github.com/RobertGoochUK/2ff8abae399fc6908d477d7ed1ec7134.js"></script>
 
-```
-PROCEDURE sp_VTMtoVMP(
-IN IN_vtm_id BIGINT UNSIGNED, 
-IN IN_dose_qty DECIMAL, 
-IN IN_dose_uom_cd BIGINT UNSIGNED, 
-IN IN_form_id BIGINT UNSIGNED, 
-IN IN_route_id BIGINT UNSIGNED)
-BEGIN
-	SELECT DISTINCT
-	vmp.vmpid, 
-	vmp.name,
-	calc_qty(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs) AS qty,
-	vmp.udfs_dose_uomcd,
-	vpi.strnt_dnmtr_uomcd,	calc_rank(IN_dose_qty,convert_units(vpi.strnt_nmrtr_val,vpi.strnt_nmrtr_uomcd,IN_dose_uom_cd),vpi.strnt_dnmtr_val,vmp.udfs,vmpform
-	.formid) AS rank
-	FROM vtm 
-	INNER JOIN vmp ON vtm.vtmid = vmp.vtmid 
-	INNER JOIN vmpform ON vmp.vmpid = vmpform.vmpid 
-	INNER JOIN vmproute ON vmp.vmpid = vmproute.vmpid 
-	INNER JOIN vpi ON vmp.vmpid = vpi.vmpid
-	INNER JOIN lookup ON vpi.strnt_nmrtr_uomcd = lookup.id
-	WHERE vtm.vtmid = IN_vtm_id 
-	AND ( vmpform.formid = IN_form_id OR IsNull(IN_form_id) )
-	AND ( vmproute.routeid = IN_route_id OR IsNull(IN_route_id) )
-	ORDER BY rank, qty;
-END
-```
 ## Known Issues
 
 ### Products (VMPs) where the VPI strength is expressed as an inaccurate decimal value
