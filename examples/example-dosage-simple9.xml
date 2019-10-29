@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple9.xml" -->
 <medicationRequest>
-  <text>
-    <status value="generated"/>
-    <div>Microgynon 30 tablets (Bayer Plc) - 63 tablets - Follow directions</div>
-  </text>
   <contained>
     <medication>
       <id value="med1"/>
@@ -22,7 +18,6 @@
           <code value="428673006"/>
         </quantity>
       </dispenseRequest>
-      <text><div>Microgynon 30 tablets (Bayer Plc), 63 tablet</div></text>
     </medication>
   </contained>
   <medicationReference>

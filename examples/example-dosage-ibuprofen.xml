@@ -10,7 +10,6 @@
           <display value="Ibuprofen"/> 
         </coding>
       </code>
-      <text><div>Ibuprofen</div></text>
     </medication>
   </contained>
   <medicationReference>

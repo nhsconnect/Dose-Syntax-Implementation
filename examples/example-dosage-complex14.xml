@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex14.xml" -->
 <!-- Metoclopramide, orally 10mg to be taken when required for nausea up to three times daily -->
-
 <medicationRequest>
   <contained>
     <medication>
@@ -12,7 +11,6 @@
           <display value="Metoclopramide"/> 
         </coding>
       </code>
-<text><div>Metoclopramide</div></text>
     </medication>
   </contained>
   <medicationReference>

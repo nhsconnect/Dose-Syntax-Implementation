@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple5.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Micralax Micro-enema 5ml (RPH Pharmaceuticals AB) - once a day</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="med1"/>
@@ -14,7 +10,6 @@
 					<display value="Micralax Micro-enema 5ml (RPH Pharmaceuticals AB)"/>
 				</coding>
 			</code>
-			<text><div>Micralax Micro-enema 5ml (RPH Pharmaceuticals AB)</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

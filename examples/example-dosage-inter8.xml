@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter8.xml" -->
 <!-- Epoetin alfa, 4500units, ONCE a DAY, subcutaneous injection -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Epoetin alfa"/>
 				</coding>
 			</code>
-			<text><div>Epoetin alfa</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-complex17.xml" -->
 <medicationRequest>
-  <text>
-		<status value="generated"/>
-		<div>Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd) - infusion at a rate of 30 mL per kilogram - over 10 hours - intravenous</div>
-  </text>
   <contained>
     <medication>
       <id value="med1"/>

@@ -6,15 +6,6 @@
 <!-- then -->
 <!-- 2 tablets - every 4 hours - as required - max dose 6 tablets in 24 hours - Yellow tablets -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>
-Migraleve tablets (McNeil Products Ltd)
-2 tablets - take once - as required when migraine occurs - Max dose 2 tablets in 24 hours - Pink tablets
-Then
-2 tablets - every 4 hours - as required - max dose 6 tablets in 24 hours - Yellow tablets
-</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="internalMedicationIdentifer123abc"/>

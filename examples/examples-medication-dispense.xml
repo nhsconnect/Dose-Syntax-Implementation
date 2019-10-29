@@ -11,10 +11,6 @@
           <display value="Atenolol 100mg tablets (Actavis UK Ltd)"/>
         </coding>
       </code>
-      <text>
-        <status value="generated"/>
-        <div>Atenolol 100mg tablets (Actavis UK Ltd)</div>
-      </text>
     </medication>
   </contained>
   <medicationReference>

@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex11.xml" -->
 <!-- Aspirin 300mg dispersible tablets, two tablets to be taken four times daily well diluted in water. To be taken with or after food. -->
-
 <medicationRequest>
   <contained>
     <medication>
@@ -12,7 +11,6 @@
           <display value="Aspirin 300mg dispersible tablets"/>
         </coding>
       </code>
-      <text><div>Aspirin 300mg dispersible tablets</div></text>
     </medication>
   </contained>
   <medicationReference>

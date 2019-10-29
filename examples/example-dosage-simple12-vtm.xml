@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple12-vtm.xml" -->
 <medicationRequest>
- <text>
-  <status value="generated"/>
-  <div>Simvastatin - 40 milligram - oral - once a day - Do not stop taking this medicine except on your doctor's advice</div>
- </text>
   <contained>
     <medication>
       <id value="med1"/>
@@ -14,7 +10,6 @@
           <display value="Simvastatin"/>
         </coding>
       </code>
-      <text><div>Simvastatin</div></text>
     </medication>
   </contained>
   <medicationReference>

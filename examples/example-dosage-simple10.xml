@@ -1,8 +1,5 @@
 <!-- "file": "example-dosage-simple10.xml" -->
 <medicationRequest>
- <text>
-  <status value="generated"/><div>Beclometasone 0.025% cream - Apply Thigh - twice a day</div>
- </text>
 <contained>
 <medication>
 <id value="med1"/>
@@ -13,7 +10,6 @@
 <display value="Beclometasone 0.025% cream"/>
 </coding>
 </code>
-<text><div>Beclometasone 0.025% cream</div></text>
 </medication>
 </contained>
 <medicationReference>

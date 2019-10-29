@@ -1,6 +1,5 @@
 <!-- "file": "examples-medication-vmp-qty.xml" -->
 <!-- Example referencing a Virtual Medicinal Product (VMP) + dispenseRequest as a contained resource -->
-
 <medicationRequest>
  <contained>
   <medication>
@@ -12,10 +11,6 @@
      <display value="Paracetamol 120mg/5ml oral suspension paediatric sugar free"/>
     </coding>
    </code>
-   <text>
-    <status value="generated"/>
-    <div>Paracetamol 120mg/5ml oral suspension paediatric sugar free</div>
-   </text>
   </medication>
  </contained>
  <medicationReference>

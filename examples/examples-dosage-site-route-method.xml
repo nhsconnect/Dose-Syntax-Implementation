@@ -1,6 +1,5 @@
 <!-- "file": "examples-dosage-site-route-method.xml" -->
 <!-- Example use of the FHIR STU3 Dosage.site .route and .method -->
-
 <!-- Site -->
 <site>
  <coding>
@@ -9,7 +8,6 @@
   <display value="Anterior abdominal wall structure"/>
  </coding>
 </site>
-
 <!-- Route -->
 <route>
  <coding>
@@ -18,7 +16,6 @@
   <display value="intramuscular route"/>
  </coding>
 </route>
-
 <!-- Method -->
 <method>
  <coding>

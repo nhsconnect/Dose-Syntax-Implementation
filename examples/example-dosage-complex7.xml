@@ -11,9 +11,6 @@
 					<display value="Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)"/>
 				</coding>
 			</code>
-			<text>
-				<div>Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

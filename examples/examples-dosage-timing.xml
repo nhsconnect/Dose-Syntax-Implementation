@@ -1,6 +1,5 @@
 <!-- "file": "examples-dosage-timing.xml" -->
 <!-- Example use of the FHIR STU3 Dosage.timing -->
-
 <!-- every 8 hours -->
 <timing>
  <repeat>
@@ -9,7 +8,6 @@
   <periodUnit value="h"/>
  </repeat>
 </timing>
-
 <!-- 4 times a day -->
 <timing>
  <repeat>
@@ -18,7 +16,6 @@
   <periodUnit value="d"/>
  </repeat>
 </timing>
-
 <!-- 2 to 4 times a day -->
 <timing>
  <repeat>
@@ -28,7 +25,6 @@
   <periodUnit value="d"/>
  </repeat>
 </timing>
-
 <!-- every 3 to 4 weeks -->
 <timing>
  <repeat>
@@ -38,7 +34,6 @@
   <periodUnit value="wk"/>
  </repeat>
 </timing>
-
 <!-- 3 to 4 times every 1 to 2 weeks -->
 <timing>
  <repeat>
@@ -49,7 +44,6 @@
   <periodUnit value="wk"/>
  </repeat>
 </timing>
-
 <!-- daily -->
 <timing>
  <repeat>
@@ -57,7 +51,6 @@
   <periodUnit value="d"/>
  </repeat>
 </timing>
-
 <!-- twice -->
 <timing>
  <repeat>

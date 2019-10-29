@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex6.xml" -->
 <!-- Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd), two to be taken once a week, start one week before travel and continue until 4 weeks after return -->
-
 <medicationRequest>
 <contained>
 <medication>
@@ -12,7 +11,6 @@
 <display value="Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)"/>
 </coding>
 </code>
-<text><div>Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)</div></text>
 </medication>
 </contained>
 <medicationReference>

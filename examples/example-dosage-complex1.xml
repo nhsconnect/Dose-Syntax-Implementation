@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex1.xml" -->
 <!-- Microgynon 30 tablets (Bayer Plc), 1 tablet, ONCE a DAY, oral, for 21 days, subsequent courses repeated after 7-day tablet-free interval -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Microgynon 30 tablets (Bayer Plc)"/>
 				</coding>
 			</code>
-			<text><div>Microgynon 30 tablets (Bayer Plc)</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter9.xml" -->
 <medicationRequest>
-  <text><div>Prednisolone 5mg tablets, 8 tablets, once a day, after food, or 7 days, then stop</div></text>
   <contained>
     <medication>
       <id value="internalMedicationIdnetifierXYZ"/>

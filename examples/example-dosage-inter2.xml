@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter2.xml" -->
 <!-- Zopiclone 3.75mg tablets, 1 tablet, at BEDTIME, PRN, oral -->
-
 <medicationRequest>
  <contained>
   <medication>
@@ -12,7 +11,6 @@
      <display value="Zopiclone 3.75mg tablets"/>
     </coding>
    </code>
-   <text><div>Zopiclone 3.75mg tablets</div></text>
   </medication>
  </contained>
  <medicationReference>

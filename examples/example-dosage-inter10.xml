@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter10.xml" -->
 <!-- Hydrocortisone 0.1% cream, apply 2-3 times daily to area around lips -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Hydrocortisone 0.1% cream"/>
 				</coding>
 			</code>
-			<text><div>Hydrocortisone 0.1% cream</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

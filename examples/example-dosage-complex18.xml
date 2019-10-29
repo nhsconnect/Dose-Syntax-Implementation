@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex18.xml" -->
 <!-- Insulin lispro (Humalog) 16units to be given by subcutaneous injection at meal times -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Insulin lispro"/> 
 				</coding>
 			</code>
-			<text><div>Insulin lispro - HUMALOG</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

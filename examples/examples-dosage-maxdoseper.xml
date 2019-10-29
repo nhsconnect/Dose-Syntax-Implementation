@@ -14,7 +14,6 @@
     <code value="h"/>
   </denominator>
 </maxDosePerPeriod>
-
 <!-- Maximum dose per administration of 2.5mg -->
 <maxDosePerAdministration>
   <value value="2.5"/>
@@ -22,7 +21,6 @@
   <system value="http://unitsofmeasure.org"/>
   <code value="mg"/>
 </maxDosePerAdministration>
-
 <!-- Maximum dose over lifetime of the patient of 600 mg/m2 -->
 <maxDosePerLifetime>
   <value value="600"/>

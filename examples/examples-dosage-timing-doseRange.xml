@@ -1,6 +1,5 @@
 <!-- "file": "examples-dosage-timing-doseRange.xml" -->
 <!-- Example use of the FHIR STU3 Dosage.timing.doseRange -->
-
 <!-- for a dose between 7.5 to 30 milligram -->
 <doseRange>
   <low>

@@ -12,10 +12,6 @@
 					<display value="Prednisolone"/>
 				</coding>
 			</code>
-			<text>
-				<status value="generated"/>
-				<div>Prednisolone</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

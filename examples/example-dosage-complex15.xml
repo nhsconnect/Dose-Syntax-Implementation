@@ -18,9 +18,6 @@
 					<display value="suppository"/>
 				</coding>
 			</form>
-			<text>
-				<div>Aspirin</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

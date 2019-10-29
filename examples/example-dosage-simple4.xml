@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple4.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Trimethoprim 100mg tablets (Crescent Pharma Ltd) - 2 tablet - oral - twice a day</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="med1"/>
@@ -14,7 +10,6 @@
 					<display value="Trimethoprim 100mg tablets (Crescent Pharma Ltd)"/>
 				</coding>
 			</code>
-			<text><div>Trimethoprim 100mg tablets (Crescent Pharma Ltd)</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

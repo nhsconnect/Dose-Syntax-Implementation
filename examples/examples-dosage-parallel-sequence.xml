@@ -2,7 +2,6 @@
 <!-- Example use of the FHIR STU3 Dosage using multiple parallel sequences -->
 <!-- Furosemide 40mg tablets, take two in the morning and one at midday for one week -->
 <!-- Using a contained Medication resource -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -14,10 +13,6 @@
 					<display value="Furosemide 40mg tablets"/>
 				</coding>
 			</code>
-			<text>
-				<status value="generated"/>
-				<div>Furosemide 40mg tablets</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

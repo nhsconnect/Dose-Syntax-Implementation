@@ -18,9 +18,6 @@
 					<display value="Modified-release capsule"/>
 				</coding>
 			</form>
-			<text>
-				<div>Morphine</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

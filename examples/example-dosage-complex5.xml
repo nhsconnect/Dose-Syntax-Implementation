@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex5.xml" -->
 <!-- Prednisolone, 7.5-30 mg once daily, adjusted according to response -->
-
 <medicationRequest>
 <contained>
 <medication>
@@ -12,7 +11,6 @@
  <display value="Prednisolone"/>
  </coding>
  </code>
- <text><div>Prednisolone</div></text>
 </medication>
 </contained>
 <medicationReference>

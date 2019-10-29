@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter11.xml" -->
 <!-- Morphine, 30mg, intravenously, injection, four times a day over 24 hours -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Morphine"/>
 				</coding>
 			</code>
-			<text><div>Morphine</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

@@ -1,7 +1,6 @@
 <!-- STU3 Dosage current limitation -->
 <!-- Defining a maximum dose per course -->
 <!-- Example: Colchicine 500microgram tablets, 500 micrograms, 2 to 4 times a day until symptoms relieved, maximum 6 mg per course, do not repeat course within 3 days -->
-
 <medicationRequest>
   <contained>
     <medication>
@@ -13,10 +12,6 @@
           <display value=\"Colchicine 500microgram tablets\"/>
         </coding>
       </code>
-      <text>
-        <status value=\"generated\"/>
-        <div>Colchicine 500microgram tablets</div>
-      </text>
     </medication>
   </contained>
   <medicationReference>

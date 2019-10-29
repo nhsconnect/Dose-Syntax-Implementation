@@ -1,11 +1,8 @@
 <!-- "file": "example-dosage-complex4.xml" -->
 <!-- Co-codamol 8mg/500mg tablets, 2 tablets when required when first symptoms of migraine appear. Dose may be repeated after 4 hours if migraine recurs. Oral. Maximum dose 6 tablets every 24 hours -->
 <!-- This example could be modelled in two ways. -->
-
 <!-- 2 tablets - as required when migraine occurs - every 4 hours - Maximum dose 6 tablets per 24 hours - Additional doses only to be taken after migraine recurrence -->
 <dosageInstruction>
-<text>2 tablets - as required when migraine occurs- every 4 hours - Maximum dose 6 tablets per 24 hours - Additional doses only to be taken after migraine recurrence
-</text>
 <doseQuantity>
 <value value="2"/>
    <unit value="tablet"/>
@@ -40,14 +37,11 @@
  </maxDosePerPeriod>
  <patientInstruction value="Additional doses only to be taken after migraine recurrence"/>
 </dosageInstruction>
-   
 <!-- Alternatively -->
-    
 <!-- 2 tablets - as required when migraine occurs - take once - max dose 6 tablets per 24 hours - THEN - 2 tablets - every 4 hours - max dose 6 tablets per 24 hours - when migraine recurs -->
 <medicationRequest>
 <dosageInstruction>
   <sequence value="1"/>
-  <text>2 tablets - as required when migraine occurs - take once - Maximum dose 6 tablets per 24 hours</text>
   <doseQuantity>
    <value value="2"/>
    <unit value="tablet"/>
@@ -81,7 +75,6 @@
   </dosageInstruction>
   <dosageInstruction>
     <sequence value="2"/>
-    <text>2 tablets - every 4 hours - Maximum dose 6 tablets per 24 hours - when migraine recurs</text>
   <doseQuantity>
    <value value="2"/>
    <unit value="tablet"/>

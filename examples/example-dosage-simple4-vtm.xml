@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple4-vtm.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Trimethoprim - 200 milligram - oral - twice a day</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="med1"/>
@@ -14,7 +10,6 @@
 					<display value="Trimethoprim"/>
 				</coding>
 			</code>
-			<text><div>Trimethoprim</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

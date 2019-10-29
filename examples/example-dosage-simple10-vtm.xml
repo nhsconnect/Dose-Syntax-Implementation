@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple10-vtm.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Oxytetracycline - 250 milligram - oral - 4 times a day</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="med1"/>
@@ -14,7 +10,6 @@
 					<display value="Oxytetracycline"/>
 				</coding>
 			</code>
-			<text><div>Oxytetracycline</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

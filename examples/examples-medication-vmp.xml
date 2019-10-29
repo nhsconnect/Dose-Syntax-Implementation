@@ -11,10 +11,6 @@
      <display value="Simvastatin 10mg tablets"/>
     </coding>
    </code>
-   <text>
-    <status value="generated"/>
-    <div>Simvastatin 10mg tablets</div>
-   </text>
   </medication>
  </contained>
  <medicationReference>

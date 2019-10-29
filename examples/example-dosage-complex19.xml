@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex19.xml" -->
 <!-- Oxygen by inhalation 1 to 2 litres per minute via nasal cannula -->
-
 <medicationRequest>
   <contained>
     <medication>

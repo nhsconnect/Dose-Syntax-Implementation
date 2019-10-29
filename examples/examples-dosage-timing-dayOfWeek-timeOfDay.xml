@@ -1,6 +1,5 @@
 <!-- "file": "examples-dosage-timing-dayOfWeek-timeOfDay.xml" -->
 <!-- Example use of the FHIR STU3 Dosage.dayOfWeek and .timeOfDay -->
-
 <!-- to be given on Mondays and Thursdays -->
 <timing>
  <repeat>
@@ -11,7 +10,6 @@
   <dayOfWeek value="thu"/>
  </repeat>
 </timing>
-
 <!-- to be given twice daily at 10:00 and 14:00 -->
 <timing>
  <repeat>
@@ -22,7 +20,6 @@
   <timeOfDay value="14:00"/>
  </repeat>
 </timing>
-
 <!-- to be given on Mondays at midday -->
 <timing>
  <repeat>

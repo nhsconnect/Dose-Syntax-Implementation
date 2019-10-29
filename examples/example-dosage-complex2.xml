@@ -1,11 +1,6 @@
 <!-- "file": "example-dosage-complex2.xml" -->
 <!-- Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) -->
-
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Loperamide 2mg capsules - 2 capsule - up to a maximum of 8 capsule per day - Now, then 1 capsule - as required for Diarrhea - up to a maximum of 8 capsule per day</div>
-	</text>
 	<medicationCodeableConcept> 
 		<coding> 
 			<system value="http://snomed.info/sct"/> 

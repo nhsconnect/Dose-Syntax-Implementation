@@ -11,10 +11,6 @@
 					<display value="Metformin 500mg tablets"/>
 				</coding>
 			</code>
-			<text>
-				<status value="generated"/>
-				<div>Metformin 500mg tablets</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>

@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-inter4.xml" -->
 <!-- Salbutamol, 5mg to be given via a nebuliser. Repeat every 20-30 minutes as required -->
-
 <medicationRequest>
 	<contained>
 		<medication>
@@ -12,7 +11,6 @@
 					<display value="Salbutamol"/>
 				</coding>
 			</code>
-			<text><div>Salbutamol</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

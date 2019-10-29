@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple3.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day</div>
-	</text>
 	<contained>
 		<medication>
 			<id value="med1"/>
@@ -14,7 +10,6 @@
 					<display value="Omeprazole 10mg gastro-resistant tablets"/>
 				</coding>
 			</code>
-			<text><div>Omeprazole 10mg gastro-resistant tablets</div></text>
 		</medication>
 	</contained>
 	<medicationReference>

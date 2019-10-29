@@ -1,6 +1,5 @@
 <!-- "file": "examples-careconnect-referenced-medication.xml" -->
 <!-- Examples for how to reference a Medication resource within the CareConnect profiled resources -->
-
 <!-- Medication referenced as a “contained resource” -->
 <medicationRequest>
 	<contained>
@@ -13,10 +12,6 @@
 					<display value="Ramipril 5mg capsules"/>
 				</coding>
 			</code>
-			<text>
-				<status value="generated"/>
-				<div>Ramipril 5mg capsules</div>
-			</text>
 		</medication>
 	</contained>
 	<medicationReference>
@@ -25,7 +20,6 @@
 	</medicationReference>
 	<!-- other data within the medicationRequest -->
 </medicationRequest>
-
 <!-- Medication referenced as resource elsewhere in the Bundle -->
 <!-- In this example the medication information is contained within a CareConnect-MedicationStatement-1 profiled resource -->
 <Bundle xmlns="http://hl7.org/fhir">
@@ -54,16 +48,11 @@
 						<display value="Ramipril 5mg capsules"/>  
 					</coding> 
 				</code>
-				<text>
-					<status value="generated"/>
-					<div>Ramipril 5mg capsules</div>
-				</text>
 			</Medication>
 		</resource>
 	</entry>
 	<!-- other content within the Bundle -->
 </Bundle>
-
 <!-- Medication referenced via an external terminology service -->
 <medicationRequest>
 	<medicationReference>

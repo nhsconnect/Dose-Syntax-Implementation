@@ -1,6 +1,5 @@
 <!-- "file": "example-dosage-complex13.xml" -->
 <!-- Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd), one tablet to be taken twice daily on Mondays, Wednesdays and Fridays -->
-
 <medicationRequest>
  <contained>
   <medication>
@@ -12,7 +11,6 @@
      <display value="Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)"/>
     </coding>
    </code>
-   <text><div>Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)</div></text>
   </medication>
  </contained>
  <medicationReference>

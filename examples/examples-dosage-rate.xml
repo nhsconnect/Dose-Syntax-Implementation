@@ -1,6 +1,5 @@
 <!-- "file": "examples-dosage-rate.xml" -->
 <!-- Example use of the FHIR STU3 Dosage.rate[x] -->
-
 <!-- at a rate of 30ml/hour using rateRatio -->
 <rateRatio>
 	<numerator>
@@ -16,7 +15,6 @@
 		<code value="h"/>
 	</denominator>
 </rateRatio>
-
 <!-- at a rate of 30ml/hour using doseQuantity -->
 <rateQuantity>
 	<value value="30"/>
@@ -24,7 +22,6 @@
 	<system value="http://unitsofmeasure.org"/>
 	<code value="mL/h"/>
 </rateQuantity>
-
 <!-- at a rate of 1mcg/kg/minute using doseQuantity -->
 <rateQuantity>
 	<value value="1"/>
@@ -32,7 +29,6 @@
 	<system value="http://unitsofmeasure.org"/>
 	<code value="ug/kg/h"/>
 </rateQuantity>
-
 <!-- give at 1-2 litres per minute using rateRange -->
 <rateRange>
 	<low>

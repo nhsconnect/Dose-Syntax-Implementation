@@ -1,9 +1,5 @@
 <!-- "file": "example-dosage-simple8.xml" -->
 <medicationRequest>
-	<text>
-		<status value="generated"/>
-		<div>Diprobase ointment (Bayer Plc) - 1 application - Topical - 3 times a day</div>
-	</text>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="http://snomed.info/sct"/>

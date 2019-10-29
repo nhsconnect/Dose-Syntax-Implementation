@@ -1,10 +1,6 @@
 <!-- "file": "example-dosage-vitB12.xml" -->
 <!-- Hydroxocobalamin 10mg/2ml solution for injection ampoules, one to be given by IM injection into the shoulder, 3 times per week for 6 doses, then every 3 months, starting on 1st November 2019 -->
 <medicationRequest>
-  <text>
-    <status value="generated"/>
-    <div>Hydroxocobalamin 10mg/2ml solution for injection ampoules - 1 ampoule - 3 times a week - intramuscular route - Shoulder - starting 2019-11-01 - take 6 times, then 1 ampoule - every 3 months - intramuscular route - Shoulder</div>
-  </text>
   <contained>
     <medication>
       <id value="med1"/>
