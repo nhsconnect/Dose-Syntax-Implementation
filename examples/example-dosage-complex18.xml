@@ -1,0 +1,48 @@
+<!-- "file": "example-dosage-complex18.xml" -->
+<!-- Insulin lispro (Humalog) 16units to be given by subcutaneous injection at meal times -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/> 
+					<code value="388454007"/>
+					<display value="Insulin lispro"/> 
+				</coding>
+			</code>
+			<text><div>Insulin lispro - HUMALOG</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" />
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="16"/>
+			<unit value="Unit"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="767525000"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="34206005"/>
+				<display value="subcutaneous"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="422145002"/>
+				<display value="inject"/>
+			</coding>
+		</method>
+		<timing>
+			<repeat>
+				<when value="C"/>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

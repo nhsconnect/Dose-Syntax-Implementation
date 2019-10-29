@@ -1,0 +1,58 @@
+<!-- "file": "example-dosage-complex17.xml" -->
+<medicationRequest>
+  <text>
+		<status value="generated"/>
+		<div>Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd) - infusion at a rate of 30 mL per kilogram - over 10 hours - intravenous</div>
+  </text>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/> 
+          <code value="21514511000001103 "/> 
+          <display value="Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd)"/> 
+        </coding>
+      </code>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" />
+  </medicationReference>
+<dosageInstruction>
+<route>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="47625008"/>
+  <display value="intravenous"/>
+ </coding>
+</route>
+<method>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="129330003"/>
+  <display value="infusion"/>
+ </coding>
+</method>
+<rateRatio>
+	<numerator>
+		<value value="30"/>
+		<unit value="millilitre"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="mL"/>
+	</numerator>
+	<denominator>
+		<value value="1"/>
+		<unit value="kilogram"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="kg"/>
+	</denominator>
+</rateRatio>
+<timing>
+ <repeat>
+  <duration value="10"/>
+  <durationUnit value="h" />
+ </repeat>
+</timing>
+</dosageInstruction>
+</medicationRequest>

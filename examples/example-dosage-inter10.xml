@@ -1,0 +1,39 @@
+<!-- "file": "example-dosage-inter10.xml" -->
+<!-- Hydrocortisone 0.1% cream, apply 2-3 times daily to area around lips -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="331680008"/>
+					<display value="Hydrocortisone 0.1% cream"/>
+				</coding>
+			</code>
+			<text><div>Hydrocortisone 0.1% cream</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="417924000"/>
+				<display value="Apply"/>
+			</coding>
+		</method>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<frequencyMax value="3"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<patientInstruction value="Apply to area around lips"/>
+	</dosageInstruction>
+</medicationRequest>

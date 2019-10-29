@@ -1,0 +1,65 @@
+<!-- "file": "example-dosage-complex15.xml" -->
+<!-- Aspirin suppository, 600mg rectally every 4 hours. Maximum 3.6gm per 24 hours -->
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="7947003"/>
+					<display value="Aspirin"/>
+				</coding>
+			</code>
+			<form>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="385194003"/>
+					<display value="suppository"/>
+				</coding>
+			</form>
+			<text>
+				<div>Aspirin</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" />
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="600"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="37161004"/>
+				<display value="Rectal"/>
+			</coding>
+		</route>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="4"/>
+				<periodUnit value="h"/>
+			</repeat>
+		</timing>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="3.6"/>
+				<unit value="gram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="g"/>
+			</numerator>
+			<denominator>
+				<value value="24"/>
+				<unit value="hour"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="h"/>
+			</denominator>
+		</maxDosePerPeriod>
+	</dosageInstruction>
+</medicationRequest>

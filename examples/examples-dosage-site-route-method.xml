@@ -1,0 +1,29 @@
+<!-- "file": "examples-dosage-site-route-method.xml" -->
+<!-- Example use of the FHIR STU3 Dosage.site .route and .method -->
+
+<!-- Site -->
+<site>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="59380008"/>
+  <display value="Anterior abdominal wall structure"/>
+ </coding>
+</site>
+
+<!-- Route -->
+<route>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="78421000"/>
+  <display value="intramuscular route"/>
+ </coding>
+</route>
+
+<!-- Method -->
+<method>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="129326001"/>
+  <display value="Injection"/>
+ </coding>
+</method>

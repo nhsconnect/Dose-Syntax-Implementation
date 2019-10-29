@@ -1,0 +1,18 @@
+<!-- "file": "examples-dosage-timing-doseQuantity.xml" -->
+<!-- Example use of the FHIR STU3 Dosage.timing.doseQuantity -->
+
+<!-- 1 capsule -->
+<doseQuantity>
+ <value value="1"/>
+ <unit value="capsule"/>
+ <system value="http://snomed.info/sct"/>
+ <code value="732937005"/>
+</doseQuantity>
+
+<!-- 30 milligrams -->
+<doseQuantity>
+ <value value="30"/>
+ <unit value="milligram"/>
+ <system value="http://unitsofmeasure.org"/>
+ <code value="mg"/>
+</doseQuantity>

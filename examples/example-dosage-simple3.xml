@@ -1,0 +1,45 @@
+<!-- "file": "example-dosage-simple3.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Omeprazole 10mg gastro-resistant tablets - 1 tablet - oral - once a day</div>
+	</text>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="407846000"/>
+					<display value="Omeprazole 10mg gastro-resistant tablets"/>
+				</coding>
+			</code>
+			<text><div>Omeprazole 10mg gastro-resistant tablets</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>  
+			<value value="1"/>  
+			<unit value="tablet"/>  
+			<system value="http://snomed.info/sct"/>  
+			<code value="428673006"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+	</dosageInstruction>
+</medicationRequest>

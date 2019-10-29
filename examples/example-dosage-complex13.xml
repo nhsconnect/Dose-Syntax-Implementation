@@ -1,0 +1,39 @@
+<!-- "file": "example-dosage-complex13.xml" -->
+<!-- Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd), one tablet to be taken twice daily on Mondays, Wednesdays and Fridays -->
+
+<medicationRequest>
+ <contained>
+  <medication>
+   <id value="med1"/>
+   <code>
+    <coding>
+     <system value="http://snomed.info/sct"/> 
+     <code value="688711000001107"/>
+     <display value="Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)"/>
+    </coding>
+   </code>
+   <text><div>Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)</div></text>
+  </medication>
+ </contained>
+ <medicationReference>
+  <reference value="#med1" />
+ </medicationReference>
+ <dosageInstruction>
+  <doseQuantity>
+   <value value="1"/>
+   <unit value="tablet"/>
+   <system value="http://snomed.info/sct"/>
+   <code value="428673006"/>
+  </doseQuantity>
+  <timing>
+   <repeat>
+    <frequency value="2"/>
+    <period value="1"/>
+    <periodUnit value="d"/>
+    <dayOfWeek value="mon"/>
+    <dayOfWeek value="wed"/>
+    <dayOfWeek value="fri"/>
+   </repeat>
+  </timing>
+ </dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,76 @@
+<!-- "file": "example-dosage-complex2.xml" -->
+<!-- Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) -->
+
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Loperamide 2mg capsules - 2 capsule - up to a maximum of 8 capsule per day - Now, then 1 capsule - as required for Diarrhea - up to a maximum of 8 capsule per day</div>
+	</text>
+	<medicationCodeableConcept> 
+		<coding> 
+			<system value="http://snomed.info/sct"/> 
+			<code value="317378005"/> 
+			<display value="Loperamide 2mg capsules"/> 
+		</coding> 
+	</medicationCodeableConcept> 
+	<dosageInstruction>
+		<sequence value="1"/>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="capsule"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428641000"/>
+		</doseQuantity>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="8"/>
+				<unit value="capsule"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="428641000"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org/"/>
+				<code value="d"/>
+			</denominator>
+		</maxDosePerPeriod>
+		<additionalInstruction>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="421723005"/>
+				<display value="Now"/>
+			</coding>
+		</additionalInstruction>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="2"/>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="capsule"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428641000"/>
+		</doseQuantity>
+		<asNeededCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="62315008"/>
+				<display value="Diarrhea"/>
+			</coding>
+		</asNeededCodeableConcept>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="8"/>
+				<unit value="capsule"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="428641000"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org/"/>
+				<code value="d"/>
+			</denominator>
+		</maxDosePerPeriod>
+	</dosageInstruction>
+</medicationRequest>

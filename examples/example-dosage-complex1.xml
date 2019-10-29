@@ -1,0 +1,52 @@
+<!-- "file": "example-dosage-complex1.xml" -->
+<!-- Microgynon 30 tablets (Bayer Plc), 1 tablet, ONCE a DAY, oral, for 21 days, subsequent courses repeated after 7-day tablet-free interval -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="42111000001107 "/>
+					<display value="Microgynon 30 tablets (Bayer Plc)"/>
+				</coding>
+			</code>
+			<text><div>Microgynon 30 tablets (Bayer Plc)</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+			<boundsDuration>
+				<value value="21"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</boundsDuration>>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+		<additionalInstruction>
+			<text value="subsequent courses repeated after 7-day tablet-free interval"/>
+		</additionalInstruction>
+	</dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,70 @@
+<!-- "file": "examples-dosage-parallel-sequence.xml" -->
+<!-- Example use of the FHIR STU3 Dosage using multiple parallel sequences -->
+<!-- Furosemide 40mg tablets, take two in the morning and one at midday for one week -->
+<!-- Using a contained Medication resource -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="317972000 "/>
+					<display value="Furosemide 40mg tablets"/>
+				</coding>
+			</code>
+			<text>
+				<status value="generated"/>
+				<div>Furosemide 40mg tablets</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+		<timing>
+			<repeat>    
+				<when value="MORN"/>
+				<frequency value="1"/>    
+				<period value="1"/>    
+				<periodUnit value="d"/> 
+				<boundsDuration>   
+					<value value="1"/>   
+					<unit value="wk"/>  
+					<system value="http://unitsofmeasure.org"/>  
+				</boundsDuration> 
+			</repeat> 
+		</timing>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+		<timing>
+			<repeat>    
+				<timeOfDay value="12:00"/>
+				<frequency value="1"/>    
+				<period value="1"/>    
+				<periodUnit value="d"/> 
+				<boundsDuration>   
+					<value value="1"/>   
+					<unit value="wk"/>  
+					<system value="http://unitsofmeasure.org"/>  
+				</boundsDuration> 
+			</repeat> 
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

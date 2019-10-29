@@ -1,0 +1,51 @@
+<!-- "file": "example-dosage-complex16.xml" -->
+<!-- Morphine modified release capsule, 20mg orally every 12 hours -->
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="73572009"/>
+					<display value="Morphine"/>
+				</coding>
+			</code>
+			<form>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="385054002"/>
+					<display value="Modified-release capsule"/>
+				</coding>
+			</form>
+			<text>
+				<div>Morphine</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" />
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="20"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="12"/>
+				<periodUnit value="h"/>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

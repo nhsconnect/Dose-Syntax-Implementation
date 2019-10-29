@@ -1,0 +1,52 @@
+<!-- "file": "example-dosage-simple5-vtm.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Sodium citrate - Enema - 450 milligram - Rectal - once a day</div>
+	</text>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="412547001"/>
+					<display value="Sodium citrate"/>
+				</coding>
+			</code>
+     			<form>
+				<coding>
+					<system value="http://snomed.info/sct"/> 
+					<code value="385186005"/>  
+					<display value="Enema"/>
+				</coding>
+			</form>
+			<text><div>Sodium citrate</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+   		<doseQuantity>  
+			<value value="450"/>  
+			<unit value="milligram"/>  
+			<system value="http://unitsofmeasure.org"/>  
+			<code value="mg"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="37161004"/>
+				<display value="Rectal"/>
+			</coding>
+		</route>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,47 @@
+<!-- "file": "example-dosage-complex5.xml" -->
+<!-- Prednisolone, 7.5-30 mg once daily, adjusted according to response -->
+
+<medicationRequest>
+<contained>
+<medication>
+ <id value="med1"/>
+ <code>
+ <coding>
+ <system value="http://snomed.info/sct"/>
+ <code value="52388000"/>
+ <display value="Prednisolone"/>
+ </coding>
+ </code>
+ <text><div>Prednisolone</div></text>
+</medication>
+</contained>
+<medicationReference>
+ <reference value="#med1" /> 
+</medicationReference>
+ <dosageInstruction>
+<timing>
+ <repeat>
+  <frequency value="1"/>
+  <period value="1"/>
+  <periodUnit value="d"/>
+ </repeat>
+</timing>
+<doseRange>
+ <low>
+   <value value="7.5"/>
+   <unit value="milligram"/>
+   <code value="mg"/>
+   <system value="http://unitsofmeasure.org"/>
+ </low>
+ <high>
+   <value value="30"/>
+   <unit value="milligram"/>
+   <code value="mg"/>
+   <system value="http://unitsofmeasure.org"/>
+ </high>
+</doseRange>
+<additionalInstruction>
+ <text value="adjust according to response"/>
+</additionalInstruction>
+ </dosageInstruction>
+</medicationRequest>

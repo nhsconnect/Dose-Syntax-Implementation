@@ -1,0 +1,36 @@
+<!-- "file": "example-dosage-simple8.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Diprobase ointment (Bayer Plc) - 1 application - Topical - 3 times a day</div>
+	</text>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="3491511000001101"/>
+			<display value="Diprobase ointment (Bayer Plc)"/>
+		</coding>
+	</medicationCodeableConcept>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="3"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="application"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="10692211000001108"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="6064005"/>
+				<display value="Topical"/>
+			</coding>
+		</route>
+	</dosageInstruction>
+</medicationRequest>

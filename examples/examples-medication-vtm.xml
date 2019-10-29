@@ -1,0 +1,27 @@
+<!-- "file": "examples-medication-vtm.xml" -->
+<!-- Example referencing a Virtual Therapeutic Moiety (VTM) as a contained resource -->
+
+<medicationRequest>
+ <contained>
+  <medication>
+   <id value="med1"/>
+   <text>
+    <status value="generated"/>
+    <div>Paracetamol</div>
+   </text>
+   <code>
+    <coding>
+     <system value="http://snomed.info/sct"/>
+     <code value="90332006"/>
+     <display value="Paracetamol"/>
+    </coding>
+   </code>
+  </medication>
+ </contained>
+ <medicationReference>
+  <reference value="#med1" /> 
+ </medicationReference>
+ <dosageInstruction>
+  <!-- dosage information added here -->
+ </dosageInstruction>
+</medicationRequest>

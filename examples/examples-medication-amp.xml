@@ -1,0 +1,26 @@
+<!-- "file": "examples-medication-amp.xml" -->
+!-- Example referencing a Actual Medicinal Product (AMP) as a contained resource -->
+<medicationRequest>
+ <contained>
+  <medication>
+   <id value="med1"/>
+   <code>
+    <coding>
+     <system value="http://snomed.info/sct"/>
+     <code value="4896211000001101"/>
+     <display value="Simvador 10mg tablets (Discovery Pharmaceuticals)"/>
+    </coding>
+   </code>
+   <text>
+    <status value="generated"/>
+    <div>Simvador 10mg tablets (Discovery Pharmaceuticals)</div>
+   </text>
+  </medication>
+ </contained>
+ <medicationReference>
+  <reference value="#med1" /> 
+ </medicationReference>
+ <dosageInstruction>
+  <!-- dosage information added here -->
+ </dosageInstruction>
+</medicationRequest>

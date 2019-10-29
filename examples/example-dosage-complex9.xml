@@ -1,0 +1,151 @@
+<!-- "file": "example-dosage-complex9.xml" -->
+<!-- Metformin 500mg tablets, initially 500 mg once daily for 1 week, dose to be taken with breakfast, then 500 mg twice daily for week, dose to be taken with breakfast and evening meal, then 500 mg 3 times a day, dose to be taken with breakfast, lunch and evening meal; maximum 2 g per day -->
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="325278007"/>
+					<display value="Metformin 500mg tablets"/>
+				</coding>
+			</code>
+			<text>
+				<status value="generated"/>
+				<div>Metformin 500mg tablets</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" />
+	</medicationReference>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<doseQuantity>
+			<value value="500"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="2"/>
+				<unit value="gram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="g"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</denominator>
+		</maxDosePerPeriod>
+		<when value="CM"/>
+		<timing>
+			<duration value= "1"/>
+			<durationUnit value= "wk"/>
+			<frequency value= "1"/>
+			<period value= "1"/>
+			<periodUnit value= "d"/>
+		</timing>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="2"/>
+		<doseQuantity>
+			<value value="500"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<maxdoseperperiod>
+			<numerator>
+				<value value="2"/>
+				<unit value="gram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="g"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</denominator>
+		</maxdoseperperiod>
+		<when value="CM"/>
+		<when value="CV"/>
+		<timing>
+			<duration value="1"/>
+			<durationUnit value="wk"/>
+			<frequency value="2"/>
+			<period value="1"/>
+			<periodUnit value="d"/>
+		</timing>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="3"/>
+		<doseQuantity>
+			<value value="500"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<maxdoseperperiod>
+			<numerator>
+				<value value="2"/>
+				<unit value="gram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="g"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</denominator>
+		</maxdoseperperiod>
+		<when value="CM"/>
+		<when value="CV"/>
+		<timing>
+			<duration value="1"/>
+			<durationUnit value="wk"/>
+			<frequency value="2"/>
+			<period value="1"/>
+			<periodUnit value="d"/>
+		</timing>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="4"/>
+		<doseQuantity>
+			<value value="500"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<maxdoseperperiod>
+			<numerator>
+				<value value="2"/>
+				<unit value="gram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="g"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</denominator>
+		</maxdoseperperiod>
+		<when value="CM"/>
+		<when value="CV"/>
+		<when value="CD"/>
+		<timing>
+			<duration value="1"/>
+			<durationUnit value="wk"/>
+			<frequency value="3"/>
+			<period value="1"/>
+			<periodUnit value="d"/>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

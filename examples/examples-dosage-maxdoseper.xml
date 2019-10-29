@@ -1,0 +1,32 @@
+<!-- "file": "examples-dosage-maxdoseper.xml" -->
+<!-- Maximum dose per period of 12mg/24 hours -->
+<maxDosePerPeriod>
+  <numerator>
+    <value value="12"/>
+    <unit value="milligram"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg"/>
+  </numerator>
+  <denominator>
+    <value value="24"/>
+    <unit value="hour"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="h"/>
+  </denominator>
+</maxDosePerPeriod>
+
+<!-- Maximum dose per administration of 2.5mg -->
+<maxDosePerAdministration>
+  <value value="2.5"/>
+  <unit value="milligram"/>
+  <system value="http://unitsofmeasure.org"/>
+  <code value="mg"/>
+</maxDosePerAdministration>
+
+<!-- Maximum dose over lifetime of the patient of 600 mg/m2 -->
+<maxDosePerLifetime>
+  <value value="600"/>
+  <unit value="milligram per square metre"/>
+  <system value="http://unitsofmeasure.org"/>
+  <code value="mg/m2"/>
+</maxDosePerLifetime>

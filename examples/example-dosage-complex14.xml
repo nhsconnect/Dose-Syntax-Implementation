@@ -1,0 +1,48 @@
+<!-- "file": "example-dosage-complex14.xml" -->
+<!-- Metoclopramide, orally 10mg to be taken when required for nausea up to three times daily -->
+
+<medicationRequest>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/> 
+          <code value="56549003"/> 
+          <display value="Metoclopramide"/> 
+        </coding>
+      </code>
+<text><div>Metoclopramide</div></text>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" />
+  </medicationReference>
+<dosageInstruction>
+<route>
+<coding>
+<system value="http://snomed.info/sct"/>
+<code value="26643006"/>
+<display value="oral"/>
+</coding>
+</route>
+ <doseQuantity>
+ <value value="10"/>
+ <unit value="milligram"/>
+ <system value="http://unitsofmeasure.org"/>
+ <code value="mg"/>
+ </doseQuantity>
+<asNeededCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="422587007"/>
+      <display value="nausea"/>
+    </coding>
+  </asNeededCodeableConcept>
+<timing>
+   <frequencyMax value="3"/>
+   <period value="1"/>
+   <periodUnit value="d"/>
+ </timing>
+</dosageInstruction>
+</medicationRequest>

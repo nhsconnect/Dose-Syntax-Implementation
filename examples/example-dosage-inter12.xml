@@ -1,0 +1,49 @@
+<!-- "file": "example-dosage-inter12.xml" -->
+<!-- Glucose 5% infusion 500ml bags, 500ml, intravenous, continuous infusion, over 8 hours -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="4860111000001106"/>
+					<display value="Glucose 5% infusion 500ml bags"/>
+				</coding>
+			</code>
+			<text><div>Glucose 5% infusion 500ml bags</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="500"/>
+			<unit value="ml"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="258773002"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="intravenous route"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="129330003"/>
+				<display value="infusion - action"/>
+			</coding>
+		</method>
+		<timing>
+			<repeat>
+				<duration value="8"/>
+				<durationUnit value="h" />
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

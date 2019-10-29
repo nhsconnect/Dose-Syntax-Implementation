@@ -1,0 +1,46 @@
+<!-- "file": "example-dosage-inter4.xml" -->
+<!-- Salbutamol, 5mg to be given via a nebuliser. Repeat every 20-30 minutes as required -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="91143003"/>
+					<display value="Salbutamol"/>
+				</coding>
+			</code>
+			<text><div>Salbutamol</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>  
+			<value value="5"/>  
+			<unit value="milligram"/>  
+			<system value="http://unitsofmeasure.org"/>  
+			<code value="mg"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="18679011000001101"/>
+				<display value="inhalation"/>
+			</coding>
+		</route>
+		<timing>
+			<frequency value="1"/>
+			<period value="20"/>
+			<periodMax value="30"/>
+			<periodUnit value="min"/>
+		</timing>
+		<asNeededBoolean value="true"/>
+		<additionalInstruction>
+			<text value="to be given via a nebuliser"/>
+		</additionalInstruction>
+	</dosageInstruction>
+</medicationRequest>

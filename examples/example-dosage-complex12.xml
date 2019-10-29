@@ -1,0 +1,24 @@
+<!-- "file": "example-dosage-complex12.xml" -->
+<!-- Permitabs 400mg tablets. Add 500ml of warm water to one tablet and dissolve. Make the resulting solution up to 8 litres and use to soak feet. -->
+
+<medicationRequest>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/> 
+          <code value="4256811000001101"/>
+          <display value="Permitabs 400mg tablets for cutaneous solution (Alliance Pharmaceuticals Ltd)"/>
+        </coding>
+      </code>
+      <text><div>Permitabs 400mg tablets for cutaneous solution (Alliance Pharmaceuticals Ltd)</div></text>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" />
+  </medicationReference>
+  <dosageInstruction>
+    <patientInstruction value="Add 500ml of warm water to one tablet and dissolve. Make the resulting solution up to 8 litres and use to soak feet."/>
+  </dosageInstruction>
+</medicationRequest>

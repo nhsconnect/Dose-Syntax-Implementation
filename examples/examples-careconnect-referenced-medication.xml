@@ -1,0 +1,75 @@
+<!-- "file": "examples-careconnect-referenced-medication.xml" -->
+<!-- Examples for how to reference a Medication resource within the CareConnect profiled resources -->
+
+<!-- Medication referenced as a “contained resource” -->
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="318902004"/>
+					<display value="Ramipril 5mg capsules"/>
+				</coding>
+			</code>
+			<text>
+				<status value="generated"/>
+				<div>Ramipril 5mg capsules</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<!-- referencing the 'contained resource', which must be prefixed with '#' -->
+		<reference value="#med1" /> 
+	</medicationReference>
+	<!-- other data within the medicationRequest -->
+</medicationRequest>
+
+<!-- Medication referenced as resource elsewhere in the Bundle -->
+<!-- In this example the medication information is contained within a CareConnect-MedicationStatement-1 profiled resource -->
+<Bundle xmlns="http://hl7.org/fhir">
+	<!-- other content within the Bundle -->
+	<entry>
+		<fullUrl value="urn:uuid:a94d6293-cfc0-45a3-b7a8-ae7040f990f1"/>
+		<resource>
+			<MedicationStatement> 
+				<medicationReference>  
+					<reference value="urn:uuid:ebc37408-dc6c-437a-a09f-f7ee88927e3f"/>
+				</medicationReference> 
+				<!-- other data within the medicationStatement -->
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<!-- other content within the Bundle -->
+	<entry>
+		<fullUrl value="urn:uuid:ebc37408-dc6c-437a-a09f-f7ee88927e3f"/>
+		<resource>
+			<Medication> 
+				<id value="ebc37408-dc6c-437a-a09f-f7ee88927e3f"/> 
+				<code>  
+					<coding>   
+						<system value="http://snomed.info/sct"/>   
+						<code value="318902004"/>   
+						<display value="Ramipril 5mg capsules"/>  
+					</coding> 
+				</code>
+				<text>
+					<status value="generated"/>
+					<div>Ramipril 5mg capsules</div>
+				</text>
+			</Medication>
+		</resource>
+	</entry>
+	<!-- other content within the Bundle -->
+</Bundle>
+
+<!-- Medication referenced via an external terminology service -->
+<medicationRequest>
+	<medicationReference>
+		<!-- reference to a RESTful terminology service to return a <medication> resource -->
+		<!-- return a Medication resource for the dm+d code 318902004 -->
+		<Reference value="http://{url_FHIR_endpoint}/medication/318902004"/>
+	</medicationReference>
+	<!-- other data within the medicationRequest -->
+</medicationRequest>

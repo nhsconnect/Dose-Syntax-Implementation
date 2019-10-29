@@ -1,0 +1,48 @@
+<!-- "file": "example-dosage-complex3.xml" -->
+<!-- Phenoxymethylpenicillin 250mg tablets, 2 tablets every 6 hours an hour before food or on an empty stomach, oral -->
+
+<medicationRequest>
+<contained>
+<medication>
+<id value="med1"/>
+<code>
+<coding>
+<system value="http://snomed.info/sct"/>
+<code value="323416001"/>
+<display value="Phenoxymethylpenicillin 250mg tablets"/>
+</coding>
+</code>
+<text><div>Phenoxymethylpenicillin 250mg tablets</div></text>
+</medication>
+</contained>
+<medicationReference>
+<reference value="#med1" /> 
+</medicationReference>
+<dosageInstruction>
+<doseQuantity>
+<value value="2"/>
+<unit value="tablet"/>
+<system value="http://snomed.info/sct"/>
+<code value="428673006"/>
+</doseQuantity>
+<timing>
+<repeat>
+<frequency value="1"/>
+<period value="6"/>
+<periodUnit value="h"/>
+</repeat>
+<when value="AC" />
+<offset value="60" />
+</timing>
+<additionalInstruction>
+<text value="an hour before food or on an empty stomach"/>
+</additionalInstruction>
+<route>
+<coding>
+<system value="http://snomed.info/sct"/>
+<code value="26643006"/>
+<display value="oral"/>
+</coding>
+</route>
+ </dosageInstruction>
+</medicationRequest>

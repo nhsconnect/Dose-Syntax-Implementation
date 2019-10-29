@@ -1,0 +1,45 @@
+<!-- "file": "example-dosage-simple10-vtm.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Oxytetracycline - 250 milligram - oral - 4 times a day</div>
+	</text>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="22969001"/>
+					<display value="Oxytetracycline"/>
+				</coding>
+			</code>
+			<text><div>Oxytetracycline</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="250"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<timing>
+			<repeat>
+				<frequency value="4"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+	</dosageInstruction>
+</medicationRequest>

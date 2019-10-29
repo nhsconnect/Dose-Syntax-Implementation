@@ -1,0 +1,62 @@
+<!-- "file": "example-dosage-inter3.xml" -->
+<!-- Salbutamol, 100-200mcg to be inhaled when required up to 4 times daily, using the metered dose device -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="91143003"/>
+					<display value="Salbutamol"/>
+				</coding>
+			</code>
+			<text><div>Salbutamol</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseRange>
+			<low>
+				<value value="100"/>
+				<unit value="microgram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="ug"/>
+			</low>
+			<high>
+				<value value="200"/>
+				<unit value="microgram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="ug"/>
+			</high>
+		</doseRange>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="18679011000001101"/>
+				<display value="inhalation"/>
+			</coding>
+		</route>
+		<asNeededBoolean value="true"/>
+		<maxDosePerPeriod>
+			<numerator>
+				<value value="4"/>
+				<unit value="dose"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="3317411000001100"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="day"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="d"/>
+			</denominator>
+		</maxDosePerPeriod>
+		<additionalInstruction>
+			<text value="using the metered dose device"/>
+		</additionalInstruction>
+	</dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,28 @@
+<!-- "file": "examples-dosage-additional.xml" -->
+<!-- Example use of the FHIR STU3 Dosage.additionalInstruction and patientInstruction -->
+
+<!-- Coded additionalInstruction -->
+<additionalInstruction>
+ <coding> 
+  <system value="http://snomed.info/sct"/> 
+  <code value="417995008"/> 
+  <display value="Dissolve or mix with water before taking"/> 
+ </coding>
+</additionalInstruction>
+
+<!-- Text additionalInstruction -->
+<additionalInstruction>
+ <text value="with dialysis"/>
+</additionalInstruction>
+
+<!-- "as directed" within an additionalInstruction -->
+<additionalInstruction>
+ <coding> 
+  <system value="http://snomed.info/sct"/> 
+  <code value="421769005"/> 
+  <display value="Follow directions"/> 
+ </coding>
+</additionalInstruction>
+
+<!-- "as directed" within a patientInstruction -->
+<patientInstruction value="As directed"/>

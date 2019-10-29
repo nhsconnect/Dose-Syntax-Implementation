@@ -1,0 +1,46 @@
+<!-- "file": "example-dosage-simple10.xml" -->
+<medicationRequest>
+ <text>
+  <status value="generated"/><div>Beclometasone 0.025% cream - Apply Thigh - twice a day</div>
+ </text>
+<contained>
+<medication>
+<id value="med1"/>
+<code>
+<coding>
+<system value="http://snomed.info/sct"/>
+<code value="331792000"/>
+<display value="Beclometasone 0.025% cream"/>
+</coding>
+</code>
+<text><div>Beclometasone 0.025% cream</div></text>
+</medication>
+</contained>
+<medicationReference>
+<reference value="#med1" /> 
+</medicationReference>
+<dosageInstruction>
+<timing>
+ <repeat>
+  <frequency value="2"/>
+  <period value="1"/>
+  <periodUnit value="d"/>
+ </repeat>
+</timing>
+<method>
+  <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="417924000"/>
+  <display value="Apply"/>
+</coding>
+</method>
+<site>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="68367000"/>
+  <display value="Thigh"/>
+ </coding>
+ <text value="Thigh"/>
+</site>
+ </dosageInstruction>
+</medicationRequest>

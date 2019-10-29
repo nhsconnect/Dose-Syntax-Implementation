@@ -1,0 +1,37 @@
+<!-- "file": "example-dosage-complex6.xml" -->
+<!-- Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd), two to be taken once a week, start one week before travel and continue until 4 weeks after return -->
+
+<medicationRequest>
+<contained>
+<medication>
+<id value="med1"/>
+<code>
+<coding>
+<system value="http://snomed.info/sct"/>
+<code value="3727711000001102 "/>
+<display value="Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)"/>
+</coding>
+</code>
+<text><div>Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)</div></text>
+</medication>
+</contained>
+<medicationReference>
+<reference value="#med1" /> 
+</medicationReference>
+<dosageInstruction>
+<doseQuantity>
+<value value="2"/>
+<unit value="tablet"/>
+<system value="http://snomed.info/sct"/>
+<code value="428673006"/>
+</doseQuantity>
+<timing>
+<repeat>
+<frequency value="1"/>
+<period value="1"/>
+<periodUnit value="wk"/>
+</repeat>
+</timing>
+<patientInstruction value="start one week before travel and continue until 4 weeks after return"/>
+</dosageInstruction>
+</medicationRequest>

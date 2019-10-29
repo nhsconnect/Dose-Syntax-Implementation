@@ -1,0 +1,52 @@
+<!-- "file": "example-dosage-simple12-vtm.xml" -->
+<medicationRequest>
+ <text>
+  <status value="generated"/>
+  <div>Simvastatin - 40 milligram - oral - once a day - Do not stop taking this medicine except on your doctor's advice</div>
+ </text>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="96304005"/>
+          <display value="Simvastatin"/>
+        </coding>
+      </code>
+      <text><div>Simvastatin</div></text>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" /> 
+  </medicationReference>
+  <dosageInstruction>
+    <doseQuantity>  
+      <value value="40"/>  
+      <unit value="milligram"/>  
+      <system value="http://unitsofmeasure.org"/>  
+      <code value="mg"/>
+    </doseQuantity>
+    <timing>
+     <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+     </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="oral"/>
+      </coding>
+    </route>
+    <additionalInstruction>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="419444006"/>
+        <display value="Do not stop taking this medicine except on your doctor's advice"/>
+      </coding>
+    </additionalInstruction>
+  </dosageInstruction>
+</medicationRequest>

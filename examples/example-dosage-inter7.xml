@@ -1,0 +1,43 @@
+<!-- "file": "example-dosage-inter7.xml" -->
+<!-- Timolol 0.1% gel eye drops, 1 drop in the left eye once daily -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="496811000001108"/>
+					<display value="Timolol 0.1% gel eye drops"/>
+				</coding>
+			</code>
+			<text><div>Timolol 0.1% gel eye drops</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="Drop"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="404218003"/>
+		</doseQuantity>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="8966001"/>
+				<display value="Left eye"/>
+			</coding>
+		</site>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,43 @@
+<!-- "file": "example-dosage-complex10.xml" -->
+<!-- Hyoscine 1mg/72hours transdermal patches, one patch to be applied once every 3 days -->
+
+<medicationRequest>
+<contained>
+<medication>
+ <id value="med1"/>
+ <code>
+ <coding>
+ <system value="http://snomed.info/sct"/>
+ <code value="322087003"/>
+<display value="Hyoscine 1mg/72hours transdermal patches"/>
+</coding>
+</code>
+ <text><div>Hyoscine 1mg/72hours transdermal patches</div></text>
+</medication>
+</contained>
+<medicationReference>
+ <reference value="#med1" /> 
+</medicationReference>
+ <dosageInstruction>
+<method>
+  <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="417924000"/>
+  <display value="Apply"/>
+</coding>
+</method>
+<timing> 
+ <repeat>  
+  <frequency value="1"/>  
+  <period value="3"/>  
+  <periodUnit value="d"/> 
+ </repeat> 
+</timing>
+<doseQuantity> 
+ <value value="1"/> 
+ <unit value="patch"/> 
+ <system value="http://snomed.info/sct"/> 
+ <code value="733005001"/>
+</doseQuantity>
+ </dosageInstruction>
+</medicationRequest>

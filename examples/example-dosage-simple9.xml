@@ -1,0 +1,40 @@
+<!-- "file": "example-dosage-simple9.xml" -->
+<medicationRequest>
+  <text>
+    <status value="generated"/>
+    <div>Microgynon 30 tablets (Bayer Plc) - 63 tablets - Follow directions</div>
+  </text>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="42111000001107"/>
+          <display value="Microgynon 30 tablets (Bayer Plc)"/>
+        </coding>
+      </code>
+      <dispenseRequest>
+        <quantity>
+          <value value="63"/> 
+          <unit value="tablet"/> 
+          <system value="http://snomed.info/sct"/> 
+          <code value="428673006"/>
+        </quantity>
+      </dispenseRequest>
+      <text><div>Microgynon 30 tablets (Bayer Plc), 63 tablet</div></text>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" /> 
+  </medicationReference>
+  <dosageInstruction>
+    <additionalInstruction>
+      <coding> 
+        <system value="http://snomed.info/sct"/> 
+        <code value="421769005"/> 
+        <display value="Follow directions"/> 
+      </coding>
+    </additionalInstruction>
+  </dosageInstruction>
+</medicationRequest>

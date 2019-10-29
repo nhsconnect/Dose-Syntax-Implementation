@@ -1,0 +1,45 @@
+<!-- "file": "example-dosage-simple4.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Trimethoprim 100mg tablets (Crescent Pharma Ltd) - 2 tablet - oral - twice a day</div>
+	</text>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="28917911000001104"/>
+					<display value="Trimethoprim 100mg tablets (Crescent Pharma Ltd)"/>
+				</coding>
+			</code>
+			<text><div>Trimethoprim 100mg tablets (Crescent Pharma Ltd)</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>  
+			<value value="2"/>  
+			<unit value="tablet"/>  
+			<system value="http://snomed.info/sct"/>  
+			<code value="428673006"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+	</dosageInstruction>
+</medicationRequest>

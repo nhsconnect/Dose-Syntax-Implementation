@@ -1,0 +1,55 @@
+<!-- "file": "example-dosage-inter11.xml" -->
+<!-- Morphine, 30mg, intravenously, injection, four times a day over 24 hours -->
+
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="73572009"/>
+					<display value="Morphine"/>
+				</coding>
+			</code>
+			<text><div>Morphine</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="4"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+				<boundsDuration>
+					<value value="24"/>
+					<unit value="h"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="30"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="intravenous route"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="422145002"/>
+				<display value="inject"/>
+			</coding>
+		</method>
+	</dosageInstruction>
+</medicationRequest>

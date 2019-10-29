@@ -1,0 +1,79 @@
+<!-- "file": "examples-dosage-duration-bounds-count.xml" -->
+<!-- Example use of the FHIR STU3 Dosage.timing.duration .bounds[x] and .count -->
+
+<!-- over 8 hours -->
+<timing>
+	<repeat>
+		<duration value="8"/>
+		<durationUnit value="h" />
+	</repeat>
+</timing>
+
+<!-- up to 16 hours"-->
+<timing>
+	<repeat>
+		<durationMax value="16"/>
+		<durationUnit value="h"/>
+	</repeat>
+</timing>
+
+<!-- three times a day for 7 days -->
+<timing>
+	<repeat>
+		<frequency value="3"/>
+		<period value="1"/>
+		<periodUnit value="d"/>
+		<boundsDuration>
+			<value value="7"/>
+			<unit value="day"/> 
+			<code value="d"/>
+			<system value="http://unitsofmeasure.org"/>
+		</boundsDuration>
+	</repeat>
+</timing>
+
+<!-- for 2 to 3 weeks -->
+<timing> 
+	<repeat>
+		<boundsRange>
+			<low>
+				<value value="3"/>
+				<unit value="week"/> 
+				<system value="http://unitsofmeasure.org"/>
+				<code value="wk"/>
+			</low>
+			<high>
+				<value value="3"/>
+				<unit value="week"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="wk"/>
+			</high>
+		</boundsRange>
+	</repeat>
+</timing>
+
+<!-- from 01/11/2018 to 10/11/2018 -->
+<timing>  
+	<repeat>
+	<boundsPeriod>
+		<start value="2018-11-01"/>
+		<end value="2018-11-10"/>
+	</boundsPeriod>
+	</repeat>	
+</timing>
+
+<!-- once -->
+<timing>
+	<repeat>
+		<count value="1"/>
+	</repeat>
+</timing>
+
+<!-- administer three or four times -->
+<!-- IMPORTANT this does not mean repeat an additional 3 or 4 times after an initial administration -->
+<timing>
+	<repeat>
+		<count value="3"/>
+		<countMax value="4"/>
+	</repeat>
+</timing>

@@ -1,0 +1,32 @@
+<!-- "file": "example-dosage-simple5.xml" -->
+<medicationRequest>
+	<text>
+		<status value="generated"/>
+		<div>Micralax Micro-enema 5ml (RPH Pharmaceuticals AB) - once a day</div>
+	</text>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="3351711000001106"/>
+					<display value="Micralax Micro-enema 5ml (RPH Pharmaceuticals AB)"/>
+				</coding>
+			</code>
+			<text><div>Micralax Micro-enema 5ml (RPH Pharmaceuticals AB)</div></text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+</medicationRequest>

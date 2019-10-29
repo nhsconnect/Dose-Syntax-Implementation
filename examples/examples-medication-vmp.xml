@@ -1,0 +1,26 @@
+<!-- "file": "examples-medication-vmp.xml" -->
+!-- Example referencing a Virtual Medicinal Product (VMP) as a contained resource -->
+<medicationRequest>
+ <contained>
+  <medication>
+   <id value="med1"/>
+   <code>
+    <coding>
+     <system value="http://snomed.info/sct"/>
+     <code value="319996000"/>
+     <display value="Simvastatin 10mg tablets"/>
+    </coding>
+   </code>
+   <text>
+    <status value="generated"/>
+    <div>Simvastatin 10mg tablets</div>
+   </text>
+  </medication>
+ </contained>
+ <medicationReference>
+  <reference value="#med1" /> 
+ </medicationReference>
+ <dosageInstruction>
+  <!-- dosage information added here -->
+ </dosageInstruction>
+</medicationRequest>

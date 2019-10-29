@@ -1,0 +1,46 @@
+<!-- "file": "example-dosage-complex19.xml" -->
+<!-- Oxygen by inhalation 1 to 2 litres per minute via nasal cannula -->
+
+<medicationRequest>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/> 
+          <code value="375287000"/> 
+          <display value="Oxygen"/> 
+        </coding>
+      </code>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" />
+  </medicationReference>
+<dosageInstruction>
+<route>
+ <coding>
+  <system value="http://snomed.info/sct"/>
+  <code value="18679011000001101"/>
+  <display value="Inhalation"/>
+ </coding>
+</route>
+<doseRange>
+  <low>
+   <value value="1"/>
+   <unit value="liter per minute"/>
+   <system value="http://unitsofmeasure.org"/>
+   <code value="L/min"/>
+  </low>
+  <high>
+   <value value="2"/>
+   <unit value="liter per minute"/>
+   <system value="http://unitsofmeasure.org"/>
+   <code value="L/min"/>
+  </high>
+</doseRange>
+  <additionalInstruction>
+    <text value="to be given via nasal cannula"/>
+  </additionalInstruction>
+</dosageInstruction>
+</medicationRequest>

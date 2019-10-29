@@ -1,0 +1,32 @@
+<!-- "file": "examples-medication-dispense.xml" -->
+<!-- Example of a medicationDispense with an AMP as a contained resource and a dispensed quantity -->
+<medicationDispense>
+  <contained>
+    <medication>
+      <id value="med1"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="275811000001103"/>
+          <display value="Atenolol 100mg tablets (Actavis UK Ltd)"/>
+        </coding>
+      </code>
+      <text>
+        <status value="generated"/>
+        <div>Atenolol 100mg tablets (Actavis UK Ltd)</div>
+      </text>
+    </medication>
+  </contained>
+  <medicationReference>
+    <reference value="#med1" /> 
+  </medicationReference>
+  <quantity>
+    <value value="28"/>
+    <unit value="tablet"/>
+    <system value="http://snomed.info/sct"/> 
+    <code value="428673006"/>
+  </quantity>
+  <dosageInstruction>
+    <!-- dosage information added here -->
+  </dosageInstruction>
+</medicationDispense>

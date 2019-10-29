@@ -1,0 +1,47 @@
+<!-- "file": "example-dosage-complex8.xml" -->
+<!-- Eprex 2,000units/0.5ml solution for injection pre-filled syringes (Janssen-Cilag Ltd), to be given by s.c. injection on Mondays and Thursdays with dialysis -->
+
+<medicationRequest>
+<contained>
+<medication>
+ <id value="med1"/>
+ <code>
+ <coding>
+ <system value="http://snomed.info/sct"/>
+ <code value="2971511000001101"/>
+ <display value="Eprex 2,000units/0.5ml solution for injection pre-filled syringes (Janssen-Cilag Ltd)"/>
+ </coding>
+ </code>
+ <text><div>Eprex 2,000units/0.5ml solution for injection pre-filled syringes (Janssen-Cilag Ltd)</div></text>
+</medication>
+</contained>
+<medicationReference>
+ <reference value="#med1" /> 
+</medicationReference>
+ <dosageInstruction>
+<route>
+ <coding>
+ <system value="http://snomed.info/sct"/>
+ <code value="34206005"/>
+ <display value="subcutaneous route"/>
+ </coding>
+</route>
+<method>
+ <coding>
+ <system value="http://snomed.info/sct"/>
+ <code value="422145002"/>
+ <display value="inject"/>
+ </coding>
+</method>
+<timing>
+ <repeat>
+ <frequency value="1"/>
+ <period value="1"/>
+ <periodUnit value="d"/>
+ <dayOfWeek value="mon"/>
+ <dayOfWeek value="thu"/>
+ </repeat>
+</timing>
+<additionalInstruction value="with dialysis"/>
+ </dosageInstruction>
+</medicationRequest>

@@ -1,0 +1,25 @@
+<!-- "file": "examples-dosage-timing-when.xml" -->
+<!-- Example use of the FHIR STU3 Dosage.when -->
+
+<!-- Event occurs at breakfast -->
+<timing>
+ <repeat>
+  <when value="CM"/>
+ </repeat>
+</timing>
+
+<!-- Event occurs at 1 hour before breakfast -->
+<timing>
+ <repeat>
+  <when value="ACM"/>
+  <offset value="60" />
+ </repeat>
+</timing>
+
+<!--Event occurs at 1 hour after breakfast -->
+<timing>
+ <repeat>
+  <when value="PCM"/>
+  <offset value="60" />
+ </repeat>
+</timing>

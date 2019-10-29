@@ -1,0 +1,13 @@
+duplicate
+/ed35e1f7cfb0eea8df8acad2aced3369
+\example-dosage-limitation-combinationproducts.xml
+
+in part1
+
+\pages\explore\dosage-examples-complex.md &
+\pages\explore\dosage-combi.md
+
+also example-dosage-commplex14.xml &
+example-dosage-inter2.xml from part2 vs part1
+
+also example-dosage-parallel-sequence.xml from part3 vs part1

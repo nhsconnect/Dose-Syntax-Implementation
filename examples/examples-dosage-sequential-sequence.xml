@@ -1,0 +1,158 @@
+<!-- "file": "examples-dosage-sequential-sequence.xml" -->
+<!-- Example use of the FHIR STU3 Dosage using multiple sequential sequences -->
+<!-- Prednisolone, 60mg daily for 4 days, then 50mg next day, then 40mg, then 30mg, then 20mg, then 10mg, then stop -->
+<medicationRequest>
+	<contained>
+		<medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="52388000"/>
+					<display value="Prednisolone"/>
+				</coding>
+			</code>
+			<text>
+				<status value="generated"/>
+				<div>Prednisolone</div>
+			</text>
+		</medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1" /> 
+	</medicationReference>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="4"/>
+					<unit value="day"/>
+					<code value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="60"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="2"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="1"/>
+					<unit value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="50"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="3"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="1"/>
+					<unit value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="40"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="4"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="1"/>
+					<unit value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="30"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="5"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="1"/>
+					<unit value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="20"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="6"/>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="1"/>
+					<unit value="d"/>
+					<system value="http://unitsofmeasure.org"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="10"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+		<additionalInstruction>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="422327006"/>
+				<display value="Then stop"/>
+			</coding>
+		</additionalInstruction>
+	</dosageInstruction>
+</medicationRequest>
