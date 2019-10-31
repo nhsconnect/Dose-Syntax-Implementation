@@ -1,7 +1,11 @@
 <!-- "file": "example-dosage-simple5-vtm.xml" -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -10,32 +14,26 @@
 					<display value="Sodium citrate"/>
 				</coding>
 			</code>
-     			<form>
+			<form>
 				<coding>
-					<system value="http://snomed.info/sct"/> 
-					<code value="385186005"/>  
+					<system value="http://snomed.info/sct"/>
+					<code value="385186005"/>
 					<display value="Enema"/>
 				</coding>
 			</form>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
-   		<doseQuantity>  
-			<value value="450"/>  
-			<unit value="milligram"/>  
-			<system value="http://unitsofmeasure.org"/>  
-			<code value="mg"/>
-		</doseQuantity>
-		<route>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="37161004"/>
-				<display value="Rectal"/>
-			</coding>
-		</route>
 		<timing>
 			<repeat>
 				<frequency value="1"/>
@@ -43,5 +41,18 @@
 				<periodUnit value="d"/>
 			</repeat>
 		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="37161004"/>
+				<display value="Rectal"/>
+			</coding>
+		</route>
+		<doseQuantity>
+			<value value="450"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

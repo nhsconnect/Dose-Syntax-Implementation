@@ -7,6 +7,8 @@ permalink: careconnect-medicationRequest-1.html
 summary: "How medication and dosage instructions are defined within the CareConnect-MedicationRequest-1 profiled resource"
 ---
 
+{% include note.html content="This page provides implementation guidance, background and context for use of Dose Syntax within CareConnect medication resources.<br/><br/>
+Implementation guidance for use of the medication resources themselves will be contained in forthcoming use-case specific Implementation Guides." %}
 
 
 The [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1) structure definition contains a number of elements that are out of scope for this implementation guidance. Only those elements relevant to convey a medication request with a structured dosage instruction are in scope of this guidance.

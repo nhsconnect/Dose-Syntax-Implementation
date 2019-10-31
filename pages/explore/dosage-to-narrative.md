@@ -8,7 +8,10 @@ summary: "Use of the text narrative within CareConnect profiled resources"
 ---
 
 
-The **text** narrative at the root level of all medication-related CareConnect profiled resources must be populated with a '*...text summary of the resource, for human interpretation*'.
+{% include warning.html content="This page is at <strong>Experimental</strong> status.<br/><br/>
+This page describes a critical functional requirement for the majority of system implementations using Dose Syntax. Structured Dose Syntax information must be capable of being rendered as a human-readable text representation e.g. in a user interface or on a medicines label.<br/><br/>
+Details of the rendering requirement are highly use-case dependent and will be addressed as work in specific use-case areas develops." %}
+
 
 This section details the logic required for a system to generate a suitable, clinically safe, complete medication plus dosage string from the coded structures.
 

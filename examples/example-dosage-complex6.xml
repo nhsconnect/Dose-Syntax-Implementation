@@ -1,35 +1,46 @@
 <!-- "file": "example-dosage-complex6.xml" -->
 <!-- Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd), two to be taken once a week, start one week before travel and continue until 4 weeks after return -->
-<medicationRequest>
-<contained>
-<medication>
-<id value="med1"/>
-<code>
-<coding>
-<system value="http://snomed.info/sct"/>
-<code value="3727711000001102 "/>
-<display value="Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)"/>
-</coding>
-</code>
-</medication>
-</contained>
-<medicationReference>
-<reference value="#med1" /> 
-</medicationReference>
-<dosageInstruction>
-<doseQuantity>
-<value value="2"/>
-<unit value="tablet"/>
-<system value="http://snomed.info/sct"/>
-<code value="428673006"/>
-</doseQuantity>
-<timing>
-<repeat>
-<frequency value="1"/>
-<period value="1"/>
-<periodUnit value="wk"/>
-</repeat>
-</timing>
-<patientInstruction value="start one week before travel and continue until 4 weeks after return"/>
-</dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="3727711000001102"/>
+					<display value="Avloclor 250mg tablets (Alliance Pharmaceuticals Ltd)"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<patientInstruction value="start one week before travel and continue until 4 weeks after return"/>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="wk"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

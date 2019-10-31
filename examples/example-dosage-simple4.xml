@@ -1,7 +1,11 @@
 <!-- "file": "example-dosage-simple4.xml" -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -10,11 +14,18 @@
 					<display value="Trimethoprim 100mg tablets (Crescent Pharma Ltd)"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
 		<timing>
 			<repeat>
@@ -23,12 +34,6 @@
 				<periodUnit value="d"/>
 			</repeat>
 		</timing>
-		<doseQuantity>  
-			<value value="2"/>  
-			<unit value="tablet"/>  
-			<system value="http://snomed.info/sct"/>  
-			<code value="428673006"/>
-		</doseQuantity>
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -36,5 +41,11 @@
 				<display value="oral"/>
 			</coding>
 		</route>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

@@ -1,0 +1,22 @@
+<!-- "file": "examples-careconnect-referenced-medication-external.xml" -->
+<!-- Examples for how to reference a Medication resource within the CareConnect profiled resources -->
+<!-- Medication referenced via an external terminology service -->
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<intent value="order"/>
+	<medicationReference>
+		<!-- reference to a RESTful terminology service to return a <Medication> resource -->
+		<!-- return a Medication resource for the dm+d code 318902004 -->
+		<reference value="http://{url_FHIR_endpoint}/medication/318902004"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<!-- other data within the medicationRequest -->
+</MedicationRequest>

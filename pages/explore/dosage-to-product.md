@@ -7,6 +7,9 @@ permalink: dosage-to-product-overview.html
 summary: "Translating a dose-based instruction into a list of suitable product-based instructions"
 ---
 
+{% include warning.html content="This page is at <strong>Experimental</strong> status.<br/><br/>
+This page describes an important functional requirement for many system implementations using Dose Syntax. Structured Dose Syntax information must be capable of being used to support dose-based and product-based prescribing, and there is a requirement to convert between the two - e.g. to convert a dose-based prescription to an actual product for dispensing within a pharmacy.<br/><br/>
+Details of the requirements for dosage format conversion are highly use-case dependent and will be addressed as work in specific use-case areas develops." %}
 
 ## Background
 

@@ -1,5 +1,7 @@
-<!-- "file": "example-dosage-complex2.xml" -->
-<!-- Loperamide 2mg capsules, take two capsules (4 mg) immediately followed by one capsule (2 mg) after each episode of diarrhoea. Daily dose should not exceed eight capsules (16 mg) -->
+<!-- "file": "example-dosage-complex4-alt2.xml" -->
+<!-- Co-codamol 8mg/500mg tablets, 2 tablets when required when first symptoms of migraine appear. Dose may be repeated after 4 hours if migraine recurs. Oral. Maximum dose 6 tablets every 24 hours -->
+<!-- Alternatively -->
+<!-- 2 tablets - as required when migraine occurs - take once - max dose 6 tablets per 24 hours - THEN - 2 tablets - every 4 hours - max dose 6 tablets per 24 hours - when migraine recurs -->
 <MedicationRequest>
 	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
 	<meta>
@@ -11,8 +13,8 @@
 			<code>
 				<coding>
 					<system value="http://snomed.info/sct"/>
-					<code value="317378005"/>
-					<display value="Loperamide 2mg capsules"/>
+					<code value="322307006"/>
+					<display value="Co-codamol 8mg/500mg tablets"/>
 				</coding>
 			</code>
 		</Medication>
@@ -29,61 +31,67 @@
 	</subject>
 	<dosageInstruction>
 		<sequence value="1"/>
-		<additionalInstruction>
+		<timing>
+			<repeat>
+				<count value="1"/>
+			</repeat>
+		</timing>
+		<asNeededCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="421723005"/>
-				<display value="Now"/>
+				<code value="37796009"/>
+				<display value="Migraine"/>
 			</coding>
-		</additionalInstruction>
+		</asNeededCodeableConcept>
 		<doseQuantity>
 			<value value="2"/>
-			<unit value="capsule"/>
+			<unit value="tablet"/>
 			<system value="http://snomed.info/sct"/>
-			<code value="428641000"/>
+			<code value="428673006"/>
 		</doseQuantity>
 		<maxDosePerPeriod>
 			<numerator>
-				<value value="8"/>
-				<unit value="capsule"/>
+				<value value="6"/>
+				<unit value="dose"/>
 				<system value="http://snomed.info/sct"/>
-				<code value="428641000"/>
+				<code value="3317411000001100"/>
 			</numerator>
 			<denominator>
-				<value value="1"/>
-				<unit value="day"/>
+				<value value="24"/>
+				<unit value="hour"/>
 				<system value="http://unitsofmeasure.org/"/>
-				<code value="d"/>
+				<code value="h"/>
 			</denominator>
 		</maxDosePerPeriod>
 	</dosageInstruction>
 	<dosageInstruction>
 		<sequence value="2"/>
-		<asNeededCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="62315008"/>
-				<display value="Diarrhea"/>
-			</coding>
-		</asNeededCodeableConcept>
+		<patientInstruction value="when migraine recurs"/>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="4"/>
+				<periodUnit value="h"/>
+			</repeat>
+		</timing>
 		<doseQuantity>
-			<value value="1"/>
-			<unit value="capsule"/>
+			<value value="2"/>
+			<unit value="tablet"/>
 			<system value="http://snomed.info/sct"/>
-			<code value="428641000"/>
+			<code value="428673006"/>
 		</doseQuantity>
 		<maxDosePerPeriod>
 			<numerator>
-				<value value="8"/>
-				<unit value="capsule"/>
+				<value value="6"/>
+				<unit value="dose"/>
 				<system value="http://snomed.info/sct"/>
-				<code value="428641000"/>
+				<code value="3317411000001100"/>
 			</numerator>
 			<denominator>
-				<value value="1"/>
-				<unit value="day"/>
+				<value value="24"/>
+				<unit value="hour"/>
 				<system value="http://unitsofmeasure.org/"/>
-				<code value="d"/>
+				<code value="h"/>
 			</denominator>
 		</maxDosePerPeriod>
 	</dosageInstruction>

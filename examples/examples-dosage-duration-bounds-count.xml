@@ -17,15 +17,15 @@
 <!-- three times a day for 7 days -->
 <timing>
 	<repeat>
-		<frequency value="3"/>
-		<period value="1"/>
-		<periodUnit value="d"/>
 		<boundsDuration>
 			<value value="7"/>
 			<unit value="day"/> 
-			<code value="d"/>
 			<system value="http://unitsofmeasure.org"/>
+			<code value="d"/>
 		</boundsDuration>
+		<frequency value="3"/>
+		<period value="1"/>
+		<periodUnit value="d"/>
 	</repeat>
 </timing>
 <!-- for 2 to 3 weeks -->
@@ -50,10 +50,10 @@
 <!-- from 01/11/2018 to 10/11/2018 -->
 <timing>  
 	<repeat>
-	<boundsPeriod>
-		<start value="2018-11-01"/>
-		<end value="2018-11-10"/>
-	</boundsPeriod>
+        <boundsPeriod>
+            <start value="2018-11-01"/>
+            <end value="2018-11-10"/>
+        </boundsPeriod>
 	</repeat>	
 </timing>
 <!-- once -->

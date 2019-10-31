@@ -1,83 +1,94 @@
 <!-- "file": "example-dosage-vitB12.xml" -->
 <!-- Hydroxocobalamin 10mg/2ml solution for injection ampoules, one to be given by IM injection into the shoulder, 3 times per week for 6 doses, then every 3 months, starting on 1st November 2019 -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="24856311000001103"/> 
-          <display value="Hydroxocobalamin 10mg/2ml solution for injection ampoules"/> 
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" />
-  </medicationReference>
-  <dosageInstruction>
-    <sequence value="1"/>
-    <doseQuantity> 
-      <value value="1"/> 
-      <unit value="ampoule"/> 
-      <system value="http://snomed.info/sct"/> 
-      <code value="413516001"/>
-    </doseQuantity>
-    <site>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="16982005"/>
-      <display value="Shoulder"/>
-      </coding>
-    </site>
-    <route>
-     <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="78421000"/>
-      <display value="intramuscular route"/>
-     </coding>
-    </route>
-    <timing> 
-      <repeat>  
-        <frequency value="3"/>  
-        <period value="1"/>  
-        <periodUnit value="wk"/> 
-        <count value="6"/>
-      </repeat> 
-    </timing>
-  </dosageInstruction>
-  <dosageInstruction>
-    <sequence value="2"/>
-    <doseQuantity> 
-      <value value="1"/> 
-      <unit value="ampoule"/> 
-      <system value="http://snomed.info/sct"/> 
-      <code value="413516001"/>
-    </doseQuantity>
-    <site>
-      <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="16982005"/>
-      <display value="Shoulder"/>
-      </coding>
-    </site>
-    <route>
-     <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="78421000"/>
-      <display value="intramuscular route"/>
-     </coding>
-    </route>
-    <timing> 
-      <repeat>  
-        <frequency value="1"/>  
-        <period value="3"/>  
-        <periodUnit value="mo"/> 
-        <boundsPeriod>
-          <start value="2019-11-01"/>
-        </boundsPeriod>
-      </repeat> 
-    </timing>
-  </dosageInstruction>  
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="24856311000001103"/>
+					<display value="Hydroxocobalamin 10mg/2ml solution for injection ampoules"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<timing>
+			<repeat>
+				<count value="6"/>
+				<frequency value="3"/>
+				<period value="1"/>
+				<periodUnit value="wk"/>
+			</repeat>
+		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="16982005"/>
+				<display value="Shoulder"/>
+			</coding>
+		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="78421000"/>
+				<display value="intramuscular route"/>
+			</coding>
+		</route>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="ampoule"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="413516001"/>
+		</doseQuantity>
+	</dosageInstruction>
+	<dosageInstruction>
+		<sequence value="2"/>
+		<timing>
+			<repeat>
+				<boundsPeriod>
+					<start value="2019-11-01"/>
+				</boundsPeriod>
+				<frequency value="1"/>
+				<period value="3"/>
+				<periodUnit value="mo"/>
+			</repeat>
+		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="16982005"/>
+				<display value="Shoulder"/>
+			</coding>
+		</site>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="78421000"/>
+				<display value="intramuscular route"/>
+			</coding>
+		</route>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="ampoule"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="413516001"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

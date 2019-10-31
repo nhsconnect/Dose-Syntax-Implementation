@@ -21,7 +21,7 @@ Examples use combinations of the following elements of the CareConnect medicatio
 * duration
 * periodMax
 
-{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
+{% include important.html content="Examples are not complete with respect to all required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
 ## Microgynon 30 tablets (Bayer Plc), 63 tablets ##
 

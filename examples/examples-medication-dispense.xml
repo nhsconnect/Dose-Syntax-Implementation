@@ -1,28 +1,38 @@
 <!-- "file": "examples-medication-dispense.xml" -->
 <!-- Example of a medicationDispense with an AMP as a contained resource and a dispensed quantity -->
-<medicationDispense>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/>
-          <code value="275811000001103"/>
-          <display value="Atenolol 100mg tablets (Actavis UK Ltd)"/>
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" /> 
-  </medicationReference>
-  <quantity>
-    <value value="28"/>
-    <unit value="tablet"/>
-    <system value="http://snomed.info/sct"/> 
-    <code value="428673006"/>
-  </quantity>
-  <dosageInstruction>
-    <!-- dosage information added here -->
-  </dosageInstruction>
-</medicationDispense>
+<MedicationDispense>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="275811000001103"/>
+					<display value="Atenolol 100mg tablets (Actavis UK Ltd)"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<quantity>
+		<value value="28"/>
+		<unit value="tablet"/>
+		<system value="http://snomed.info/sct"/>
+		<code value="428673006"/>
+	</quantity>
+	<dosageInstruction>
+		<!-- dosage information added here -->
+	</dosageInstruction>
+</MedicationDispense>

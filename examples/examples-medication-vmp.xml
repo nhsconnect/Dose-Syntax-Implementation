@@ -1,22 +1,33 @@
 <!-- "file": "examples-medication-vmp.xml" -->
-!-- Example referencing a Virtual Medicinal Product (VMP) as a contained resource -->
-<medicationRequest>
- <contained>
-  <medication>
-   <id value="med1"/>
-   <code>
-    <coding>
-     <system value="http://snomed.info/sct"/>
-     <code value="319996000"/>
-     <display value="Simvastatin 10mg tablets"/>
-    </coding>
-   </code>
-  </medication>
- </contained>
- <medicationReference>
-  <reference value="#med1" /> 
- </medicationReference>
- <dosageInstruction>
-  <!-- dosage information added here -->
- </dosageInstruction>
-</medicationRequest>
+<!-- Example referencing a Virtual Medicinal Product (VMP) as a contained resource -->
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="319996000"/>
+					<display value="Simvastatin 10mg tablets"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<!-- dosage information added here -->
+	</dosageInstruction>
+</MedicationRequest>

@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-inter10.xml" -->
 <!-- Hydrocortisone 0.1% cream, apply 2-3 times daily to area around lips -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,19 +15,20 @@
 					<display value="Hydrocortisone 0.1% cream"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
-		<method>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="417924000"/>
-				<display value="Apply"/>
-			</coding>
-		</method>
+		<patientInstruction value="Apply to area around lips"/>
 		<timing>
 			<repeat>
 				<frequency value="2"/>
@@ -32,6 +37,12 @@
 				<periodUnit value="d"/>
 			</repeat>
 		</timing>
-		<patientInstruction value="Apply to area around lips"/>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="417924000"/>
+				<display value="Apply"/>
+			</coding>
+		</method>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

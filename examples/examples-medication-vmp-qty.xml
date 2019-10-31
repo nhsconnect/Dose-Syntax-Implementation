@@ -1,30 +1,41 @@
 <!-- "file": "examples-medication-vmp-qty.xml" -->
 <!-- Example referencing a Virtual Medicinal Product (VMP) + dispenseRequest as a contained resource -->
-<medicationRequest>
- <contained>
-  <medication>
-   <id value="med1"/>
-   <code>
-    <coding>
-     <system value="http://snomed.info/sct"/>
-     <code value="322282001"/>
-     <display value="Paracetamol 120mg/5ml oral suspension paediatric sugar free"/>
-    </coding>
-   </code>
-  </medication>
- </contained>
- <medicationReference>
-  <reference value="#med1" /> 
- </medicationReference>
- <dispenseRequest>
-  <quantity>
-   <value value="200"/>
-   <unit value="ml"/>
-   <system value="http://snomed.info/sct"/> 
-   <code value="258773002"/>
-  </quantity>
- </dispenseRequest>
- <dosageInstruction>
-  <!-- dosage information added here -->
- </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="322282001"/>
+					<display value="Paracetamol 120mg/5ml oral suspension paediatric sugar free"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<!-- dosage information added here -->
+	</dosageInstruction>
+	<dispenseRequest>
+		<quantity>
+			<value value="200"/>
+			<unit value="ml"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="258773002"/>
+		</quantity>
+	</dispenseRequest>
+</MedicationRequest>

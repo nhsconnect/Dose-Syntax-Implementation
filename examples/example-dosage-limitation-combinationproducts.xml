@@ -5,9 +5,13 @@
 <!-- 2 tablets - take once - as required when migraine occurs - Max dose 2 tablets in 24 hours - Pink tablets -->
 <!-- then -->
 <!-- 2 tablets - every 4 hours - as required - max dose 6 tablets in 24 hours - Yellow tablets -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="internalMedicationIdentifer123abc"/>
 			<code>
 				<coding>
@@ -16,23 +20,29 @@
 					<display value="Migraleve tablets (McNeil Products Ltd)"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<Reference value= "#internalMedicationIdentifer123abc" />
+		<reference value="#internalMedicationIdentifer123abc"/>
 		<display value="Migraleve tablets (McNeil Products Ltd)"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
 		<sequence value="1"/>
 		<text value="2 tablets - take once - as required when migraine occurs - Max dose 2 tablets in 24 hours - Pink tablet"/>
-		<doseQuantity>
-			<value value="2"/>
-			<unit value="tablet"/>
-			<system value="http://snomed.info/sct"/>
-			<code value="428673006"/>
-		</doseQuantity>
+		<additionalInstruction>
+			<text value="Pink tablets"/>
+		</additionalInstruction>
 		<timing>
-			<count value="1"/>
+			<repeat>
+				<count value="1"/>
+			</repeat>
 		</timing>
 		<asNeededCodeableConcept>
 			<coding>
@@ -41,6 +51,12 @@
 				<display value="Migraine"/>
 			</coding>
 		</asNeededCodeableConcept>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
 		<maxDosePerPeriod>
 			<numerator>
 				<value value="2"/>
@@ -55,25 +71,27 @@
 				<code value="h"/>
 			</denominator>
 		</maxDosePerPeriod>
-		<additionalInstruction>
-			<text value="Pink tablets"/>
-		</additionalInstruction>
 	</dosageInstruction>
 	<dosageInstruction>
 		<sequence value="2"/>
 		<text value="2 tablets - every 4 hours - as required - max dose 6 tablets in 24 hours - Yellow tablets"/>
+		<additionalInstruction>
+			<text value="Yellow tablets"/>
+		</additionalInstruction>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="4"/>
+				<periodUnit value="h"/>
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true"/>
 		<doseQuantity>
 			<value value="2"/>
 			<unit value="tablet"/>
 			<system value="http://snomed.info/sct"/>
 			<code value="428673006"/>
 		</doseQuantity>
-		<timing>
-			<frequency value="1"/>
-			<period value="4"/>
-			<periodUnit value="h"/>
-		</timing>
-		<asNeededBoolean value="true"/>
 		<maxDosePerPeriod>
 			<numerator>
 				<value value="6"/>
@@ -88,8 +106,5 @@
 				<code value="h"/>
 			</denominator>
 		</maxDosePerPeriod>
-		<additionalInstruction>
-			<text value="Yellow tablets"/>
-		</additionalInstruction>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-inter11.xml" -->
 <!-- Morphine, 30mg, intravenously, injection, four times a day over 24 hours -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,30 +15,32 @@
 					<display value="Morphine"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
 		<timing>
 			<repeat>
+				<boundsDuration>
+					<value value="24"/>
+					<unit value="hour"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="h"/>
+				</boundsDuration>
 				<frequency value="4"/>
 				<period value="1"/>
 				<periodUnit value="d"/>
-				<boundsDuration>
-					<value value="24"/>
-					<unit value="h"/>
-					<system value="http://unitsofmeasure.org"/>
-				</boundsDuration>
 			</repeat>
 		</timing>
-		<doseQuantity>
-			<value value="30"/>
-			<unit value="milligram"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
-		</doseQuantity>
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -49,5 +55,11 @@
 				<display value="inject"/>
 			</coding>
 		</method>
+		<doseQuantity>
+			<value value="30"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

@@ -1,5 +1,6 @@
-<!-- "file": "example-dosage-complex12.xml" -->
-<!-- Permitabs 400mg tablets. Add 500ml of warm water to one tablet and dissolve. Make the resulting solution up to 8 litres and use to soak feet. -->
+<!-- "file": "examples-careconnect-referenced-medication-contained.xml" -->
+<!-- Examples for how to reference a Medication resource within the CareConnect profiled resources -->
+<!-- Medication referenced as a "contained resource" -->
 <MedicationRequest>
 	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
 	<meta>
@@ -11,14 +12,15 @@
 			<code>
 				<coding>
 					<system value="http://snomed.info/sct"/>
-					<code value="4256811000001101"/>
-					<display value="Permitabs 400mg tablets for cutaneous solution (Alliance Pharmaceuticals Ltd)"/>
+					<code value="318902004"/>
+					<display value="Ramipril 5mg capsules"/>
 				</coding>
 			</code>
 		</Medication>
 	</contained>
 	<intent value="order"/>
 	<medicationReference>
+		<!-- referencing the 'contained resource', which must be prefixed with '#' -->
 		<reference value="#med1"/>
 	</medicationReference>
 	<subject>
@@ -27,7 +29,5 @@
 			<value value="9999999999"/>
 		</identifier>
 	</subject>
-	<dosageInstruction>
-		<patientInstruction value="Add 500ml of warm water to one tablet and dissolve. Make the resulting solution up to 8 litres and use to soak feet."/>
-	</dosageInstruction>
+	<!-- other data within the medicationRequest -->
 </MedicationRequest>

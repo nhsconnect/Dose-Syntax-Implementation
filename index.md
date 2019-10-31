@@ -4,7 +4,7 @@ keywords: homepage
 tags: [overview]
 sidebar: overview_sidebar
 permalink: index.html
-toc: false
+toc: true
 summary: Use of the Dosage structure within CareConnect Profiles
 ---
 
@@ -13,7 +13,17 @@ summary: Use of the Dosage structure within CareConnect Profiles
 
 ## Introduction ##
 
-This implementation guidance covers the use of medication and dosage structure definitions within HL7 UK INTEROPen CareConnect Profiles that are an extension to FHIR STU3. The primary use case is for the FHIR medicationRequest resource profiled as [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1) for implementation within the United Kingdom (UK). The guidance is also applicable when using the [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1) and [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1) profiled resources as they contain the same [Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage) structure.
+This implementation guidance covers the use of dosage structure definitions within HL7 UK INTEROPen CareConnect medication profiles. 
+
+The primary use case is for:
+
+- [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1)
+- [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1)
+- [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1)
+
+profiled resources as they contain the same [Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage) structure.
+
+- [CareConnect-MedicationAdministration-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1) uses a subset of the Dosage structure to describe dose administered.
 
 ## How to use this Guidance ##
 

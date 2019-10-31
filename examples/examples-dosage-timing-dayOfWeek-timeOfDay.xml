@@ -16,8 +16,8 @@
   <frequency value="2"/>
   <period value="1"/>
   <periodUnit value="d"/>
-  <timeOfDay value="10:00"/>
-  <timeOfDay value="14:00"/>
+  <timeOfDay value="10:00:00"/>
+  <timeOfDay value="14:00:00"/>
  </repeat>
 </timing>
 <!-- to be given on Mondays at midday -->
@@ -27,6 +27,6 @@
   <period value="1"/>
   <periodUnit value="wk"/>
   <dayOfWeek value="mon"/>
-  <timeOfDay value="12:00"/>
+  <timeOfDay value="12:00:00"/>
  </repeat>
 </timing>

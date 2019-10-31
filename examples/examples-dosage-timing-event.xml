@@ -4,7 +4,7 @@
 <timing>
  <event value="2019-11-01" />
 </timing>
-<!-- on 1st Nov 2019 at 10:30 and again on 1st Dec 2019 at 22:03 -->
+<!-- on 1st Nov 2019 at 10:30 and again on 1st Dec 2019 at 22:30 -->
 <timing>
  <event value="2019-11-01T10:30" />
  <event value="2019-12-01T22:30" />

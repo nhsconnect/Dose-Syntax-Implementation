@@ -1,41 +1,54 @@
 <!-- "file": "example-dosage-inter2.xml" -->
 <!-- Zopiclone 3.75mg tablets, 1 tablet, at BEDTIME, PRN, oral -->
-<medicationRequest>
- <contained>
-  <medication>
-   <id value="med1"/>
-   <code>
-    <coding>
-     <system value="http://snomed.info/sct"/>
-     <code value="321177003"/>
-     <display value="Zopiclone 3.75mg tablets"/>
-    </coding>
-   </code>
-  </medication>
- </contained>
- <medicationReference>
-  <reference value="#med1" /> 
- </medicationReference>
- <dosageInstruction>
-  <timing>
-   <frequency value="1"/>
-   <period value="1"/>
-   <periodUnit value="d"/>
-   <when value="HS"/>
-  </timing>
-  <asNeededBoolean value="true"/>
-  <doseQuantity>  
-   <value value="1"/>  
-   <unit value="tablet"/>  
-   <system value="http://snomed.info/sct"/>  
-   <code value="428673006"/>
-  </doseQuantity>
-  <route>
-   <coding>
-    <system value="http://snomed.info/sct"/>
-    <code value="26643006"/>
-    <display value="oral"/>
-   </coding>
-  </route>
- </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="321177003"/>
+					<display value="Zopiclone 3.75mg tablets"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+				<when value="HS"/>
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true"/>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

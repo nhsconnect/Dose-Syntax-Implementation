@@ -1,54 +1,65 @@
 <!-- "file": "example-dosage-complex17.xml" -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="21514511000001103 "/> 
-          <display value="Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd)"/> 
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" />
-  </medicationReference>
-<dosageInstruction>
-<route>
- <coding>
-  <system value="http://snomed.info/sct"/>
-  <code value="47625008"/>
-  <display value="intravenous"/>
- </coding>
-</route>
-<method>
- <coding>
-  <system value="http://snomed.info/sct"/>
-  <code value="129330003"/>
-  <display value="infusion"/>
- </coding>
-</method>
-<rateRatio>
-	<numerator>
-		<value value="30"/>
-		<unit value="millilitre"/>
-		<system value="http://unitsofmeasure.org"/>
-		<code value="mL"/>
-	</numerator>
-	<denominator>
-		<value value="1"/>
-		<unit value="kilogram"/>
-		<system value="http://unitsofmeasure.org"/>
-		<code value="kg"/>
-	</denominator>
-</rateRatio>
-<timing>
- <repeat>
-  <duration value="10"/>
-  <durationUnit value="h" />
- </repeat>
-</timing>
-</dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="21514511000001103"/>
+					<display value="Voluven 10% infusion 500ml Freeflex bags (Fresenius Kabi Ltd)"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<duration value="10"/>
+				<durationUnit value="h"/>
+			</repeat>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="intravenous"/>
+			</coding>
+		</route>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="129330003"/>
+				<display value="infusion"/>
+			</coding>
+		</method>
+		<rateRatio>
+			<numerator>
+				<value value="30"/>
+				<unit value="millilitre"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mL"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="kilogram"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="kg"/>
+			</denominator>
+		</rateRatio>
+	</dosageInstruction>
+</MedicationRequest>

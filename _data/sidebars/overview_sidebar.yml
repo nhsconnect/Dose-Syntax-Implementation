@@ -1,7 +1,7 @@
 entries:
 - title: Dose Syntax Implementation 
   product: Dose Syntax Implementation for FHIR
-  version: 1.2.0 - Experimental 
+  version: 1.3.0 - Alpha
   levels: one
   folders:
 
@@ -22,7 +22,7 @@ entries:
       url: /overview_glossary.html
       output: web
 
-  - title: CareConnect Resources
+  - title: CareConnect Medication Resources
     output: web,pdf
     folderitems:
     - title: Overview
@@ -76,8 +76,24 @@ entries:
     - title: text, code
       url: /dosage-text.html
       output: web
-      
-  - title: Current Limitations of STU3 Dosage Structure
+
+  - title: Dose Syntax Examples
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /dosage-examples-overview.html
+      output: web
+    - title: Simple Fully Machine Readable
+      url: /dosage-examples-simple.html
+      output: web
+    - title: Complex Fully Machine Readable
+      url: /dosage-examples-inter.html
+      output: web
+    - title: Semi Machine Readable
+      url: /dosage-examples-complex.html
+      output: web
+
+  - title: Questions for STU3 Dosage Structure
     output: web,pdf
     folderitems:
     - title: Overview
@@ -99,7 +115,7 @@ entries:
       url: /dosage-tradefamily.html
       output: web
 
-  - title: CareConnect Text Narrative
+  - title: Appendix - Text Narrative
     output: web,pdf
     folderitems:
     - title: Overview
@@ -110,7 +126,7 @@ entries:
       url: /dosage-to-narrative-logic.html
       output: web
       
-  - title: Dose to Product Translation
+  - title: Appendix - Dose to Product Translation
     output: web,pdf
     folderitems:
     - title: Overview
@@ -121,21 +137,6 @@ entries:
       url: /dosage-to-product-logic.html
       output: web
       
-  - title: Worked Examples
-    output: web,pdf
-    folderitems:
-    - title: Overview
-      url: /dosage-examples-overview.html
-      output: web
-    - title: Simple Fully Machine Readable
-      url: /dosage-examples-simple.html
-      output: web
-    - title: Complex Fully Machine Readable
-      url: /dosage-examples-inter.html
-      output: web
-    - title: Semi Machine Readable
-      url: /dosage-examples-complex.html
-      output: web
       
   - title: Help & Support
     output: web

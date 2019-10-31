@@ -24,7 +24,7 @@ Examples use combinations of the following elements of the CareConnect medicatio
 
 Where clinically appropriate, each example is shown as both a **dose-based** and **product-based** instruction.
 
-{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
+{% include important.html content="Examples are not complete with respect to all required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
 ## Oxytetracycline, 250mg, oral, 4 times a day ##
 

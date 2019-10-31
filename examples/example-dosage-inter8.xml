@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-inter8.xml" -->
 <!-- Epoetin alfa, 4500units, ONCE a DAY, subcutaneous injection -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,18 +15,19 @@
 					<display value="Epoetin alfa"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
-		<doseQuantity>
-			<value value="4500"/>
-			<unit value="unit"/>
-			<code value="767525000"/>
-			<system value="http://snomed.info/sct"/>
-		</doseQuantity>
 		<timing>
 			<repeat>
 				<frequency value="1"/>
@@ -44,5 +49,11 @@
 				<display value="inject"/>
 			</coding>
 		</method>
+		<doseQuantity>
+			<value value="4500"/>
+			<unit value="unit"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="767525000"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

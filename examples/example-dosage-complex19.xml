@@ -1,45 +1,56 @@
 <!-- "file": "example-dosage-complex19.xml" -->
 <!-- Oxygen by inhalation 1 to 2 litres per minute via nasal cannula -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="375287000"/> 
-          <display value="Oxygen"/> 
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" />
-  </medicationReference>
-<dosageInstruction>
-<route>
- <coding>
-  <system value="http://snomed.info/sct"/>
-  <code value="18679011000001101"/>
-  <display value="Inhalation"/>
- </coding>
-</route>
-<doseRange>
-  <low>
-   <value value="1"/>
-   <unit value="liter per minute"/>
-   <system value="http://unitsofmeasure.org"/>
-   <code value="L/min"/>
-  </low>
-  <high>
-   <value value="2"/>
-   <unit value="liter per minute"/>
-   <system value="http://unitsofmeasure.org"/>
-   <code value="L/min"/>
-  </high>
-</doseRange>
-  <additionalInstruction>
-    <text value="to be given via nasal cannula"/>
-  </additionalInstruction>
-</dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="375287000"/>
+					<display value="Oxygen"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<additionalInstruction>
+			<text value="to be given via nasal cannula"/>
+		</additionalInstruction>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="18679011000001101"/>
+				<display value="Inhalation"/>
+			</coding>
+		</route>
+		<doseRange>
+			<low>
+				<value value="1"/>
+				<unit value="liter per minute"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="L/min"/>
+			</low>
+			<high>
+				<value value="2"/>
+				<unit value="liter per minute"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="L/min"/>
+			</high>
+		</doseRange>
+	</dosageInstruction>
+</MedicationRequest>

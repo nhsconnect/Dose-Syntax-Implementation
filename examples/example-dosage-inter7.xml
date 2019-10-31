@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-inter7.xml" -->
 <!-- Timolol 0.1% gel eye drops, 1 drop in the left eye once daily -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,25 +15,19 @@
 					<display value="Timolol 0.1% gel eye drops"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
-		<doseQuantity>
-			<value value="1"/>
-			<unit value="Drop"/>
-			<system value="http://snomed.info/sct"/>
-			<code value="404218003"/>
-		</doseQuantity>
-		<site>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="8966001"/>
-				<display value="Left eye"/>
-			</coding>
-		</site>
 		<timing>
 			<repeat>
 				<frequency value="1"/>
@@ -37,5 +35,18 @@
 				<periodUnit value="d"/>
 			</repeat>
 		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="8966001"/>
+				<display value="Left eye"/>
+			</coding>
+		</site>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="Drop"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="404218003"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

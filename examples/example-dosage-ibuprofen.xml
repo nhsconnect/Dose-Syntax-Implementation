@@ -1,49 +1,55 @@
 <!-- "file": "example-dosage-ibuprofen.xml" -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="38268001"/> 
-          <display value="Ibuprofen"/> 
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" />
-  </medicationReference>
-  <dosageInstruction>
-    <doseQuantity>
-      <value value="400"/>
-      <unit value="milligram"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="mg"/>
-    </doseQuantity>
-    <route>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="26643006"/>
-        <display value="oral"/>
-      </coding>
-    </route>
-    <timing>
-      <repeat>
-        <frequency value="3"/>
-        <period value="1"/>
-        <periodUnit value="d"/>
-        <boundsDuration>
-          <value value="5"/>
-          <unit value="day"/> 
-          <code value="d"/>
-          <system value="http://unitsofmeasure.org"/>
-        </boundsDuration>
-        <boundsPeriod>
-          <start value="2019-03-10"/>
-        </boundsPeriod>
-      </repeat>
-    </timing>
-  </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="38268001"/>
+					<display value="Ibuprofen"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<boundsPeriod>
+					<start value="2019-03-10"/>
+					<end value="2019-03-14"/>
+				</boundsPeriod>
+				<frequency value="3"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="oral"/>
+			</coding>
+		</route>
+		<doseQuantity>
+			<value value="400"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

@@ -1,49 +1,60 @@
 <!-- "file": "example-dosage-inter9.xml" -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="internalMedicationIdnetifierXYZ"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="325427002"/> 
-          <display value="Prednisolone 5mg tablets"/> 
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#internalMedicationIdnetifierXYZ"/>
-    <display value="Prednisolone 5mg tablets"/>
-  </medicationReference>
-  <dosageInstruction>
-    <additionalInstruction>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="422327006"/>
-        <display value="Then stop"/>
-      </coding>
-    </additionalInstruction>
-    <timing>
-      <repeat>
-        <boundsDuration>
-          <value value="7"/>
-          <unit value="day"/>
-          <system value="http://unitsofmeasure.org"/>
-          <code value="d"/>
-        </boundsDuration>>
-        <frequency value="1"/>
-        <period value="1"/>
-        <periodMax value="1"/>
-        <periodUnit value="d"/>
-        <when value="PC"/>
-      </repeat>
-    </timing>
-    <doseQuantity>
-      <value value="8"/>
-      <unit value="tablet"/>
-      <system value="http://snomed.info/sct"/>
-      <code value="428673006"/>
-    </doseQuantity>
-  </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="internalMedicationIdnetifierXYZ"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="325427002"/>
+					<display value="Prednisolone 5mg tablets"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#internalMedicationIdnetifierXYZ"/>
+		<display value="Prednisolone 5mg tablets"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<additionalInstruction>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="422327006"/>
+				<display value="Then stop"/>
+			</coding>
+		</additionalInstruction>
+		<timing>
+			<repeat>
+				<boundsDuration>
+					<value value="7"/>
+					<unit value="day"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="d"/>
+				</boundsDuration>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodMax value="1"/>
+				<periodUnit value="d"/>
+				<when value="PC"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="8"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

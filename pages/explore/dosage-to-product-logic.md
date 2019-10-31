@@ -7,6 +7,9 @@ permalink: dosage-to-product-logic.html
 summary: "Logic for translating a dose-based instruction into a list of suitable product-based instructions"
 ---
 
+{% include warning.html content="This page is at <strong>Experimental</strong> status.<br/><br/>
+This page describes an important functional requirement for many system implementations using Dose Syntax. Structured Dose Syntax information must be capable of being used to support dose-based and product-based prescribing, and there is a requirement to convert between the two - e.g. to convert a dose-based prescription to an actual product for dispensing within a pharmacy.<br/><br/>
+Details of the requirements for dosage format conversion are highly use-case dependent and will be addressed as work in specific use-case areas develops." %}
 
 Refer to the Overview page for the high level description of the translation process.
 
@@ -35,7 +38,7 @@ Together with the FORM, ROUTE and UNIT_OF_MEASURE vocabularies from the dm+d **L
 
 When dm+d data is imported into a relational database, concepts marked as INVALID or VMP concepts flagged as "not actual products available" may be excluded from the import.
 
-![alt text](images/explore/e-r.jpg "dm+d Entity Relationship Diagram")
+![alt text](images/explore/e-r.png "dm+d Entity Relationship Diagram")
 
 ### Mapping between ucum and SNOMED/dm+d
 

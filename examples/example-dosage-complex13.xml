@@ -1,37 +1,48 @@
 <!-- "file": "example-dosage-complex13.xml" -->
 <!-- Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd), one tablet to be taken twice daily on Mondays, Wednesdays and Fridays -->
-<medicationRequest>
- <contained>
-  <medication>
-   <id value="med1"/>
-   <code>
-    <coding>
-     <system value="http://snomed.info/sct"/> 
-     <code value="688711000001107"/>
-     <display value="Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)"/>
-    </coding>
-   </code>
-  </medication>
- </contained>
- <medicationReference>
-  <reference value="#med1" />
- </medicationReference>
- <dosageInstruction>
-  <doseQuantity>
-   <value value="1"/>
-   <unit value="tablet"/>
-   <system value="http://snomed.info/sct"/>
-   <code value="428673006"/>
-  </doseQuantity>
-  <timing>
-   <repeat>
-    <frequency value="2"/>
-    <period value="1"/>
-    <periodUnit value="d"/>
-    <dayOfWeek value="mon"/>
-    <dayOfWeek value="wed"/>
-    <dayOfWeek value="fri"/>
-   </repeat>
-  </timing>
- </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="688711000001107"/>
+					<display value="Co-trimoxazole 80mg/400mg tablets (Actavis UK Ltd)"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+				<dayOfWeek value="mon"/>
+				<dayOfWeek value="wed"/>
+				<dayOfWeek value="fri"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

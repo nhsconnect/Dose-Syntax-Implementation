@@ -1,29 +1,40 @@
 <!-- "file": "examples-medication-vtm-form.xml" -->
 <!-- Example referencing a Virtual Therapeutic Moiety (VTM) with a coded form as a contained resource -->
-<medicationRequest>
- <contained>
-  <medication> 
-   <id value="med1"/> 
-   <code>  
-    <coding>   
-     <system value="http://snomed.info/sct"/>   
-     <code value="90332006"/>   
-     <display value="Paracetamol"/>  
-    </coding> 
-   </code>
-   <form>
-    <coding>
-     <system value="http://snomed.info/sct"/> 
-     <code value="385194003"/>  
-     <display value="suppository"/>
-    </coding>
-   </form>
-  </medication>
- </contained>
- <medicationReference>
-  <reference value="#med1" /> 
- </medicationReference>
- <dosageInstruction>
-  <!-- dosage information added here -->
- </dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="90332006"/>
+					<display value="Paracetamol"/>
+				</coding>
+			</code>
+			<form>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="385194003"/>
+					<display value="suppository"/>
+				</coding>
+			</form>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<!-- dosage information added here -->
+	</dosageInstruction>
+</MedicationRequest>

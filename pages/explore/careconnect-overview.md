@@ -10,23 +10,32 @@ summary: "Overview of CareConnect profiled resources that include the Dosage str
 
 {% include important.html content="This guidance is under active development by NHS Digital and content may be added or updated on a regular basis." %}
 
-This implementation guidance applies to three CareConnect profiled resources that contain the same two structures;
+{% include note.html content="This page provides implementation guidance, background and context for use of Dose Syntax within CareConnect medication resources.<br/><br/>
+Implementation guidance for use of the medication resources themselves will be contained in forthcoming use-case specific Implementation Guides." %}
+
+
+This implementation guidance applies to four CareConnect profiled resources that contain the same two structures;
 
   * [CareConnect-MedicationRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1)
   * [CareConnect-MedicationDispense-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1)
   * [CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1)
+  * [CareConnect-MedicationAdministration-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1)
 
 Each contain two common structures;
 
+  * A [STU3 Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage) structure (or subset thereof)
   * A reference to a [CareConnect-Medication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1) profiled resource
-  * A [STU3 Dosage](http://hl7.org/fhir/stu3/dosage.html#Dosage) structure
+
+## Use of the STU3 Dosage datatype ##
+
+The STU3 Dosage datatype is detailed in the [HL7 FHIR specification](http://hl7.org/fhir/stu3/dosage.html#Dosage) and in the [Dosage Structure](./dosage-overview.html) section of this document.
 
 ## Referencing a CareConnect-Medication-1 profiled resource ##
 
 A reference to a CareConnect-Medication-1 resource can be implemented in three ways;
-  * As an internal reference known as a "contained resource" where the resource is embedded inside the parent resource.
+  * As an internal reference known as a "contained resource" where the resource is embedded inside the parent resource. This pattern is strongly discouraged in FHIR-based systems. It is used as the basis of examples here only to give clear, compact illustrative examples.
   * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care.
-  * As an external reference to a RESTful API that would return a resource. At the time of writing, such a terminology service does not exists so use of this method is **not recommended**.
+  * As an external reference to a RESTful API that would return a resource. This is the preferred pattern for referencing in production systems.
 
 <script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
 
@@ -67,7 +76,3 @@ A Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) coded concep
 #### Actual Medicinal Product (AMP) Example ####
 
 <script src="https://gist.github.com/RobertGoochUK/b0de11fbd88a3e2949532a66168659f4.js"></script>
-
-## Use of medication.text ##
-
-In all cases, the **medication.text** must be populated with the description of the coded medication concept. The text is a narrative data type containing `<div>` and `<status>` elements. Within the `<div>` the content could contain XHTML marked-up but receiving systems may choose to ignore any mark-up if they want to be in control of the presentation.

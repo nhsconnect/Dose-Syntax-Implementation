@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-complex7.xml" -->
 <!-- Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd), one to be given by IM injection into the anterior abdominal wall on 1st November 2019 -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,12 +15,32 @@
 					<display value="Zoladex 3.6mg implant SafeSystem pre-filled syringes (AstraZeneca UK Ltd)"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" />
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
+		<timing>
+			<event value="2019-11-01"/>
+			<repeat>
+				<count value="1"/>
+			</repeat>
+		</timing>
+		<site>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="59380008"/>
+				<display value="Anterior abdominal wall structure"/>
+			</coding>
+		</site>
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -31,18 +55,5 @@
 				<display value="inject"/>
 			</coding>
 		</method>
-		<site>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="59380008"/>
-				<display value="Anterior abdominal wall structure"/>
-			</coding>
-		</site>
-		<timing>
-			<event value="2019-11-01" />
-			<repeat>
-				<count value="1" />
-			</repeat>
-		</timing>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

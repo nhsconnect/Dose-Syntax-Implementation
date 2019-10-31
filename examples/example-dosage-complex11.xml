@@ -1,43 +1,54 @@
 <!-- "file": "example-dosage-complex11.xml" -->
 <!-- Aspirin 300mg dispersible tablets, two tablets to be taken four times daily well diluted in water. To be taken with or after food. -->
-<medicationRequest>
-  <contained>
-    <medication>
-      <id value="med1"/>
-      <code>
-        <coding>
-          <system value="http://snomed.info/sct"/> 
-          <code value="329526003"/>
-          <display value="Aspirin 300mg dispersible tablets"/>
-        </coding>
-      </code>
-    </medication>
-  </contained>
-  <medicationReference>
-    <reference value="#med1" />
-  </medicationReference>
-<dosageInstruction>
-<additionalInstruction>
-  <coding> 
-    <system value="http://snomed.info/sct"/> 
-    <code value="417995008"/> 
-    <display value="Dissolve or mix with water before taking"/> 
-  </coding>
-</additionalInstruction>
-<timing>
- <repeat>
-  <frequency value="4"/> 
-  <period value="1"/>
-  <periodUnit value="d"/>
-  <when value="C"/>
-  <when value="PC"/> 
- </repeat> 
-</timing>
-<doseQuantity>
- <value value="2"/>
- <unit value="tablet"/>
- <system value="http://snomed.info/sct"/>
- <code value="428673006"/>
-</doseQuantity>
-</dosageInstruction>
-</medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med1"/>
+			<code>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="329526003"/>
+					<display value="Aspirin 300mg dispersible tablets"/>
+				</coding>
+			</code>
+		</Medication>
+	</contained>
+	<intent value="order"/>
+	<medicationReference>
+		<reference value="#med1"/>
+	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
+	<dosageInstruction>
+		<additionalInstruction>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="417995008"/>
+				<display value="Dissolve or mix with water before taking"/>
+			</coding>
+		</additionalInstruction>
+		<timing>
+			<repeat>
+				<frequency value="4"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+				<when value="C"/>
+				<when value="PC"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
+		</doseQuantity>
+	</dosageInstruction>
+</MedicationRequest>

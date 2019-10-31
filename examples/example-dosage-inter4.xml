@@ -1,8 +1,12 @@
 <!-- "file": "example-dosage-inter4.xml" -->
 <!-- Salbutamol, 5mg to be given via a nebuliser. Repeat every 20-30 minutes as required -->
-<medicationRequest>
+<MedicationRequest>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</meta>
 	<contained>
-		<medication>
+		<Medication>
 			<id value="med1"/>
 			<code>
 				<coding>
@@ -11,18 +15,31 @@
 					<display value="Salbutamol"/>
 				</coding>
 			</code>
-		</medication>
+		</Medication>
 	</contained>
+	<intent value="order"/>
 	<medicationReference>
-		<reference value="#med1" /> 
+		<reference value="#med1"/>
 	</medicationReference>
+	<subject>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+			<value value="9999999999"/>
+		</identifier>
+	</subject>
 	<dosageInstruction>
-		<doseQuantity>  
-			<value value="5"/>  
-			<unit value="milligram"/>  
-			<system value="http://unitsofmeasure.org"/>  
-			<code value="mg"/>
-		</doseQuantity>
+		<additionalInstruction>
+			<text value="to be given via a nebuliser"/>
+		</additionalInstruction>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="20"/>
+				<periodMax value="30"/>
+				<periodUnit value="min"/>
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true"/>
 		<route>
 			<coding>
 				<system value="http://snomed.info/sct"/>
@@ -30,15 +47,11 @@
 				<display value="inhalation"/>
 			</coding>
 		</route>
-		<timing>
-			<frequency value="1"/>
-			<period value="20"/>
-			<periodMax value="30"/>
-			<periodUnit value="min"/>
-		</timing>
-		<asNeededBoolean value="true"/>
-		<additionalInstruction>
-			<text value="to be given via a nebuliser"/>
-		</additionalInstruction>
+		<doseQuantity>
+			<value value="5"/>
+			<unit value="milligram"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
 	</dosageInstruction>
-</medicationRequest>
+</MedicationRequest>

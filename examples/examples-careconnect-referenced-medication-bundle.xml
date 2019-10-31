@@ -1,0 +1,40 @@
+<!-- "file": "examples-careconnect-referenced-medication-bundle.xml" -->
+<!-- Examples for how to reference a Medication resource within the CareConnect profiled resources -->
+<!-- Medication referenced as resource elsewhere in the Bundle -->
+<!-- In this example the medication information is contained within a CareConnect-MedicationStatement-1 profiled resource -->
+<Bundle>
+	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
+	<meta>
+		<profile value="https://hl7.org/STU3/StructureDefinition/Bundle"/>
+	</meta>
+	<type value="message"/>
+	<!-- other content within the Bundle -->
+	<entry>
+		<fullUrl value="urn:uuid:a94d6293-cfc0-45a3-b7a8-ae7040f990f1"/>
+		<resource>
+			<MedicationStatement>
+				<medicationReference>
+					<reference value="urn:uuid:ebc37408-dc6c-437a-a09f-f7ee88927e3f"/>
+				</medicationReference>
+				<!-- other data within the medicationStatement -->
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<!-- other content within the Bundle -->
+	<entry>
+		<fullUrl value="urn:uuid:ebc37408-dc6c-437a-a09f-f7ee88927e3f"/>
+		<resource>
+			<Medication>
+				<id value="ebc37408-dc6c-437a-a09f-f7ee88927e3f"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="318902004"/>
+						<display value="Ramipril 5mg capsules"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<!-- other content within the Bundle -->
+</Bundle>

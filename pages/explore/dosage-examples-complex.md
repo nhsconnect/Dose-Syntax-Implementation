@@ -10,7 +10,7 @@ summary: "Semi Machine Readable Examples"
 
 These **medicationRequest** examples are only semi machine readable as they require part of the instruction to be expressed as free-text within either *additionalInstruction* or *patientInstruction*.
 
-{% include important.html content="Examples are not complete with respect to all mandatory or required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
+{% include important.html content="Examples are not complete with respect to all required data for a CareConnect implementation but instead highlight the variety of use of the FHIR Dosage structure" %}
 
 ## NovoRapid Penfill 100units/ml solution for injection 3ml cartridges (Novo Nordisk Ltd), inject according to insulin requirements ##
 

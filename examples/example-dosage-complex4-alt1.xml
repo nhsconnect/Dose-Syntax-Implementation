@@ -1,5 +1,7 @@
-<!-- "file": "example-dosage-complex15.xml" -->
-<!-- Aspirin suppository, 600mg rectally every 4 hours. Maximum 3.6gm per 24 hours -->
+<!-- "file": "example-dosage-complex4-alt1.xml" -->
+<!-- Co-codamol 8mg/500mg tablets, 2 tablets when required when first symptoms of migraine appear. Dose may be repeated after 4 hours if migraine recurs. Oral. Maximum dose 6 tablets every 24 hours -->
+<!-- This example could be modelled in two ways. -->
+<!-- 2 tablets - as required when migraine occurs - every 4 hours - Maximum dose 6 tablets per 24 hours - Additional doses only to be taken after migraine recurrence -->
 <MedicationRequest>
 	<id value="a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"/>
 	<meta>
@@ -11,17 +13,10 @@
 			<code>
 				<coding>
 					<system value="http://snomed.info/sct"/>
-					<code value="7947003"/>
-					<display value="Aspirin"/>
+					<code value="322307006"/>
+					<display value="Co-codamol 8mg/500mg tablets"/>
 				</coding>
 			</code>
-			<form>
-				<coding>
-					<system value="http://snomed.info/sct"/>
-					<code value="385194003"/>
-					<display value="suppository"/>
-				</coding>
-			</form>
 		</Medication>
 	</contained>
 	<intent value="order"/>
@@ -35,6 +30,7 @@
 		</identifier>
 	</subject>
 	<dosageInstruction>
+		<patientInstruction value="Additional doses only to be taken after migraine recurrence"/>
 		<timing>
 			<repeat>
 				<frequency value="1"/>
@@ -42,30 +38,30 @@
 				<periodUnit value="h"/>
 			</repeat>
 		</timing>
-		<route>
+		<asNeededCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="37161004"/>
-				<display value="Rectal"/>
+				<code value="37796009"/>
+				<display value="Migraine"/>
 			</coding>
-		</route>
+		</asNeededCodeableConcept>
 		<doseQuantity>
-			<value value="600"/>
-			<unit value="milligram"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
+			<value value="2"/>
+			<unit value="tablet"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="428673006"/>
 		</doseQuantity>
 		<maxDosePerPeriod>
 			<numerator>
-				<value value="3.6"/>
-				<unit value="gram"/>
-				<system value="http://unitsofmeasure.org"/>
-				<code value="g"/>
+				<value value="6"/>
+				<unit value="dose"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="3317411000001100"/>
 			</numerator>
 			<denominator>
 				<value value="24"/>
 				<unit value="hour"/>
-				<system value="http://unitsofmeasure.org"/>
+				<system value="http://unitsofmeasure.org/"/>
 				<code value="h"/>
 			</denominator>
 		</maxDosePerPeriod>
