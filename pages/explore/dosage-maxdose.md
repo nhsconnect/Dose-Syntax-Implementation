@@ -19,4 +19,4 @@ Not currently supported is how to define a **maximum dose per course**.
 
 With the current STU3 Dosage structure, a maximum dose per course would have to be conveyed in free-text using the **Dosage.additionalInstruction**.
 
-<script src="https://gist.github.com/RobertGoochUK/3c2f9c94a120a473c67294f3f6d56f39.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/09b3a6a0572b5977269bc0cc5d900f45.js"></script>

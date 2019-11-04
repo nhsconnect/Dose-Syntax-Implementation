@@ -18,7 +18,7 @@ The **asNeededCodeableConcept** option is used to bound the dosage instruction t
 ## Examples
 
 ### Dosage.asNeeded
-<script src="https://gist.github.com/RobertGoochUK/355dcf9b4e71f740e5b197b77f80818d.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/ef3fd4b4b3ff7689ab99ca0f44a51163.js"></script>
 
 ### Dosage.asNeededCodeableConcept
-<script src="https://gist.github.com/RobertGoochUK/8a3bd9f5bbd25a7cf9ffd23975dbeedf.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/45bcc402fbeedc35099db6fa6085aa08.js"></script>

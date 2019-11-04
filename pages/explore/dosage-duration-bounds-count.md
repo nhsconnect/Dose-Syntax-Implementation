@@ -18,4 +18,4 @@ An instruction to limit a single course of medication uses the **bounds** struct
 
 An instruction for a set number of doses, including the use case of "once", plus also any maximum number of doses, is defined by **count** and **countMax**. Whilst the **count** is within **repeat** it does not mean repeat a number of additional times. A count of 1 means adminster a dose once. A count of 3 means administer 3 doses.
   
-<script src="https://gist.github.com/RobertGoochUK/021a2e6a7b726dca4e4ce61269ddc508.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/a04bb614342d374f8468a937a154c50e.js"></script>

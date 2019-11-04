@@ -16,4 +16,4 @@ In secondary care the individual components of the pack should be prescribed as 
 
 In primary care the combination pack is prescribed and therefore the medication request must reference the medication resource for the dm+d code of the combination product. The medication request then links to 2 dosing instructions which describe how each tablet should be taken.
 
-<script src="https://gist.github.com/RobertGoochUK/ed35e1f7cfb0eea8df8acad2aced3369.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/96e660b150dcac3e70c56653425a11de.js"></script>

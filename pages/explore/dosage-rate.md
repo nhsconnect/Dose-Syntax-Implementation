@@ -25,4 +25,4 @@ Where the unit of measure applicable to a rate range is defined within ucom the 
 
 ## Examples
 
-<script src="https://gist.github.com/RobertGoochUK/618bb18a1ad8e5397883a68032cdb4ff.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/4bf460c2c200f837d567f7d63e4b9aff.js"></script>

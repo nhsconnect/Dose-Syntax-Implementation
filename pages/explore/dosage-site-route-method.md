@@ -27,7 +27,7 @@ The [999000041000001103 ePrescribing method simple reference set (foundation met
 
 Whilst a FHIR [value-set for method](http://hl7.org/fhir/valueset-administration-method-codes.html) does exist, together with two separate hierarchies within SNOMED-CT ([Dose form administration method](https://termbrowser.nhs.uk/?perspective=full&conceptId1=736665006&edition=uk-edition) and [Dosing instruction fragment](https://termbrowser.nhs.uk/?perspective=full&conceptId1=422096002&edition=uk-edition)), it is recommended to use the ePrescribing reference set in the first instance.
 
-<script src="https://gist.github.com/RobertGoochUK/463347c7af504eff10b60b2ae6bc189d.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/9ab86bf2f42170b80ae576922dad34b2.js"></script>
 
 ## Use of Synonyms ##
 

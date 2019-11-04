@@ -29,7 +29,7 @@ For prescribing or dispensing uses cases where a Virtual Medicinal Product (VMP)
 
 The **dispenseRequest** structure contains a simple quantity and coded unit of measure. Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of [767524001 Unit of measure (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition). Most, but not all units relevant to medication dosage instructions, are contained within the hierarchy as a descendant of [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).
 
-<script src="https://gist.github.com/RobertGoochUK/987b500e381e4b1fc3e258a19fda8acd.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/7521989049c13b5e548d6bd4e2ce9d96.js"></script>
 
 ## text ##
 

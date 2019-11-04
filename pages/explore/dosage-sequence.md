@@ -17,10 +17,10 @@ Examples below include Prednisolone to treat Bell's palsy where a dose starts at
 
 Where the value of sequence is an incremental integer it defines a sequential instruction.
 
-<script src="https://gist.github.com/RobertGoochUK/94b057717c3ade14ae6d6227bd52c213.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/c56267a78e7c9ddf9d7421d06dce25f0.js"></script>
 
 ## Concurrent Instructions ##
 
 Where the same integer value of sequence is defines it means a concurrent instruction.
 
-<script src="https://gist.github.com/RobertGoochUK/bc29af1df30e9f0b86da1d2224a76b39.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/812bc65d9eb7c30891888e0dbda570bd.js"></script>

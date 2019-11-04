@@ -19,13 +19,13 @@ By default, use UCUM units of measure. The system URL for UCOM is "http://unitso
 
 Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure. The system URL for SNOMED-CT is "http://snomed.info/sct". Examples of when a SNOMED-CT unit of measure would be used are "tablet", "capsule" or "ampule". Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of [767524001 Unit of measure (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition), of which most, but not all units relevant to medication dosage instructions are contained within the hierarchy as a descendant of [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).
 
-<script src="https://gist.github.com/RobertGoochUK/82fd7c2c1ef256eaaac3c63ed5654c48.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/f57f25fa61f77bdf837919d0e676b2b2.js"></script>
 
 ## Dosage.doseRange ##
 
 The **doseRange** is used to describe a dose that may be in a given low/high range. By default, use UCUM units of measure, but where not defined, use SNOMED-CT units.
 
-<script src="https://gist.github.com/RobertGoochUK/2a58d4caba5a91a01e76ca87e46a3fc2.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/8e95e65ffbcae8b797b5f5d0cf76274d.js"></script>
 
 ## Dosage.timing.repeat.frequency and Dosage.timing.repeat.period ##
 
@@ -35,4 +35,4 @@ The unit of the period must be one of the UCUM units; s = second; min = minute; 
 
 A **frequencyMax** and/or **periodMax** can also be used to define ranges.
 
-<script src="https://gist.github.com/RobertGoochUK/8a7de6eb02731e129f5a4157e3b3db20.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/9b76d9da1ef82906bd2cd3e49ce5beb1.js"></script>

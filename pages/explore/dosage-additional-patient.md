@@ -30,5 +30,5 @@ The use of a dosage instruction akin to "as directed" should be avoided wherever
  
 In some cases, where the same instruction is relevant to both a clinician and patient, then the instructions may be repeated using both structures. This will ensure the receiving system makes the information available to the appropriate person.
  
- <script src="https://gist.github.com/RobertGoochUK/bdfe6b4e1aec96c27e3a17c325c14033.js"></script>
+ <script src="https://gist.github.com/IOPS-DEV/46ab707ee642105bc77ab6dc0beded2e.js"></script>
  

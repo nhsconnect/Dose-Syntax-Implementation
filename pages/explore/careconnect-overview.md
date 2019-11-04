@@ -37,7 +37,19 @@ A reference to a CareConnect-Medication-1 resource can be implemented in three w
   * As an internal reference to a resource defined elsewhere within a [FHIR bundle](https://www.hl7.org/fhir/bundle.html). Use this when an implementation requires the use of a bundle, for example NHS Digital Transfer of Care.
   * As an external reference to a RESTful API that would return a resource. This is the preferred pattern for referencing in production systems.
 
-<script src="https://gist.github.com/RobertGoochUK/6d2ec5ac0e42545a0598723be730578a.js"></script>
+
+  ### contained resource
+  
+  <script src="https://gist.github.com/IOPS-DEV/4ae4847ab15b77eed0cd7f94727b67e3.js"></script>
+  
+  ### FHIR bundle
+  
+  <script src="https://gist.github.com/IOPS-DEV/56a5a2ea4741154d07ec3f2a44b4ed1d.js"></script>
+  
+  ### external reference
+  
+  <script src="https://gist.github.com/IOPS-DEV/bb2cffc25aea1f77144b6f2e6d201fba.js"></script>
+  
 
 ## Use of the different dm+d concepts ##
 
@@ -51,13 +63,13 @@ The dm+d code used within a medication resource will vary depending on the level
 
 The most generic representation of a medicine using only a Virtual Therapeutic Moiety (VTM) dm+d concept.
 
-<script src="https://gist.github.com/RobertGoochUK/92bff409c185c985fdb85269cb912761.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/0b2afd68b2f6bb2b68bdf9b05d92bd04.js"></script>
 
 ### VTM plus Form ###
 
 A coded form can be defined along with a Virtual Therapeutic Moiety (VTM) dm+d concept where the clinician does not want to be specific with a product-based instruction.
 
-<script src="https://gist.github.com/RobertGoochUK/43d83d1cac80e404d02a8440368362c7.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/6ebb31a98edc8ef5989dd79d302c332b.js"></script>
 
 ### VTM plus Trade Family ###
 
@@ -71,8 +83,8 @@ A Virtual Medicinal Product (VMP) or Actual Medicinal Product (AMP) coded concep
 
 #### Virtual Medicinal Product (VMP) Example ####
 
-<script src="https://gist.github.com/RobertGoochUK/574f6ae7053f908e2cc95abc6224dd76.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/30980ca158fab0b77f67287fae022b38.js"></script>
 
 #### Actual Medicinal Product (AMP) Example ####
 
-<script src="https://gist.github.com/RobertGoochUK/b0de11fbd88a3e2949532a66168659f4.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/f551e49ecf178dd690f0b877c1754b70.js"></script>
