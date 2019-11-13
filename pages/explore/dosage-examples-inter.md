@@ -89,7 +89,7 @@ Includes a dose duration.
 
 Includes a **rateRatio** and a **duration**.
 
-**Note**. The rateRatio could also be modelled using a ucum unit within a **doseQuantity**. In this example we are using the slightly more complex **rateRatio** structure.
+**Note**. The rateRatio could also be modelled using a UCUM unit within a **doseQuantity**. In this example we are using the slightly more complex **rateRatio** structure.
 
 ```xml
 <doseQuantity>

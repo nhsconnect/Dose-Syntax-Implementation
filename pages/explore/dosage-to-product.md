@@ -23,7 +23,7 @@ A GP would translate dose-based medication requests within a discharge letter in
 
 **IMPORTANT** - The process described here is to create a suitable short list of products to fulfil the medication request. It is not intended to identify a single product. A local implementation may choose to further filter the list of products on factors like local availability (stock), local formulary or cost. The order of products listed may also be locally condfigured to promote or demote products based on licensing status or local needs such as paediatric use.
 
-The translation process requires the use of the NHS Dictionary of Medicines and Devices (dm+d) plus a mapping table for ucum units of measure that use different terms than dm+d. For example; `gram` is a dm+d unit of measure with `g` is the equivalant within ucum, and ucum spells `liter` differently to the dm+d `litre`.
+The translation process requires the use of the NHS Dictionary of Medicines and Devices (dm+d) plus a mapping table for UCUM units of measure that use different terms than dm+d. For example; `gram` is a dm+d unit of measure with `g` is the equivalant within UCUM, and UCUM spells `liter` differently to the dm+d `litre`.
 
 ### Step 1 - Get child VMPs of the VTM
 
@@ -42,7 +42,7 @@ and vmp_route = {route_id}  (if specified)
 ```
 ### Step 2 - Calculate the required quantity of each VMP to fulfil the requested dose 
 
-Take the dose from the **doseQuantity** or **doseRange.low** structures. This will be a combination of a quantity and a coded unit of measure. If the unit of measure is using a ucum unit then the SNOMED code needs to be looked-up from dm+d. This is where the addition mapping table applies.
+Take the dose from the **doseQuantity** or **doseRange.low** structures. This will be a combination of a quantity and a coded unit of measure. If the unit of measure is using a UCUM unit then the SNOMED code needs to be looked-up from dm+d. This is where the addition mapping table applies.
 
 Each VMP contains strength information for the active ingredients. It would not be expected to use a dose-based prescription for combination drugs (e.g. anything beginning "co-") nor any VTM where some associated products contained multiple ingredents (e.g. Phosphate). In such cases translation from dose to products is not possible.
 

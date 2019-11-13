@@ -1,10 +1,10 @@
 ---
-title: Dosage when, offset, dayOfWeek and timeOfDay
+title: Dosage when, offset, dayOfWeek, timeOfDay and code
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-when-offset-day-time.html
-summary: "Specific timing instructions (when, offset, dayOfWeek and timeOfDay)"
+summary: "Specific timing instructions (when, offset, dayOfWeek, timeOfDay and code)"
 ---
 
 
@@ -30,3 +30,7 @@ A dosage instruction can specify specific days of the week and/or times of the d
 A dosage instruction can specify specific dates and times using event.
 
 <script src="https://gist.github.com/IOPS-DEV/32b2b7aa996e1817ea3c4b7a1f1a31b4.js"></script>
+
+## Dosage.timing.code ##
+
+Allows a code, often a Latin abbreviation, for a timing schedule to be specified, for example, "BID" (=twice a day). It is recommended that such codes **are not** used when the rest of the Dosage structure is supported by the system. Instead use the structures like **frequency** and **period** so that a timing schedule can be computable.

@@ -9,7 +9,7 @@ summary: "Additional clinical instructions and patient instructions"
 
 
  
-Use the **additionalInstruction** and/or **patientInstruction** structure for dosage instructions relevant to the clinician or patient that cannot be conveyed elsewhere within the Dosage structure.
+Use the **additionalInstruction** and/or **patientInstruction** structure for dosage instructions relevant to the clinician or patient that cannot be conveyed elsewhere within the Dosage structure. 
 
 Additional instructions can be either SNOMED-CT coded or free-text and can be repeated allowing for multiple SNOMED-CT coded instructions to be conveyed. Patient instructions can only be free-text and can only be defined once per dosage instruction.
 
@@ -32,3 +32,10 @@ In some cases, where the same instruction is relevant to both a clinician and pa
  
  <script src="https://gist.github.com/IOPS-DEV/46ab707ee642105bc77ab6dc0beded2e.js"></script>
  
+## Dosage.text ##
+
+The [FHIR specification](http://hl7.org/fhir/stu3/dosage-definitions.html#Dosage.text) for the **Dosage.text** attribute is ambiguous and not clear on it's intended use. The approach used within this guidance is to provide the complete human readable string representation of the dosage instruction within the **text** narrative of the parent CareConnect profiled resource.
+
+Therefore until such a time when the FHIR specification is clearer (Note. The STU4 definition is slightly better but still ambiguous) the use of the **Dosage.text** attribute is not recommended where the dosage instruction is defined using the coded structures. This position may be subject to change as a result of initial implementation experience or feedback from the FHIR community.
+
+The **Dosage.text** attribute would be populated in an implementation which does not support the coded structures.

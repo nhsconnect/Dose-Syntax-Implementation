@@ -38,18 +38,18 @@ A reference to a CareConnect-Medication-1 resource can be implemented in three w
   * As an external reference to a RESTful API that would return a resource. This is the preferred pattern for referencing in production systems.
 
 
-  ### contained resource
-  
-  <script src="https://gist.github.com/IOPS-DEV/4ae4847ab15b77eed0cd7f94727b67e3.js"></script>
-  
-  ### FHIR bundle
-  
-  <script src="https://gist.github.com/IOPS-DEV/56a5a2ea4741154d07ec3f2a44b4ed1d.js"></script>
-  
-  ### external reference
-  
-  <script src="https://gist.github.com/IOPS-DEV/bb2cffc25aea1f77144b6f2e6d201fba.js"></script>
-  
+### Contained resource
+
+<script src="https://gist.github.com/IOPS-DEV/4ae4847ab15b77eed0cd7f94727b67e3.js"></script>
+
+### FHIR bundle
+
+<script src="https://gist.github.com/IOPS-DEV/56a5a2ea4741154d07ec3f2a44b4ed1d.js"></script>
+
+### External reference
+
+<script src="https://gist.github.com/IOPS-DEV/bb2cffc25aea1f77144b6f2e6d201fba.js"></script>
+
 
 ## Use of the different dm+d concepts ##
 

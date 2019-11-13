@@ -75,7 +75,7 @@ Express a **rateRange** as "at a rate of {low_value} to {high_value} {high_units
 
 Express a **rateQuantity** as "at a rate of {value} {units}"
 
-`at a rate of 1 microgram per kilogram per hour` (**Note**. This example uses the ucum unit "microgram per kilogram per hour")
+`at a rate of 1 microgram per kilogram per hour` (**Note**. This example uses the UCUM unit "microgram per kilogram per hour")
 
 ### duration, durationMax ###
 

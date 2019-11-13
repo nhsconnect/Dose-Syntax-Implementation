@@ -40,13 +40,13 @@ When dm+d data is imported into a relational database, concepts marked as INVALI
 
 ![alt text](images/explore/e-r.png "dm+d Entity Relationship Diagram")
 
-### Mapping between ucum and SNOMED/dm+d
+### Mapping between UCUM and SNOMED/dm+d
 
-The following mapping table needs to be available to the implementing system. It is required to identify the units of measure within the ucum standard that use different different codes to the dm+d.
+The following mapping table needs to be available to the implementing system. It is required to identify the units of measure within the UCUM standard that use different different codes to the dm+d.
 
-For example `g` is a ucum code for "gram" and the equivalent within dm+d is `gram|258682000` so a mapping is required to associate `g` with the SNOMED code `258682000`. This mapping table may need to be extended within a local implementation depending on which ucum units are to be expected.
+For example `g` is a UCUM code for "gram" and the equivalent within dm+d is `gram|258682000` so a mapping is required to associate `g` with the SNOMED code `258682000`. This mapping table may need to be extended within a local implementation depending on which UCUM units are to be expected.
 
-**SNOMED/dm+d code** | **ucum unit**
+**SNOMED/dm+d code** | **UCUM unit**
 258683005 | kilogram
 258682000 | g
 258684004 | milligram

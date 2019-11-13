@@ -15,15 +15,21 @@ A large proportion of cases, especially those where the medication is described 
 
 The **doseQuantity** is one of two ways to describe a dose; the amount of medication per dose, as a simple coded quantity. The alternative is with a **doseRange**.
 
-By default, use UCUM units of measure. The system URL for UCOM is "http://unitsofmeasure.org". Examples of when a UCUM unit of measure would be used are "gram" or "milliliter" or "percent".
+By preference, use UCUM units of measure (system URL: “http://unitsofmeasure.org”). 
+Examples of when a UCUM unit of measure would be used are “gram” or “milliliter” or “percent”.
 
-Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure. The system URL for SNOMED-CT is "http://snomed.info/sct". Examples of when a SNOMED-CT unit of measure would be used are "tablet", "capsule" or "ampule". Any unit of measure can be used from the SNOMED-CT hierarchy as a descendant of [767524001 Unit of measure (qualifier value)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition), of which most, but not all units relevant to medication dosage instructions are contained within the hierarchy as a descendant of [732935002 Unit of presentation (unit of presentation)](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).
+Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure (system URL: “http://snomed.info/sct”).  
+Examples of when a SNOMED-CT unit of measure would typically be used are “tablet”, “capsule” or “ampule”.  
+Units of presentation relevant to medication dosage instructions are contained within the hierarchy as descendants of [732935002 | Unit of presentation](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).  
+Units of measure, where UCUM is not available, are contained within the hierarchy as descendants of [767524001 | Unit of measure](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition).  
+
+
 
 <script src="https://gist.github.com/IOPS-DEV/f57f25fa61f77bdf837919d0e676b2b2.js"></script>
 
 ## Dosage.doseRange ##
 
-The **doseRange** is used to describe a dose that may be in a given low/high range. By default, use UCUM units of measure, but where not defined, use SNOMED-CT units.
+The **doseRange** is used to describe a dose that may be in a given low/high range. By preference, use UCUM units of measure, but where not defined, use SNOMED-CT units.
 
 <script src="https://gist.github.com/IOPS-DEV/8e95e65ffbcae8b797b5f5d0cf76274d.js"></script>
 

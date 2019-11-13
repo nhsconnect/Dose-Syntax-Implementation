@@ -73,9 +73,6 @@ entries:
     - title: sequence
       url: /dosage-sequence.html
       output: web
-    - title: text, code
-      url: /dosage-text.html
-      output: web
 
   - title: Dose Syntax Examples
     output: web,pdf
@@ -119,7 +116,7 @@ entries:
     output: web,pdf
     folderitems:
     - title: Overview
-      url: /dosage-to-narrative-overview2.html
+      url: /dosage-to-narrative-overview.html
       output: web
       type: homepage
     - title: Text Generation Logic

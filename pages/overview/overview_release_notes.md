@@ -13,13 +13,13 @@ summary: Summary release notes of the versions of the FHIR Dose Syntax Implement
 
 * Use of STU3 Dosage structure within CareConnect profiled resources
 * Worked examples using the CareConnect-MedicationRequest-1 profiled resource
+* Guidance (experimental) for converting a dose-based (VTM) instruction into an appropriate short list of (VMP/AMP) products 
+* Guidance (experimental) for creating a human readable string from the FHIR Dosage elements
 
 ### Exclusions ####
 
 The following will be added to future versions of this implementation guidance.
 * Guidance for converting existing prescription content (e.g. an order sentence) within an existing prescribing system into a FHIR Dosage instruction
-* Guidance for converting a dose-based (VTM) instruction into an appropriate short list of (VMP/AMP) products 
-* Guidance for creating a human readable string from the FHIR Dosage elements
 * Guidance for creating patient focussed dosage instructions when converting from a dose-based to product-based instruction
 
 ## Version History ##
