@@ -29,9 +29,9 @@
 	<dosageInstruction>
 		<timing>
 			<repeat>
-				<frequency value="4"/>
-				<period value="1"/>
-				<periodUnit value="d"/>
+				<frequency value="1"/>
+				<period value="6"/>
+				<periodUnit value="h"/>
 			</repeat>
 		</timing>
 		<route>
