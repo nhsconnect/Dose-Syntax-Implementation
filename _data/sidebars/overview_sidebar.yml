@@ -80,14 +80,14 @@ entries:
     - title: Overview
       url: /dosage-examples-overview.html
       output: web
-    - title: Simple Fully Machine Readable
-      url: /dosage-examples-simple.html
+    - title: Standard Dose Syntax Examples
+      url: /dosage-examples-standard.html
       output: web
-    - title: Complex Fully Machine Readable
-      url: /dosage-examples-inter.html
+    - title: Additional Instruction Examples
+      url: /dosage-examples-additional.html
       output: web
-    - title: Semi Machine Readable
-      url: /dosage-examples-complex.html
+    - title: Patient Instruction Examples
+      url: /dosage-examples-patient.html
       output: web
 
   - title: Questions for STU3 Dosage Structure
