@@ -24,6 +24,15 @@ The following will be added to future versions of this implementation guidance.
 
 ## Version History ##
 
+### 1.3.1-alpha ###
+
+* review comment clarifications
+* clarification of use of UCUM units of measure versus SNOMED CT units of measure and presentation
+* clarification of use of SNOMED synonyms
+* clarification of use of additionalInstruction, patientInstruction, text
+* rearrange examples to illustrate standar use of dose syntax, use of additionalInstruction, use of patientInstruction
+* additional example of use of Medication not in dm+d \(2nd Glucose 5% infusion example\)
+
 ### 1.3.0-alpha###
 * Reorganisation of content to foreground Dose Syntax versus background Medicines context
 * Examples rework to conform to CareConnect medication profiling

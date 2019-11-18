@@ -175,8 +175,6 @@ Includes a **rateRatio** and a **duration**.
 {% include note.html content="Product based prescription with course length as number of doses, sequential dosing." %}
 <script src="https://gist.github.com/IOPS-DEV/73bf7eef079a6dff9eed68ff5d110570.js"></script>
 
-## Insulin lispro (Humalog) 16units to be given by subcutaneous injection at meal times ##
-
-Complex because requires the use of a specific brand (within SNOMED-CT known as a Trade Family).
+## Insulin lispro, 16units to be given by subcutaneous injection at meal times ##
 
 <script src="https://gist.github.com/IOPS-DEV/39048b639f39819d7d012dd1a1ca4f27.js"></script>
