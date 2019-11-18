@@ -146,7 +146,7 @@ For this example, assume today's date is 9th March 2019, hence 'tomorrow' is 10t
 {% include note.html content="Product based prescription. Route, method and dose duration." %}
 <script src="https://gist.github.com/IOPS-DEV/509539f865054465a4f70d78e48bafe7.js"></script>
 
-## Glucose 5% infusion 500ml bags, 500ml, intravenous, continuous infusion, over 8 hours ##
+## Glucose 5% infusion, intravenous, 100ml/hour, continuous infusion, over 8 hours ##
 
 {% include note.html content="Non dm+d (ingredient) based prescription. Route, method and dose duration." %}
 <script src="https://gist.github.com/IOPS-DEV/cd7efa8708679e39f7c203a6f690e516.js"></script>

@@ -1,10 +1,10 @@
 ---
-title: STU3 Limitation - Combination product instructions
+title: STU3 Limitation - Combination pack instructions
 keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: dosage-combi.html
-summary: "STU3 Limitation - Combination product instructions"
+summary: "STU3 Limitation - Combination pack instructions"
 ---
 
 
