@@ -37,7 +37,7 @@ The following will be added to future versions of this implementation guidance.
 * rearrange examples to illustrate standar use of dose syntax, use of additionalInstruction, use of patientInstruction
 * additional example of use of Medication not in dm+d \(2nd Glucose 5% infusion example\)
 
-### 1.3.0-alpha###
+### 1.3.0-alpha ###
 * Reorganisation of content to foreground Dose Syntax versus background Medicines context
 * Examples rework to conform to CareConnect medication profiling
 * Dose to Product & CareConnect Text Narrative moved to appendix pending scoping decisions
