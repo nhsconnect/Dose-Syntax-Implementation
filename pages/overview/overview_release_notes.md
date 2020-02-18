@@ -24,6 +24,10 @@ The following will be added to future versions of this implementation guidance.
 
 ## Version History ##
 
+### 1.3.2-alpha ###
+
+* updated external links to the AWS demonstrator with links to the demonstrator and associated API documentation provided by the North of England Commissioning Support Unit
+
 ### 1.3.1-alpha ###
 
 * review comment clarifications
