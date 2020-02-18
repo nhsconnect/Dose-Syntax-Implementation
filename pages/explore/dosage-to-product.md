@@ -89,4 +89,4 @@ Oxytetracycline 125mg/5ml oral suspension | 10 ml
 Oxytetracycline 500mg/5ml oral suspension | 2.5 ml
 Oxytetracycline 100mg/5ml oral suspension | 12.5 ml
 
-A demonstrator is available as part of [Experimental Alpha Web Services](http://ec2-18-130-128-118.eu-west-2.compute.amazonaws.com/) hosted on AWS, which can be used to test and verify this dose-to-product translation logic.
+A [demonstrator](https://dmdsite-uks-test-web.azurewebsites.net/DoseTranslation) and [API documentation](https://apidmd001.azurewebsites.net/index.html) has been provided by the North of England Commissioning Support Unit which can be used to test and verify this dose-to-product translation logic.
