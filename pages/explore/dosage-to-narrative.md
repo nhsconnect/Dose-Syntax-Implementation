@@ -78,7 +78,7 @@ Exceptions are as follows;
 
 A web service is in development by NHS Digital that will implement this logic and translate a CareConnect medication-related profiled resource and return a string suitable for use as the text narrative. When available, this web service can be used by system suppliers during their software prototyping and design phases. It should also be suitable as an operational service so that system suppliers so not have to implement this complex logic within their own solutions.
 
-Have a play with the [Beta Web Services](https://dmdsite-uks-test-web.azurewebsites.net/Dosage) and associated [API documentation] (https://apidmd001.azurewebsites.net/index.html) provided by the North of England Commissioning Support Unit.
+A [demonstrator](https://dmdsite-uks-test-web.azurewebsites.net/Dosage) and associated [API documentation](https://apidmd001.azurewebsites.net/index.html) has been provided by the North of England Commissioning Support Unit that aligns with this guidance.
 
 <!--
 <script type='text/javascript'>
