@@ -15,12 +15,12 @@ Current approved version published on [https://developer.nhs.uk/apis/dose-syntax
 
 To contribute to the repository, please ensure you update your local repository so it is inline with the latest changes with the origin e.g. `git fetch` and `git pull`.
 
-If you have an old version of this repository before 3rd Feb 2021, you may want to reset your local `master` and `gh-pages` branches with origin.
-For example: `git reset --hard origin/master` or `git reset --hard origin/gh-pages`.
+If you have an old version of this repository before 3rd Feb 2021, you may want to reset your local `master` branch with origin.
+For example: `git reset --hard origin/master`.
 
-### Branch strategy
+### Branching strategy
 
-This repository uses [GitHub Flow](https://guides.github.com/introduction/flow/) for the branch strategy.
+This repository uses [GitHub Flow](https://guides.github.com/introduction/flow/) for the branching strategy.
 
 #### Branches
 
@@ -37,7 +37,7 @@ Please do not commit to the `master` branch directly. Instead, please create a f
 
 Please ensure your commit messages are relevant to the feature you're creating - for example:
 
-`git commit -m "Fixed spelling mistake in README.md"`'
+`git commit -m "Fixed spelling mistake in README.md"`
 
 #### Making a Pull / Merge request
 
