@@ -1,43 +1,83 @@
 ---
 title: Dosage dose[x], frequency and period
-keywords:  messaging
-tags: [fhir,messaging]
+keywords: messaging
+tags: [fhir, messaging]
 sidebar: foundations_sidebar
 permalink: dosage-doseQuantity-freq-period.html
 summary: "Simple timing instructions using dose[x], frequency and period"
+mathjax: true
 ---
 
+> A large proportion of cases, especially those where the medication are described using a VMP or AMP concept, can have a dosage instruction defined as a **doseQuantity** plus a combination of **frequency** and **period** elements within the [Timing structure](http://hl7.org/fhir/STU3/datatypes.html#Timing).
 
+## Units of Measure
 
-A large proportion of cases, especially those where the medication is described using a VMP or AMP concept, can have a dosage instruction defined as a **doseQuantity** plus a combination of **frequency** and **period** elements within the Timing structure.
+A unit of measure is required when [describing a dosage](#describing-a-dose) and can be supplied via one of the following:
 
-## Dosage.doseQuantity ##
+### UCUM
 
-The **doseQuantity** is one of two ways to describe a dose; the amount of medication per dose, as a simple coded quantity. The alternative is with a **doseRange**.
+[The Unified Code for Units of Measure](http://unitsofmeasure.org) (UCUM) is preferred and should be used where possible.
 
-By preference, use UCUM units of measure (system URL: “http://unitsofmeasure.org”). 
-Examples of when a UCUM unit of measure would be used are “gram” or “milliliter” or “percent”.
+Examples of when a UCUM unit of measure would be used are:
 
-Where a UCUM unit of measure is not defined, use a SNOMED-CT unit of measure (system URL: “http://snomed.info/sct”).  
-Examples of when a SNOMED-CT unit of measure would typically be used are “tablet”, “capsule” or “ampule”.  
-Units of presentation relevant to medication dosage instructions are contained within the hierarchy as descendants of [732935002 | Unit of presentation](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition).  
-Units of measure, where UCUM is not available, are contained within the hierarchy as descendants of [767524001 | Unit of measure](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition).  
+- gram (g)
+- milliliter (ml)
+- percent (%)
 
+### SNOMED-CT
 
+In the instance where a UCUM unit of measure is not defined, use a [SNOMED-CT](https://datadictionary.nhs.uk/data_elements/unit_of_measurement__snomed_ct_dm_d_.html) unit of measure instead.
+
+Examples of where a SNOMED-CT unit of measure would typically be used are:
+
+- tablet
+- capsule
+- ampoule
+
+All units of measure are descendants of concept [`767524001 | Unit of measure (qualifier value) |`](https://termbrowser.nhs.uk/?perspective=full&conceptId1=767524001&edition=uk-edition,999000691000001104) which includes both UCUM and non-UCUM codes.
+
+Concept [`732935002 | Unit of presentation (unit of presentation) |`](https://termbrowser.nhs.uk/?perspective=full&conceptId1=732935002&edition=uk-edition), which is also a descendant of the Unit of measure concept, holds a list non-UCUM units of measure that are used within prescribing, such as:
+
+- tablet
+- pad
+- patch
+
+## Describing a dosage
+
+A dosage can be described via one of the following methods. In both instances when considering Units of Measure note that UCUM is preferred.
+
+### Dosage.doseQuantity
+
+The amount of medication per dose, as a [simple coded quantity](http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity).
 
 <script src="https://gist.github.com/IOPS-DEV/f57f25fa61f77bdf837919d0e676b2b2.js"></script>
 
-## Dosage.doseRange ##
+### Dosage.doseRange
 
-The **doseRange** is used to describe a dose that may be in a given low/high range. By preference, use UCUM units of measure, but where not defined, use SNOMED-CT units.
+A dose that may be in a given low/high range.
 
 <script src="https://gist.github.com/IOPS-DEV/8e95e65ffbcae8b797b5f5d0cf76274d.js"></script>
 
-## Dosage.timing.repeat.frequency and Dosage.timing.repeat.period ##
+## Dosage.timing.repeat.frequency and Dosage.timing.repeat.period
 
-Simple dosage timing instructions can be described using **frequency** and **period**. The combination of frequency and period allows for the two commonly used expressions of "X times a period" and "every X period".
+Simple dosage timing instructions can be described using **frequency** and **period**.
 
-The unit of the period must be one of the UCUM units; s = second; min = minute; h = hour; d =day; wk = week; mo =month; a = year.
+The combination of frequency and period allows for the two commonly used expressions of:
+
+- $$x$$ times a period
+- every $$x$$ period
+
+The unit of the period **must be** one of the UCUM units:
+
+| UCUM Unit | Definition |
+| --------- | ---------- |
+| `s`       | second     |
+| `min`     | minute     |
+| `h`       | hour       |
+| `d`       | day        |
+| `wk`      | week       |
+| `mo`      | month      |
+| `a`       | year       |
 
 A **frequencyMax** and/or **periodMax** can also be used to define ranges.
 

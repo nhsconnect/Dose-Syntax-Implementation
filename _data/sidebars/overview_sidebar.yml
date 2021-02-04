@@ -1,7 +1,7 @@
 entries:
-- title: Dose Syntax Implementation 
-  product: Dose Syntax Implementation for FHIR
-  version: 1.3.2 - Alpha
+- title: Dose Syntax Implementation
+  product: Dose Syntax Implementation for FHIR STU3
+  version: 1.3.3-beta
   levels: one
   folders:
 
@@ -37,8 +37,8 @@ entries:
       output: web
     - title: CareConnect-MedicationStatement-1
       url: /careconnect-MedicationStatement-1.html
-      output: web 
-      
+      output: web
+
   - title: Dosage Structure
     output: web,pdf
     folderitems:
@@ -66,7 +66,7 @@ entries:
       output: web
     - title: maxDosePer[x]
       url: /dosage-maxdoseper.html
-      output: web    
+      output: web
     - title: additional, patientInstruction, text
       url: /dosage-additional-patient.html
       output: web
@@ -101,7 +101,7 @@ entries:
       output: web
     - title: 2. Maximum dose per course
       url: /dosage-maxdose.html
-      output: web        
+      output: web
     - title: 3. Periods of no medicine administration
       url: /dosage-no-meds.html
       output: web
@@ -122,7 +122,7 @@ entries:
     - title: Text Generation Logic
       url: /dosage-to-narrative-logic.html
       output: web
-      
+
   - title: Appendix - Dose to Product Translation
     output: web,pdf
     folderitems:
@@ -133,8 +133,8 @@ entries:
     - title: Dose to Product Logic
       url: /dosage-to-product-logic.html
       output: web
-      
-      
+
+
   - title: Help & Support
     output: web
     folderitems:
