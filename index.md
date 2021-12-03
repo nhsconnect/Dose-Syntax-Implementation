@@ -9,7 +9,7 @@ summary: Use of the Dosage structure within CareConnect Profiles
 ---
 
 
-{% include important.html content="This guidance is under active development by NHS Digital and content may be added or updated on a regular basis." %}
+{% include important.html content="This guidance has now moved to [Dose Syntax Implementation Guidance for FHIR STU3](https://simplifier.net/guide/dosesyntaximplementationguidanceforfhirstu3)." %}
 
 ## Introduction ##
 
